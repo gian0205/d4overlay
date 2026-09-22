@@ -32,6 +32,43 @@ test('classIdFrom reconhece formatos do GEP', () => {
   assert.equal(classIdFrom('Paladin'), 'paladin');
   assert.equal(classIdFrom(''), null);
   assert.equal(classIdFrom('Amazon'), null);
+  // formato real do GEP: número
+  assert.equal(classIdFrom(220940), 'sorcerer');
+  assert.equal(classIdFrom('2131351'), 'paladin');
+  assert.equal(classIdFrom(-1), null);
+});
+
+test('formato real do GEP: class numérica e map com IDs de área', () => {
+  const { parseIdList } = require('../src/shared/gep-ids');
+  const fs = require('fs');
+  const areas = parseIdList(fs.readFileSync(path.join(__dirname, '..', 'data', 'gep', 'area_names.txt'), 'utf8'));
+  const territories = parseIdList(fs.readFileSync(path.join(__dirname, '..', 'data', 'gep', 'territory_names.txt'), 'utf8'));
+  const names = { areas, territories };
+  assert.equal(areas.get(1496133), 'Hall of the Penitent');
+  assert.equal(areas.has(-1), false);
+
+  // exemplos copiados da doc do Overwolf (feature/category/key/value)
+  let s = emptyState();
+  s = applyInfoUpdate(s, { feature: 'me', category: 'character', key: 'class', value: 220940 }, names);
+  s = applyInfoUpdate(s, { feature: 'location', category: 'match_info', key: 'location', value: '{"x" : -1001.76,"y" : 133.699,"z" : 77.6396}' }, names);
+  s = applyInfoUpdate(s, { feature: 'location', category: 'match_info', key: 'map', value: '{"area" : 1496133,"territory" : 1381479}' }, names);
+  assert.equal(s.character.classId, 'sorcerer');
+  assert.equal(s.location.areaId, 1496133);
+  assert.equal(s.location.area, 'Hall of the Penitent');
+  assert.equal(s.location.territory, 'Kurast');
+  assert.equal(findBossByLocation(bosses.bosses, s.location)?.id, 'grigoire');
+
+  // getInfo agrupa por categoria ("character", "match_info")
+  let g = applyInfoUpdate(emptyState(), { feature: 'character', category: 'character', key: 'class', value: 2081670 }, names);
+  g = applyInfoUpdate(g, { feature: 'match_info', category: 'match_info', key: 'map', value: '{"area" : 2189180,"territory" : 0}' }, names);
+  assert.equal(g.character.classId, 'paladin');
+  assert.equal(findBossByLocation(bosses.bosses, g.location)?.id, 'belial');
+
+  // área fora da tabela: guarda o id, sem nome, sem boss
+  const u = applyInfoUpdate(emptyState(), { feature: 'location', key: 'map', value: '{"area" : 999,"territory" : 1}' }, names);
+  assert.equal(u.location.areaId, 999);
+  assert.equal(u.location.area, null);
+  assert.equal(findBossByLocation(bosses.bosses, u.location), null);
 });
 
 test('findBossByLocation acha a arena pelo nome da área', () => {
@@ -57,8 +94,22 @@ test('currentPhase escolhe fase por nível e paragon', () => {
   assert.equal(currentPhase(build, { level: 10 }).id, 'lv1');
   assert.equal(currentPhase(build, { level: 30 }).id, 'lv2');
   assert.equal(currentPhase(build, { level: 55 }).id, 'lv3');
-  assert.equal(currentPhase(build, { level: 60, paragon: 0 }).id, 'end1');
-  assert.equal(currentPhase(build, { level: 60, paragon: 200 }).id, 'end2');
+  assert.equal(currentPhase(build, { level: 70, paragon: 0 }).id, 'end1');
+  assert.equal(currentPhase(build, { level: 70, paragon: 200 }).id, 'end2');
+});
+
+test('currentPhase ignora fases manuais e usa a primeira fase abaixo do nível máximo', () => {
+  const build = {
+    phases: [
+      { id: 'push', manual: true, minParagon: 0 },
+      { id: 'start', minParagon: 0 },
+      { id: 'end', minParagon: 200 },
+    ],
+  };
+  assert.equal(currentPhase(build, { level: 20 }).id, 'start');
+  assert.equal(currentPhase(build, { level: 70, paragon: 10 }).id, 'start');
+  assert.equal(currentPhase(build, { level: 70, paragon: 250 }).id, 'end');
+  assert.equal(currentPhase({ phases: [{ id: 'só', manual: true }] }, {}).id, 'só');
 });
 
 test('nextStep e progress usam os passos concluídos', () => {

@@ -100,9 +100,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Fechar a árvore de skills e subir a dificuldade.",
           "steps": [
             {
@@ -238,9 +238,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema e dificuldade.",
           "steps": [
             {
@@ -372,9 +372,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema.",
           "steps": [
             {
@@ -506,9 +506,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema.",
           "steps": [
             {
@@ -641,9 +641,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema.",
           "steps": [
             {
@@ -776,9 +776,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema e espírito secundário.",
           "steps": [
             {
@@ -910,9 +910,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema.",
           "steps": [
             {
@@ -1016,9 +1016,9 @@
         },
         {
           "id": "lv3",
-          "name": "Nível 51–60",
+          "name": "Nível 51–70",
           "minLevel": 51,
-          "maxLevel": 60,
+          "maxLevel": 70,
           "focus": "Suprema.",
           "steps": [
             {

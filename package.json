@@ -19,6 +19,7 @@
     "d4data:sync": "node scripts/d4data/sync.js",
     "d4data:extract": "node scripts/d4data/extract.js",
     "d4data": "npm run d4data:sync && npm run d4data:extract && npm run validate-data",
+    "d4companion": "node scripts/d4companion/sync.js",
     "dist": "ow-electron-builder --publish=never"
   },
   "build": {

@@ -1,13 +1,83 @@
 {
-  "version": "2026.09-s15-r2",
+  "version": "2026.09-s15-r3",
   "season": "Temporada 15 (Lord of Hatred)",
+  "source": {
+    "name": "Maxroll — Boss Loot Table Cheat Sheet",
+    "url": "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet",
+    "updated": "2026-09-22"
+  },
   "notes": [
-    "Todos os Lair Bosses podem dropar Únicos Míticos; Míticos não são presos a um boss.",
-    "O primeiro Único do baú vem da tabela do boss; os seguintes têm 50% de chance de vir do pool geral (ex.: Frostburn, The Butcher's Cleaver, Azurewrath).",
-    "5 troféus do boss no Cubo Horádrico = 1 Único aleatório da tabela dele.",
-    "Belial não tem tabela própria: no baú dele você escolhe a tabela de outro boss.",
-    "Listas PARCIAIS montadas a partir de buscas (os sites de loot não têm API). Todo nome foi conferido contra os arquivos do jogo (d4data); a associação item→boss ainda não é confirmada (\"?\")."
+    "Desde Lord of Hatred cada Único tem um único boss dedicado; o pool geral ainda existe, mas pesa pouco.",
+    "Todos os bosses podem dropar Míticos Icônicos; qualquer Único pode vir como Mítico (affixes e poder no máximo).",
+    "Troféus do boss no Cubo Horádrico viram Únicos dedicados daquele boss (chance pequena de Mítico; vêm com a tag Crafted).",
+    "Runas específicas de cada boss só caem com o nó \"Lair of Runes\" do War Plan.",
+    "Belial não tem tabela própria: ele copia a tabela do boss que você escolher.",
+    "Os Únicos novos da Temporada 15 vêm das masmorras Capstone de Baal, Mefisto e Diablo (fora do sistema de Lair). Baal é o mais rápido de farmar."
   ],
+  "generalPool": [
+    "Azurewrath",
+    "Banished Lord's Talisman",
+    "Blood-Mad Idol",
+    "Crown of Lucion",
+    "Endurant Faith",
+    "Fists of Fate",
+    "Flickerstep",
+    "Frostburn",
+    "Godslayer Crown",
+    "Locran's Talisman",
+    "Mother's Embrace",
+    "Paingorger's Gauntlets",
+    "Penitent Greaves",
+    "Rakanoth's Wake",
+    "Razorplate",
+    "Rustbitten Dirk",
+    "Shard of Verathiel",
+    "Signet of Pelghain",
+    "Soulbrand",
+    "Tassets of the Dawning Sky",
+    "Temerity",
+    "The Butcher's Cleaver",
+    "Thousand-Eye Reaver",
+    "Thundergod's Blessing",
+    "Tibault's Will",
+    "Wendigo Brand",
+    "Wyrdskin",
+    "X'Fal's Corroded Signet",
+    "Yen's Blessing"
+  ],
+  "iconicMythics": [
+    "Andariel's Visage",
+    "Ahavarion, Spear of Lycander",
+    "Doombringer",
+    "El'Druin, Sword of Justice",
+    "Harlequin Crest",
+    "Heir of Perdition",
+    "Melted Heart of Selig",
+    "Nesekem, the Herald",
+    "Ring of Starless Skies",
+    "Shattered Vow",
+    "Shroud of False Death",
+    "The Grandfather",
+    "Tyrael's Might"
+  ],
+  "season15Capstone": {
+    "note": "Masmorras Capstone de Baal, Mefisto e Diablo: todos podem dropar todos; taxas observadas pelo Maxroll.",
+    "common": [
+      "Arioc's Needle",
+      "Henri's Perquisition",
+      "Leoric's Crown",
+      "Messerschmidt's Reaver",
+      "Nemesis Bracers",
+      "The Furnace"
+    ],
+    "uncommon": [
+      "In-Geom",
+      "Squirt's Blouse"
+    ],
+    "rare": [
+      "Stone of Jordan"
+    ]
+  },
   "bosses": [
     {
       "id": "grigoire",
@@ -16,85 +86,153 @@
       "summon": "1 Lair Key",
       "arena": {
         "name": "Hall of the Penitent",
-        "region": "Kehjistan",
+        "region": "Dry Steppes (sul de Ked Bardu)",
         "matchers": [
           "Hall of the Penitent",
           "Grigoire"
+        ],
+        "areaIds": [
+          1496133
         ]
       },
       "tips": [
         "Fique longe das linhas de raio no chão.",
         "Na fase de muralha elétrica, procure o espaço aberto."
       ],
-      "knownDropCount": 19,
+      "unlock": "Recomendado: completar Helltide",
+      "element": "Raio",
+      "trophy": "Living Steel",
+      "runes": [
+        "Yax",
+        "Poc",
+        "Bac"
+      ],
       "drops": [
         {
-          "name": "Seed of Horazon",
-          "verified": false
-        },
-        {
-          "name": "Hands of the Worldbreaker",
-          "verified": false
-        },
-        {
-          "name": "Deathgrip",
-          "verified": false
-        },
-        {
-          "name": "Vision of the Firestorm",
-          "verified": false
-        },
-        {
-          "name": "Cage of Madness",
-          "verified": false
-        },
-        {
-          "name": "The Maestro",
-          "verified": false
-        },
-        {
-          "name": "The Basilisk",
-          "verified": false
-        },
-        {
-          "name": "Bastion of Sir Matthias",
-          "verified": false
-        },
-        {
           "name": "Gohr's Devastating Grips",
-          "verified": false
-        },
-        {
-          "name": "Strike of Stormhorn",
-          "verified": false
+          "classes": [
+            "barbarian"
+          ]
         },
         {
           "name": "Might of Qual-Kehk",
-          "verified": false
+          "classes": [
+            "barbarian"
+          ]
         },
         {
           "name": "Hunter's Zenith",
-          "verified": false
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "The Basilisk",
+          "classes": [
+            "druid"
+          ]
         },
         {
           "name": "Will of Stone",
-          "verified": false
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Deathgrip",
+          "classes": [
+            "necromancer"
+          ]
         },
         {
           "name": "The Mortacrux",
-          "verified": false
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Bastion of Sir Matthias",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Sunbrand",
+          "classes": [
+            "paladin"
+          ]
         },
         {
           "name": "Desperate March",
-          "verified": false
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "The Maestro",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Strike of Stormhorn",
+          "classes": [
+            "sorcerer"
+          ]
         },
         {
           "name": "The Oculus",
-          "verified": false
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Vision of the Firestorm",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Peacemonger's Signet",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Sunstained War-Crozier",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Cage of Madness",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Hands of the Worldbreaker",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Seed of Horazon",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Sire of Sin",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Paingorger's Gauntlets"
         }
       ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -105,7 +243,7 @@
       "summon": "1 Lair Key",
       "arena": {
         "name": "Glacial Fissure",
-        "region": "Fractured Peaks",
+        "region": "Fractured Peaks (sudoeste de Kyovashad)",
         "matchers": [
           "Glacial Fissure",
           "Beast in the Ice"
@@ -115,35 +253,134 @@
         "Destrua as poças de gelo rapidamente.",
         "Saia dos círculos de congelamento antes de explodirem."
       ],
-      "knownDropCount": 19,
+      "unlock": "Recomendado: completar Nightmare Dungeons",
+      "element": "Frio",
+      "trophy": "Distilled Fear",
+      "runes": [
+        "Moni",
+        "Nagu",
+        "Jah"
+      ],
       "drops": [
         {
+          "name": "Ring of the Ravenous",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "The Relentless Heart",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
           "name": "Accord of the Wilds",
-          "verified": false
+          "classes": [
+            "druid"
+          ]
         },
         {
           "name": "Airidah's Inexorable Will",
-          "verified": false
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Malefic Crescent",
+          "classes": [
+            "druid"
+          ]
         },
         {
           "name": "Deathless Visage",
-          "verified": false
-        },
-        {
-          "name": "Gift of Frost",
-          "verified": false
-        },
-        {
-          "name": "Hellhound's Sabatons",
-          "verified": false
+          "classes": [
+            "necromancer"
+          ]
         },
         {
           "name": "Howl from Below",
-          "verified": false
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Light's Rebuke",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Sanctis of Kethamar",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Orphan Maker",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Saboteur's Signet",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Gift of Frost",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Starfall Coronet",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Vox Omnium",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Protection of the Prime",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Scorn of the Earth",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Hellhound's Sabatons",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Kabraxis' Will",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "The Eightfold Idol",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Signet of Pelghain"
         }
       ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -155,27 +392,151 @@
       "trophy": "Malignant Heart",
       "arena": {
         "name": "Malignant Burrow",
-        "region": "Hawezar (ao lado da Tree of Whispers)",
+        "region": "Hawezar (perto do waypoint da Tree of Whispers)",
         "matchers": [
           "Malignant Burrow",
           "Varshan"
+        ],
+        "areaIds": [
+          1767907
         ]
       },
       "tips": [
         "Mate os corações malignos que ele invoca para reduzir o dano."
       ],
+      "unlock": "Obrigatório: completar a Tree of Whispers",
+      "element": "Sombra / Físico",
+      "runes": [
+        "Kry",
+        "Thul",
+        "Tam"
+      ],
       "drops": [
         {
-          "name": "Shard of Verathiel",
-          "verified": false
+          "name": "100,000 Steps",
+          "classes": [
+            "barbarian"
+          ]
         },
         {
-          "name": "Deathspeaker's Pendant",
-          "verified": false
+          "name": "Overkill",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Autumnal Crown",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Greatstaff of the Crone",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Stone of Vehemen",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Hangman's Hand",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "The Hand of Naz",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Seal of the Second Trumpet",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Wreath of Auric Laurel",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Death's Pavane",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Eaglehorn",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Pitfighter's Gull",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Levin Grasp",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Onyx Soul",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Raiment of the Sea",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Balazan's Maxtlatl",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Wound Drinker",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Ae'grom's Schism",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Seal of the Ophanim",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Thrice-Woven Nightmare",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Shard of Verathiel"
         }
       ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -191,45 +552,148 @@
         "matchers": [
           "Darkened Way",
           "Lord Zir"
+        ],
+        "areaIds": [
+          445562
         ]
       },
       "tips": [
         "Quebre as pedras de sangue (Blood Stones) para interromper a cura.",
         "Evite as poças de sangue."
       ],
-      "knownDropCount": 21,
+      "unlock": "Recomendado: Blood Maiden na Helltide",
+      "element": "Fogo",
+      "runes": [
+        "Ner",
+        "Kel",
+        "Eom"
+      ],
       "drops": [
         {
+          "name": "Fields of Crimson",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Twin Strikes",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Gathlen's Birthright",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Unsung Ascetic's Wraps",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Waxing Gibbous",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
           "name": "Cruor's Embrace",
-          "verified": false
+          "classes": [
+            "necromancer"
+          ]
         },
         {
-          "name": "Dirge of Odium",
-          "verified": false
+          "name": "Sanguivor, Blade of Zir",
+          "classes": [
+            "necromancer"
+          ]
         },
         {
-          "name": "Elegy",
-          "verified": false
+          "name": "Judgment of Auriel",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Judicant's Glaivehelm",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Shroud of Khanduras",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Skyhunter",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "The Umbracrux",
+          "classes": [
+            "rogue"
+          ]
         },
         {
           "name": "Fang of the Vipermagi",
-          "verified": false
+          "classes": [
+            "sorcerer"
+          ]
         },
         {
-          "name": "Fields of Crimson",
-          "verified": false
+          "name": "Rimeblood",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Staff of Lam Esen",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Ring of the Midday Hunt",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Ring of Writhing Moon",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Dirge of Odium",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Elegy",
+          "classes": [
+            "warlock"
+          ]
         },
         {
           "name": "Fleshwrit Carapace",
-          "verified": false
+          "classes": [
+            "warlock"
+          ]
         },
         {
-          "name": "X'Fal's Corroded Signet",
-          "verified": false
+          "name": "X'Fal's Corroded Signet"
         }
       ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -240,15 +704,146 @@
       "summon": "1 Lair Key",
       "arena": {
         "name": "Urivar",
-        "region": "Nahantu",
+        "region": "Nahantu (perto do waypoint de Kichuk)",
         "matchers": [
           "Urivar"
         ]
       },
       "tips": [],
-      "drops": [],
+      "unlock": "Recomendado: Kurast Undercity",
+      "element": "Fogo",
+      "trophy": "Judicator's Mask",
+      "runes": [
+        "Tzic",
+        "Mot",
+        "Yul"
+      ],
+      "drops": [
+        {
+          "name": "Mantle of Mountain's Fury",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Unbroken Chain",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Dark Howl",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Dolmen Stone",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Kilt of Blackwing",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Gospel of the Devotee",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Will of Rathma",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Cathedral's Song",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Herald's Morningstar",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Cassia's Grace",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Windforce",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Writhing Band of Trickery",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Flamescar",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Iceheart Brais",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Molten Band",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Band of First Breath",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Sunbird's Gorget",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Cowl of Malefic Torment",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Infernal Homunculus",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "The Blade of Sight Aflame",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Yen's Blessing"
+        }
+      ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -270,39 +865,156 @@
         "Quando ele entrar no chão, fique em movimento.",
         "Tenha Unstoppable para o agarrão."
       ],
-      "knownDropCount": 23,
+      "unlock": "Obrigatório: chaves dos Initiate Lair Bosses",
+      "element": "Veneno",
+      "runes": [
+        "Noc",
+        "Tam"
+      ],
       "drops": [
         {
-          "name": "Razorplate",
-          "verified": false
-        },
-        {
-          "name": "Bands of Ichorous Rose",
-          "verified": false
-        },
-        {
-          "name": "Blue Rose",
-          "verified": false
-        },
-        {
-          "name": "Condemnation",
-          "verified": false
-        },
-        {
           "name": "Dark Stalker's Medallion",
-          "verified": false
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Rage of Harrogath",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Sabre of Tsasgal",
+          "classes": [
+            "barbarian"
+          ]
         },
         {
           "name": "Fractured Runestone",
-          "verified": false
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Greenwalker's Oath",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Mark of the Old Wolf",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Mutilator Plate",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Path of Trag'Oul",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "The Undercrown",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Supplication",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Ward of the White Dove",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Bands of Ichorous Rose",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Condemnation",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Sea Lord's Fine Gloves",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Blue Rose",
+          "classes": [
+            "sorcerer"
+          ]
         },
         {
           "name": "Galvanic Azurite",
-          "verified": false
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Staff of Endless Rage",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Widow's Web",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Wushe Nak Pa",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Gauntlets of Sheol",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Morlu Fleshward",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Rictus of Terror",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Scourge of Duriel",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Razorplate"
         }
       ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -314,7 +1026,7 @@
       "trophy": "Pincushioned Doll",
       "arena": {
         "name": "Hanged Man's Hall",
-        "region": "Kehjistan",
+        "region": "Kehjistan (leste de Tarsarak)",
         "matchers": [
           "Hanged Man's Hall",
           "Andariel"
@@ -324,35 +1036,151 @@
         "Desvie das lâminas giratórias e do veneno no chão.",
         "Desde Lord of Hatred tem tabela própria (não compartilha com Duriel)."
       ],
-      "knownDropCount": 21,
+      "unlock": "Obrigatório: chaves dos Initiate Lair Bosses",
+      "element": "Todos",
+      "runes": [
+        "Cem",
+        "Zan",
+        "Igni"
+      ],
       "drops": [
         {
-          "name": "Anathema of the Primes",
-          "verified": false
+          "name": "Ancients' Oath",
+          "classes": [
+            "barbarian"
+          ]
         },
         {
-          "name": "Ancients' Oath",
-          "verified": false
+          "name": "Emblem of Staalbreak",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Hellhammer",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Greenwalker's Signet",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Insatiable Fury",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Storm's Companion",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Ebonpiercer",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Kessime's Legacy",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Lidless Wall",
+          "classes": [
+            "necromancer"
+          ]
         },
         {
           "name": "Argent Veil",
-          "verified": false
-        },
-        {
-          "name": "Assassin's Stride",
-          "verified": false
-        },
-        {
-          "name": "Craze of the Dead God",
-          "verified": false
+          "classes": [
+            "paladin"
+          ]
         },
         {
           "name": "Dawnfire",
-          "verified": false
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Assassin's Stride",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Beastfall Boots",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Deathmask of Nirmitruq",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Drognan's Anguish",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Esadora's Overflowing Cameo",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Orsivane",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Craze of the Dead God",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Jacinth Shell",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Anathema of the Primes",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Night Terror",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Scepter of the Three",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Godslayer Crown"
         }
       ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -364,15 +1192,157 @@
       "trophy": "Abhorrent Heart",
       "arena": {
         "name": "Harbinger of Hatred",
-        "region": "",
+        "region": "Nahantu (perto do waypoint de Kurast Docks)",
         "matchers": [
           "Harbinger"
         ]
       },
       "tips": [],
-      "drops": [],
+      "unlock": "Obrigatório: chaves dos Initiate Lair Bosses",
+      "element": "Sombra",
+      "runes": [
+        "Teb",
+        "Wat",
+        "Yom"
+      ],
+      "drops": [
+        {
+          "name": "Bane of Ahjad-Den",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Nomad's Longing Heart",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Ugly Bastard Helm",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Fleshrender",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Ifeh's Dire Totem",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Might of the Ursine",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Blood Wake",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Pact of Bone",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "The Gloom Ward",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Gate of the Red Dawn",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Mantle of the Grey",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Etna's Lost Dagger",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Scoundrel's Leathers",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Shrouded Gift",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Flameweaver",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Sidhe Bindings",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Tal Rasha's Iridescent Loop",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Protean Heart",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Sepazontec",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Bridle of Tor'Baalos",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Spine of Tathamet",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "The Fecund Seal",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Temerity"
+        }
+      ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -383,7 +1353,7 @@
       "summon": "1 Greater Lair Key",
       "arena": {
         "name": "The Butcher",
-        "region": "",
+        "region": "Kehjistan (Gea Kul)",
         "matchers": [
           "Butcher"
         ]
@@ -391,9 +1361,501 @@
       "tips": [
         "Kite: ele puxa com o gancho e dá stun."
       ],
-      "drops": [],
+      "unlock": "Obrigatório: chaves dos Initiate Lair Bosses",
+      "element": "Fogo / Físico",
+      "trophy": "Fresh Meat",
+      "runes": [
+        "Qua",
+        "Que",
+        "Vex"
+      ],
+      "drops": [
+        {
+          "name": "Chainscourged Mail",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Ramaladni's Magnum Opus",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Ring of Red Furor",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Fury of the Wilds",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Heart of Azgar",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Purified Lightbringer",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Mace of King Leoric",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Red Blessing",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Vengeful Sinew",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "March of the Stalwart Soul",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Red Sermon",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Cowl of the Nameless",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Fist of the Iron Rose",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Scoundrel's Kiss",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Emberfury",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Shanar's Resonance",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Staff of Zerae",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Hesha e Kesungi",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Path of the Emissary",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Hellbrand Signet",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Lurid Pact",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Moloch's Beating Flame",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Nails of the Gore-Crowned",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "The Butcher's Cleaver"
+        }
+      ],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
+    },
+    {
+      "id": "astaroth",
+      "name": "Astaroth",
+      "tier": "special",
+      "summon": "1 Escalation Sigil",
+      "unlock": "Obrigatório: completar Escalating Nightmare Dungeons",
+      "element": "Fogo",
+      "trophy": "Ash of the Charred Duke",
+      "arena": {
+        "name": "Astaroth",
+        "region": "Último andar das Escalating Nightmare Dungeons",
+        "matchers": [
+          "Astaroth",
+          "Amalgam of Rage"
+        ],
+        "areaIds": [
+          2278706,
+          2278711,
+          2330051,
+          2330476
+        ]
+      },
+      "tips": [
+        "Fica no fim das Escalating Nightmare Dungeons (inclui o Amalgam of Rage)."
+      ],
+      "drops": [
+        {
+          "name": "Battle Trance",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Hooves of the Mountain God",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "The Third Blade",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Dirge of Airidah",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Mad Wolf's Glee",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Wildheart Hunger",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Blood Moon Breeches",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Bloodless Scream",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Ring of the Sacrilegious Soul",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Griswold's Opus",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Herald of Zakarum",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Asheara's Khanjar",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Eyes in the Dark",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Gladiator's Triumph",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Esu's Heirloom",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Fractured Winterglass",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Hail of Verglas",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Echo of Kwatli",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Ring of the Midnight Sun",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Rod of Kepeleke",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Bindings of Attrition",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Footfalls of the Waning World",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Hecaton Chasm",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Litany of Sable",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Crown of Lucion"
+        }
+      ],
+      "sources": [
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
+    },
+    {
+      "id": "bartuc",
+      "name": "Bartuc",
+      "tier": "special",
+      "summon": "1 Infernal Hordes Compass",
+      "unlock": "Obrigatório: juntar 666 Burning Aether nas Infernal Hordes",
+      "element": "Fogo e Sombra",
+      "trophy": "Chaotic Essence",
+      "arena": {
+        "name": "Infernal Hordes",
+        "region": "Kehjistan (perto do waypoint de Yshari Sanctum)",
+        "matchers": [
+          "Bartuc"
+        ]
+      },
+      "tips": [
+        "Aparece nas Infernal Hordes depois de juntar 666 Burning Aether."
+      ],
+      "drops": [
+        {
+          "name": "Arreat's Bearing",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "The Open Eye of Gorgorra",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Tuskhelm of Joritz the Mighty",
+          "classes": [
+            "barbarian"
+          ]
+        },
+        {
+          "name": "Earthbreaker",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Khamsin Steppewalkers",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Mjölnic Ryng",
+          "classes": [
+            "druid"
+          ]
+        },
+        {
+          "name": "Gravewalker's Hand",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Omen of Pain",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "The Unmaker",
+          "classes": [
+            "necromancer"
+          ]
+        },
+        {
+          "name": "Arcadia",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Sundered Night",
+          "classes": [
+            "paladin"
+          ]
+        },
+        {
+          "name": "Grasp of Shadow",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Misericorde",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Word of Hakan",
+          "classes": [
+            "rogue"
+          ]
+        },
+        {
+          "name": "Axial Conduit",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Ophidian Iris",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Raiment of the Infinite",
+          "classes": [
+            "sorcerer"
+          ]
+        },
+        {
+          "name": "Harmony of Ebewaka",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Loyalty's Mantle",
+          "classes": [
+            "spiritborn"
+          ]
+        },
+        {
+          "name": "Eye of Baal",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Hand of Apotheosis",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Sashes of the Wretched",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "The Hemat Stone",
+          "classes": [
+            "warlock"
+          ]
+        },
+        {
+          "name": "Azurewrath"
+        }
+      ],
+      "sources": [
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
@@ -401,20 +1863,24 @@
       "id": "belial",
       "name": "Belial, Lord of Lies",
       "tier": "pinnacle",
-      "summon": "Chaves de Greater Lair Bosses",
+      "summon": "1 Superior Lair Key",
       "arena": {
         "name": "Belial",
-        "region": "",
+        "region": "Kehjistan (oeste do waypoint de Tarsarak)",
         "matchers": [
-          "Belial"
+          "Belial's Chamber"
+        ],
+        "areaIds": [
+          2189180
         ]
       },
       "tips": [
         "Melhor chance de Míticos; escolha a tabela de outro boss no baú."
       ],
+      "unlock": "Obrigatório: chaves obtidas derrotando Belial no encontro de emboscada",
+      "element": "Sombra e Veneno",
       "drops": [],
       "sources": [
-        "https://d4guides.gg/en/loot-table",
         "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     }

@@ -103,6 +103,7 @@ button.btn, .chip {
 .badge.initiate { color: #9fc3e7; }
 .badge.greater { color: var(--accent); }
 .badge.pinnacle { color: var(--mythic); }
+.badge.special { color: #e7a86b; }
 
 .drops li { color: var(--unique); }
 .drops li.mine { font-weight: 600; }
@@ -135,3 +136,11 @@ details.drop > summary { cursor: pointer; list-style: none; }
 details.drop > summary::-webkit-details-marker { display: none; }
 .power { color: var(--text); font-weight: normal; font-size: 12px; margin: 2px 0 6px; white-space: pre-line; }
 .drops li.mythic > details > summary { color: var(--mythic); }
+
+/* builds importados do Maxroll */
+.btn.small { flex: 0 0 auto; font-size: 11px; padding: 2px 8px; }
+.badge.maxroll { color: #6fb3e8; border-color: #6fb3e8; }
+.phases button.manual { border-style: dashed; }
+.loadout li { color: inherit; }
+.loadout li.unique > details > summary { color: var(--unique); }
+.loadout li.mythic > details > summary { color: var(--mythic); }

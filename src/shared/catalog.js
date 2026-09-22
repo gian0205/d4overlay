@@ -11,29 +11,36 @@ function indexUniques(uniques = []) {
   return new Map(uniques.map((u) => [normalize(u.name), u]));
 }
 
-function enrichDrop(drop, index) {
+function enrichDrop(drop, index, ptById = {}) {
   const unique = index.get(normalize(drop.name));
   if (!unique) return { ...drop, inCatalog: false };
+  const pt = ptById[unique.id];
   return {
     ...drop,
     name: unique.name,
+    namePt: pt?.namePt ?? null,
     classes: drop.classes ?? unique.classes,
     slot: unique.slotPt ?? unique.slot,
     power: unique.power,
+    powerPt: pt?.powerPt ?? null,
     mythic: unique.mythic,
     inCatalog: true,
   };
 }
 
-/** Retorna uma cópia de bosses.json com os drops enriquecidos. */
-function enrichBosses(bossesData, uniques) {
+/**
+ * Retorna uma cópia de bosses.json com os drops enriquecidos.
+ * `companion` (opcional) = data/generated/d4companion.json, para nomes/poderes em português.
+ */
+function enrichBosses(bossesData, uniques, companion) {
   if (!bossesData || !uniques?.length) return bossesData;
   const index = indexUniques(uniques);
+  const ptById = companion?.uniques ?? {};
   return {
     ...bossesData,
     bosses: bossesData.bosses.map((boss) => ({
       ...boss,
-      drops: (boss.drops ?? []).map((drop) => enrichDrop(drop, index)),
+      drops: (boss.drops ?? []).map((drop) => enrichDrop(drop, index, ptById)),
     })),
   };
 }

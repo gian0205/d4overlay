@@ -5,10 +5,16 @@ const { normalize } = require('./text');
 /**
  * Encontra o boss cuja arena corresponde à localização atual do jogador.
  * `location` vem do GEP do Overwolf (feature "location": area / territory).
- * Cada boss tem `arena.matchers`: trechos de nome de área que identificam a arena.
+ * Cada boss tem `arena.matchers`: trechos de nome de área que identificam a arena,
+ * e opcionalmente `arena.areaIds`: IDs de área do GEP confirmados.
  */
 function findBossByLocation(bosses, location) {
   if (!location) return null;
+  // ID exato da área (arena.areaIds) tem prioridade sobre o nome.
+  if (location.areaId != null) {
+    const byId = bosses.find((b) => b.arena?.areaIds?.includes(location.areaId));
+    if (byId) return byId;
+  }
   const haystacks = [location.area, location.territory]
     .map(normalize)
     .filter(Boolean);

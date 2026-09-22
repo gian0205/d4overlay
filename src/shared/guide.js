@@ -3,15 +3,19 @@
 /**
  * Nível máximo de personagem; acima disso o progresso é medido em Paragon.
  */
-const MAX_LEVEL = 60;
+const MAX_LEVEL = 70; // Lord of Hatred subiu o nível máximo de 60 para 70
 
 /**
  * Retorna a fase do guia adequada ao personagem.
  * Fases definem `minLevel`/`maxLevel` e, para o endgame, `minParagon`.
+ * Fases com `manual: true` (ex.: variantes "Push"/"Speedfarm" do Maxroll) só
+ * aparecem quando o jogador as escolhe.
  */
 function currentPhase(build, character = {}) {
-  const phases = build?.phases ?? [];
-  if (phases.length === 0) return null;
+  const all = build?.phases ?? [];
+  if (all.length === 0) return null;
+  const auto = all.filter((p) => !p.manual);
+  const phases = auto.length ? auto : all;
 
   const level = Number(character.level) || 0;
   const paragon = Number(character.paragon) || 0;
@@ -31,7 +35,7 @@ function currentPhase(build, character = {}) {
   );
   if (byLevel) return byLevel;
 
-  return level === 0 ? phases[0] : phases[phases.length - 1];
+  return level < MAX_LEVEL ? phases[0] : phases[phases.length - 1];
 }
 
 /** Próximo passo não concluído da fase. */

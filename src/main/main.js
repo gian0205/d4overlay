@@ -7,6 +7,21 @@ const { WorldEvents } = require('./world-events');
 const { HOTKEYS } = require('./hotkeys');
 const { emptyState, applyInfoUpdate } = require('../shared/game-state');
 const { findBossByLocation } = require('../shared/boss-match');
+const { parseIdList } = require('../shared/gep-ids');
+const fs = require('fs');
+const path = require('path');
+
+/** Tabelas de IDs de área/território do GEP (data/gep, baixadas da doc do Overwolf). */
+function loadGepNames() {
+  const read = (file) => {
+    try {
+      return parseIdList(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'gep', file), 'utf8'));
+    } catch {
+      return new Map();
+    }
+  };
+  return { areas: read('area_names.txt'), territories: read('territory_names.txt') };
+}
 
 /**
  * Hub central: guarda o estado do jogo e distribui para todas as janelas.
@@ -19,6 +34,8 @@ class Hub {
     this.windows = new Set();
     this.gameState = emptyState();
     this.currentBossId = null;
+    this.gepNames = loadGepNames();
+    this.lastAreaId = null;
     this.worldEvents = null;
     this.backend = null;
   }
@@ -44,14 +61,14 @@ class Hub {
     for (const [category, values] of Object.entries(info?.res ?? info ?? {})) {
       if (!values || typeof values !== 'object') continue;
       for (const [key, value] of Object.entries(values)) {
-        this.gameState = applyInfoUpdate(this.gameState, { feature: category, category, key, value });
+        this.gameState = applyInfoUpdate(this.gameState, { feature: category, category, key, value }, this.gepNames);
       }
     }
     this.publishGameState();
   }
 
   onInfoUpdate(update) {
-    this.gameState = applyInfoUpdate({ ...this.gameState, running: true }, update);
+    this.gameState = applyInfoUpdate({ ...this.gameState, running: true }, update, this.gepNames);
     this.publishGameState();
   }
 
@@ -61,6 +78,13 @@ class Hub {
 
   publishGameState() {
     this.broadcast('game-state', this.gameState);
+
+    // Ajuda a calibrar arena.matchers: mostra no console cada área nova que o GEP envia.
+    const loc = this.gameState.location;
+    if (loc.areaId !== this.lastAreaId) {
+      this.lastAreaId = loc.areaId;
+      console.log(`[gep] área: ${loc.areaId} = ${loc.area ?? '(sem nome na tabela)'} · território: ${loc.territoryId} = ${loc.territory ?? '?'} · classe: ${this.gameState.character.rawClass}`);
+    }
 
     const boss = findBossByLocation(this.data.get().bosses.bosses, this.gameState.location);
     const bossId = boss?.id ?? null;
@@ -102,6 +126,17 @@ class Hub {
       const result = await this.data.refreshFromRemote(this.settings.get().remoteDataUrl);
       if (result.ok) this.broadcast('data', this.data.get());
       return result;
+    });
+    ipcMain.handle('import-maxroll', async (_e, input) => {
+      const result = await this.data.importMaxroll(input);
+      if (result.ok) this.broadcast('data', this.data.get());
+      return result;
+    });
+    ipcMain.handle('remove-imported-build', (_e, buildId) => {
+      this.data.removeImported(buildId);
+      if (this.settings.get().selectedBuildId === buildId) this.settings.update({ selectedBuildId: null });
+      this.broadcast('data', this.data.get());
+      return this.settings.get();
     });
     ipcMain.handle('set-interactive', (_e, value) => {
       const next = this.backend.setInteractive(Boolean(value));

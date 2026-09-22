@@ -12,6 +12,7 @@ const DEFAULTS = {
   remoteDataUrl: '',
   worldEventsUrl: 'https://d4armory.io/api/events.json',
   autoOpenBossPanel: true,
+  ptNames: true,
   bounds: { width: 380, height: 620, x: null, y: null },
 };
 

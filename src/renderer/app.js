@@ -3,7 +3,7 @@
 /* global d4 */
 
 const logic = d4.logic;
-const TIER_LABEL = { initiate: 'Initiate', greater: 'Greater', pinnacle: 'Pináculo' };
+const TIER_LABEL = { initiate: 'Initiate', greater: 'Greater', special: 'Especiais', pinnacle: 'Pináculo' };
 
 const state = {
   mode: new URLSearchParams(location.search).get('mode') ?? 'overlay',
@@ -69,6 +69,17 @@ function selectedBuild() {
   return builds().find((b) => b.id === state.settings.selectedBuildId) ?? null;
 }
 
+/** Nome/poder no idioma escolhido (português quando disponível). */
+function label(en, ptText) {
+  return state.settings?.ptNames && ptText ? ptText : en;
+}
+
+/** Nome principal + original entre parênteses quando está traduzido (útil para buscar no trade/guias). */
+function itemName(en, ptText) {
+  const shown = label(en, ptText);
+  return shown !== en ? [shown, h('span', { class: 'muted' }, ` (${en})`)] : shown;
+}
+
 async function saveSettings(patch) {
   state.settings = await d4.updateSettings(patch);
   render();
@@ -122,7 +133,7 @@ function renderBossTab() {
   const select = h(
     'select',
     { onchange: (e) => { state.viewBossId = e.target.value; render(); } },
-    ['initiate', 'greater', 'pinnacle'].map((tier) =>
+    Object.keys(TIER_LABEL).map((tier) =>
       h(
         'optgroup',
         { label: TIER_LABEL[tier] },
@@ -146,13 +157,13 @@ function renderBossTab() {
         { class: 'drop' },
         h(
           'summary',
-          { title: drop.power ?? '' },
-          drop.name,
+          { title: label(drop.power, drop.powerPt) ?? '' },
+          itemName(drop.name, drop.namePt),
           drop.slot ? h('span', { class: 'muted' }, ` · ${drop.slot}`) : null,
           drop.classes?.length && !mine ? h('span', { class: 'muted' }, ` (${drop.classes.map(logic.className).join(', ')})`) : null,
           drop.verified === false ? h('span', { class: 'unverified', title: 'Associação ao boss não confirmada' }, ' ?') : null,
         ),
-        drop.power ? h('div', { class: 'power' }, drop.power) : h('div', { class: 'muted' }, 'Sem dados do jogo para este item.'),
+        drop.power || drop.powerPt ? h('div', { class: 'power' }, label(drop.power, drop.powerPt)) : h('div', { class: 'muted' }, 'Sem dados do jogo para este item.'),
       ),
     );
 
@@ -186,7 +197,10 @@ function renderBossTab() {
       boss.id === state.detectedBossId ? h('div', { class: 'chip on' }, 'Você está na arena deste boss') : null,
       h('table', {},
         h('tr', {}, h('td', {}, 'Invocação'), h('td', {}, boss.summon ?? '-')),
-        boss.trophy ? h('tr', {}, h('td', {}, 'Troféu'), h('td', {}, `${boss.trophy} (5 = 1 único no Cubo)`)) : null,
+        boss.unlock ? h('tr', {}, h('td', {}, 'Chave'), h('td', {}, boss.unlock)) : null,
+        boss.element ? h('tr', {}, h('td', {}, 'Elemento'), h('td', {}, boss.element)) : null,
+        boss.trophy ? h('tr', {}, h('td', {}, 'Troféu'), h('td', {}, `${boss.trophy} (vira único dele no Cubo)`)) : null,
+        boss.runes?.length ? h('tr', {}, h('td', {}, 'Runas'), h('td', {}, `${boss.runes.join(', ')} (com Lair of Runes)`)) : null,
         h('tr', {}, h('td', {}, 'Local'), h('td', {}, [boss.arena?.name, boss.arena?.region].filter(Boolean).join(' — ') || '-')),
       ),
       boss.tips?.length ? [h('h3', {}, 'Dicas'), h('ul', {}, boss.tips.map((t) => h('li', {}, t)))] : null,
@@ -195,7 +209,30 @@ function renderBossTab() {
         ? h('p', { class: 'unverified' }, `Lista parcial: ${boss.drops.length} de ~${boss.knownDropCount} únicos.`)
         : null,
     ),
+    nameList('Pool geral (todos os bosses)', state.data.bosses.generalPool),
+    nameList('Míticos Icônicos (todos os bosses)', state.data.bosses.iconicMythics),
+    capstoneList(state.data.bosses.season15Capstone),
     h('details', {}, h('summary', { class: 'muted' }, 'Notas da temporada'), h('ul', {}, (state.data.bosses.notes ?? []).map((n) => h('li', { class: 'muted' }, n)))),
+    state.data.bosses.source?.url
+      ? h('p', { class: 'muted' }, `Fonte: ${state.data.bosses.source.name} (${state.data.bosses.source.updated ?? '?'})`)
+      : null,
+  );
+}
+
+function nameList(title, names) {
+  if (!names?.length) return null;
+  return h('details', {}, h('summary', { class: 'muted' }, `${title} (${names.length})`), h('ul', { class: 'drops' }, names.map((n) => h('li', {}, n))));
+}
+
+function capstoneList(capstone) {
+  if (!capstone) return null;
+  const tiers = [['common', 'Comuns (~15%)'], ['uncommon', 'Incomuns (~10%)'], ['rare', 'Raros (~5%)']];
+  return h(
+    'details',
+    {},
+    h('summary', { class: 'muted' }, 'Únicos da Temporada 15 (Capstone)'),
+    h('p', { class: 'muted' }, capstone.note),
+    tiers.filter(([k]) => capstone[k]?.length).map(([k, label]) => [h('h3', {}, label), h('ul', { class: 'drops' }, capstone[k].map((n) => h('li', {}, n)))]),
   );
 }
 
@@ -209,7 +246,7 @@ function renderManualCharacter() {
     h('div', { class: 'muted', style: 'margin-bottom:6px' }, 'Sem dados do jogo: informe seu personagem.'),
     h('div', { class: 'row' },
       h('div', {}, h('label', {}, 'Nível'),
-        h('input', { type: 'number', min: 1, max: 60, value: state.settings.manualLevel ?? '', onchange: (e) => saveSettings({ manualLevel: Number(e.target.value) || null }) })),
+        h('input', { type: 'number', min: 1, max: 70, value: state.settings.manualLevel ?? '', onchange: (e) => saveSettings({ manualLevel: Number(e.target.value) || null }) })),
       h('div', {}, h('label', {}, 'Paragon'),
         h('input', { type: 'number', min: 0, value: state.settings.manualParagon ?? '', onchange: (e) => saveSettings({ manualParagon: Number(e.target.value) || null }) })),
     ),
@@ -239,12 +276,86 @@ function renderBuildPicker(classId) {
           class: `card clickable ${b.id === state.settings.selectedBuildId ? 'selected' : ''}`,
           onclick: () => { state.viewPhaseId = null; saveSettings({ selectedBuildId: b.id }); },
         },
-        h('strong', {}, b.name), h('span', { class: 'badge' }, b.difficulty ?? ''),
+        h('strong', {}, b.name), h('span', { class: `badge ${isImported(b) ? 'maxroll' : ''}` }, b.difficulty ?? ''),
         h('div', { class: 'muted' }, b.playstyle ?? ''),
+        isImported(b)
+          ? h('button', { class: 'btn small', onclick: (e) => { e.stopPropagation(); removeImported(b); } }, 'Remover')
+          : null,
       ),
     ),
     classId && !options.length ? h('p', { class: 'muted' }, 'Nenhum build cadastrado para essa classe.') : null,
+    renderMaxrollImport(),
     classId ? renderClassSkills(classId) : null,
+  );
+}
+
+function isImported(build) {
+  return build?.source?.kind === 'maxroll';
+}
+
+async function removeImported(build) {
+  state.settings = await d4.removeImportedBuild(build.id);
+  render();
+}
+
+/** Importa um build do planner do Maxroll (link ou id). */
+function renderMaxrollImport() {
+  const status = h('div', { class: 'muted' });
+  const input = h('input', { type: 'text', placeholder: 'maxroll.gg/d4/planner/…' });
+  const run = async () => {
+    status.textContent = 'Importando do Maxroll…';
+    const res = await d4.importMaxroll(input.value);
+    if (!res.ok) {
+      status.textContent = `Erro: ${res.error}`;
+      return;
+    }
+    state.viewPhaseId = null;
+    const patch = { selectedBuildId: res.build.id };
+    if (!hasGameData() || !state.game.character.classId) patch.manualClassId = res.build.classId;
+    await saveSettings(patch);
+  };
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') run(); });
+  return h(
+    'div',
+    { class: 'card', style: 'margin-top:10px' },
+    h('strong', {}, 'Importar build do Maxroll'),
+    h('div', { class: 'muted', style: 'margin:4px 0' }, 'Abra um build no planner do Maxroll e cole o link aqui. As fases (Starter, Endgame, Push…) viram o guia.'),
+    h('div', { class: 'row' }, input, h('button', { class: 'btn', style: 'flex:0', onclick: run }, 'Importar')),
+    h('a', { onclick: () => d4.openExternal(logic.maxrollBuildList) }, 'Ver builds do Maxroll'),
+    status,
+  );
+}
+
+/** Equipamento da fase importada: skills, itens com poder/aspecto, runas e Paragon. */
+function renderLoadout(loadout) {
+  if (!loadout) return null;
+  const itemRow = (it) => {
+    const aspect = it.aspect && !it.aspect.unknown ? it.aspect : null;
+    const title = it.kind === 'unique' ? itemName(it.name, it.namePt) : aspect ? itemName(aspect.name, aspect.namePt) : (it.name ?? 'Lendário (sem aspecto)');
+    const power = it.kind === 'unique' ? label(it.power, it.powerPt) : aspect ? label(aspect.power, aspect.powerPt) : null;
+    const origin = it.kind === 'unique'
+      ? (it.boss ? `Dropa de ${it.boss.name}` : null)
+      : aspect?.codex ? 'Códex de Poder' : aspect?.dungeon ? `Masmorra: ${aspect.dungeon}` : null;
+    return h(
+      'li',
+      { class: `${it.kind === 'unique' ? 'unique' : ''} ${it.mythic ? 'mythic' : ''}` },
+      h('details', { class: 'drop' },
+        h('summary', {}, h('span', { class: 'muted' }, `${it.slot}: `), title, it.charm ? h('span', { class: 'muted' }, ' · talismã') : null),
+        power ? h('div', { class: 'power' }, power) : null,
+        origin ? h('div', { class: 'muted' }, origin) : null,
+        it.runes?.length ? h('div', { class: 'muted' }, `Runas: ${it.runes.join(', ')}`) : null,
+      ),
+    );
+  };
+  return h(
+    'details',
+    { style: 'margin-top:6px' },
+    h('summary', { class: 'muted' }, `Equipamento da fase (${loadout.items.length} itens)`),
+    loadout.skills.length ? h('div', {}, h('strong', {}, 'Skills: '), loadout.skills.map((s) => s.name).join(', ')) : null,
+    h('ul', { class: 'drops loadout' }, loadout.items.map(itemRow)),
+    loadout.paragon.length
+      ? h('div', {}, h('strong', {}, 'Paragon: '), loadout.paragon.map((p) => `${label(p.board, p.boardPt)}${p.glyph ? ` [${label(p.glyph, p.glyphPt)}]` : ''}`).join(' → '))
+      : null,
   );
 }
 
@@ -263,14 +374,15 @@ function renderGuide(build) {
       h('button', { class: 'btn', style: 'flex:0', onclick: () => saveSettings({ selectedBuildId: null }) }, 'Trocar'),
     ),
     build.verified === false ? h('div', { class: 'unverified' }, 'Guia modelo — confira detalhes no planner.') : null,
+    isImported(build) ? renderImportedActions(build) : null,
     h('div', { class: 'progress' }, h('div', { style: `width:${pct}%` })),
     h('div', { class: 'muted' }, `${pct}% concluído`),
     renderManualCharacter(),
     h('div', { class: 'phases' },
       build.phases.map((p) =>
         h('button', {
-          class: `chip ${p.id === current?.id ? 'current' : ''} ${p.id === phase?.id ? 'viewing' : ''}`,
-          title: p.id === current?.id ? 'Fase atual pelo seu nível' : '',
+          class: `chip ${p.id === current?.id ? 'current' : ''} ${p.id === phase?.id ? 'viewing' : ''} ${p.manual ? 'manual' : ''}`,
+          title: p.id === current?.id ? 'Fase atual pelo seu nível' : p.manual ? 'Variante: escolha manual' : '',
           onclick: () => { state.viewPhaseId = p.id; render(); },
         }, p.name),
       ),
@@ -288,6 +400,7 @@ function renderGuide(build) {
               h('span', {}, s.text),
             );
           }),
+          renderLoadout(phase.loadout),
         )
       : null,
     h('h3', {}, 'Skills'),
@@ -300,6 +413,24 @@ function renderGuide(build) {
       ? [h('h3', {}, 'Links'), h('ul', {}, build.links.map((l) => h('li', {}, h('a', { onclick: () => d4.openExternal(l.url) }, l.label))))]
       : null,
     renderClassSkills(build.classId),
+  );
+}
+
+function renderImportedActions(build) {
+  const status = h('span', { class: 'muted' });
+  return h(
+    'div',
+    { class: 'row', style: 'margin:4px 0' },
+    h('button', {
+      class: 'btn small',
+      onclick: async () => {
+        status.textContent = 'Atualizando…';
+        const res = await d4.importMaxroll(build.source.plannerId);
+        status.textContent = res.ok ? 'Atualizado.' : `Erro: ${res.error}`;
+      },
+    }, 'Atualizar do Maxroll'),
+    h('button', { class: 'btn small', onclick: () => removeImported(build) }, 'Remover'),
+    status,
   );
 }
 
@@ -371,7 +502,10 @@ function renderConfigTab() {
     {},
     h('h3', {}, 'Dados (bosses e builds)'),
     h('div', { class: 'muted' }, `Fonte atual: ${state.data.source} · bosses v${state.data.bosses.version} · builds v${state.data.builds.version}`),
-    h('div', { class: 'muted' }, state.data.catalog ? `Catálogo do jogo (d4data): build ${state.data.catalog.build}` : 'Catálogo do jogo ausente — rode npm run d4data'),
+    h('div', { class: 'muted' }, state.data.catalog?.build ? `Catálogo do jogo (d4data): build ${state.data.catalog.build}` : 'Catálogo do jogo ausente — rode npm run d4data'),
+    h('div', { class: 'muted' }, state.data.catalog?.companion
+      ? `Nomes em português, aspectos e Paragon (Diablo4Companion): ${String(state.data.catalog.companion.commitDate ?? '').slice(0, 10)}`
+      : 'Dados do Diablo4Companion ausentes — rode npm run d4companion'),
     h('label', {}, 'URL de dados remota (JSON com { bosses, builds })'),
     remoteInput,
     h('div', { class: 'row', style: 'margin-top:6px' },
@@ -390,6 +524,10 @@ function renderConfigTab() {
     eventsInput,
     h('button', { class: 'btn', style: 'margin-top:6px', onclick: () => saveSettings({ worldEventsUrl: eventsInput.value.trim() }) }, 'Salvar'),
     h('h3', {}, 'Comportamento'),
+    h('label', { class: 'step' },
+      h('input', { type: 'checkbox', checked: state.settings.ptNames, onchange: (e) => saveSettings({ ptNames: e.target.checked }) }),
+      h('span', {}, 'Mostrar nomes de itens e aspectos em português'),
+    ),
     h('label', { class: 'step' },
       h('input', { type: 'checkbox', checked: state.settings.autoOpenBossPanel, onchange: (e) => saveSettings({ autoOpenBossPanel: e.target.checked }) }),
       h('span', {}, 'Abrir a aba do boss automaticamente ao entrar na arena'),

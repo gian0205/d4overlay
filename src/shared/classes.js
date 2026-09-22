@@ -1,6 +1,7 @@
 'use strict';
 
 const { normalize } = require('./text');
+const { CLASS_BY_GEP_ID } = require('./gep-ids');
 
 /** Classes jogáveis do Diablo IV (ids usados nos arquivos de dados). */
 const CLASSES = [
@@ -30,7 +31,9 @@ const ALIASES = {
  * no id interno da classe. Retorna null se não reconhecer.
  */
 function classIdFrom(raw) {
-  const text = normalize(String(raw ?? '').replace(/_/g, ' '));
+  // O GEP manda um número (ex.: 220940 = "Sorcerer Male"); texto também é aceito.
+  const named = CLASS_BY_GEP_ID[Number(raw)] ?? raw;
+  const text = normalize(String(named ?? '').replace(/_/g, ' '));
   if (!text) return null;
   const words = text.split(' ');
   for (const [id, aliases] of Object.entries(ALIASES)) {
