@@ -11,6 +11,7 @@ const CLASSES = [
   { id: 'sorcerer', name: 'Feiticeiro' },
   { id: 'spiritborn', name: 'Espiritonato' },
   { id: 'paladin', name: 'Paladino' },
+  { id: 'warlock', name: 'Warlock' },
 ];
 
 const ALIASES = {
@@ -21,6 +22,7 @@ const ALIASES = {
   sorcerer: ['sorcerer', 'sorceress', 'feiticeiro', 'feiticeira', 'sorc'],
   spiritborn: ['spiritborn', 'espiritonato', 'espirito nato'],
   paladin: ['paladin', 'paladino'],
+  warlock: ['warlock', 'bruxo'],
 };
 
 /**

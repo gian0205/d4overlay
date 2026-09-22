@@ -140,10 +140,20 @@ function renderBossTab() {
   const dropItem = (drop, mine) =>
     h(
       'li',
-      { class: mine ? 'mine' : '' },
-      drop.name,
-      drop.classes?.length && !mine ? h('span', { class: 'muted' }, ` (${drop.classes.map(logic.className).join(', ')})`) : null,
-      drop.verified === false ? h('span', { class: 'unverified', title: 'Não verificado' }, ' ?') : null,
+      { class: `${mine ? 'mine' : ''} ${drop.mythic ? 'mythic' : ''}` },
+      h(
+        'details',
+        { class: 'drop' },
+        h(
+          'summary',
+          { title: drop.power ?? '' },
+          drop.name,
+          drop.slot ? h('span', { class: 'muted' }, ` · ${drop.slot}`) : null,
+          drop.classes?.length && !mine ? h('span', { class: 'muted' }, ` (${drop.classes.map(logic.className).join(', ')})`) : null,
+          drop.verified === false ? h('span', { class: 'unverified', title: 'Associação ao boss não confirmada' }, ' ?') : null,
+        ),
+        drop.power ? h('div', { class: 'power' }, drop.power) : h('div', { class: 'muted' }, 'Sem dados do jogo para este item.'),
+      ),
     );
 
   const sections = [];
@@ -176,10 +186,14 @@ function renderBossTab() {
       boss.id === state.detectedBossId ? h('div', { class: 'chip on' }, 'Você está na arena deste boss') : null,
       h('table', {},
         h('tr', {}, h('td', {}, 'Invocação'), h('td', {}, boss.summon ?? '-')),
+        boss.trophy ? h('tr', {}, h('td', {}, 'Troféu'), h('td', {}, `${boss.trophy} (5 = 1 único no Cubo)`)) : null,
         h('tr', {}, h('td', {}, 'Local'), h('td', {}, [boss.arena?.name, boss.arena?.region].filter(Boolean).join(' — ') || '-')),
       ),
       boss.tips?.length ? [h('h3', {}, 'Dicas'), h('ul', {}, boss.tips.map((t) => h('li', {}, t)))] : null,
       sections,
+      boss.knownDropCount && boss.drops?.length < boss.knownDropCount
+        ? h('p', { class: 'unverified' }, `Lista parcial: ${boss.drops.length} de ~${boss.knownDropCount} únicos.`)
+        : null,
     ),
     h('details', {}, h('summary', { class: 'muted' }, 'Notas da temporada'), h('ul', {}, (state.data.bosses.notes ?? []).map((n) => h('li', { class: 'muted' }, n)))),
   );
@@ -230,6 +244,7 @@ function renderBuildPicker(classId) {
       ),
     ),
     classId && !options.length ? h('p', { class: 'muted' }, 'Nenhum build cadastrado para essa classe.') : null,
+    classId ? renderClassSkills(classId) : null,
   );
 }
 
@@ -276,12 +291,29 @@ function renderGuide(build) {
         )
       : null,
     h('h3', {}, 'Skills'),
-    h('table', {}, build.skills.map((s) => h('tr', {}, h('td', {}, s.slot), h('td', {}, s.name)))),
+    build.skills.length
+      ? h('table', {}, build.skills.map((s) => h('tr', {}, h('td', {}, s.slot), h('td', {}, s.name))))
+      : h('p', { class: 'muted' }, 'Defina as skills pelo planner (lista completa da classe abaixo).'),
     build.stats?.length ? [h('h3', {}, 'Prioridade de atributos'), h('ol', {}, build.stats.map((s) => h('li', {}, s)))] : null,
     build.keyItems?.length ? [h('h3', {}, 'Itens / aspectos chave'), h('ul', {}, build.keyItems.map((s) => h('li', {}, s)))] : null,
     build.links?.length
       ? [h('h3', {}, 'Links'), h('ul', {}, build.links.map((l) => h('li', {}, h('a', { onclick: () => d4.openExternal(l.url) }, l.label))))]
       : null,
+    renderClassSkills(build.classId),
+  );
+}
+
+/** Skills da classe extraídas dos arquivos do jogo (data/generated/skills.json). */
+function renderClassSkills(classId) {
+  const skills = state.data.catalog?.skills?.[classId];
+  if (!skills?.length) return null;
+  return h(
+    'details',
+    { style: 'margin-top:10px' },
+    h('summary', { class: 'muted' }, `Skills de ${logic.className(classId)} no jogo (${skills.length})`),
+    skills.map((sk) =>
+      h('details', { class: 'drop' }, h('summary', {}, sk.name), h('div', { class: 'power' }, sk.description || '-')),
+    ),
   );
 }
 
@@ -339,6 +371,7 @@ function renderConfigTab() {
     {},
     h('h3', {}, 'Dados (bosses e builds)'),
     h('div', { class: 'muted' }, `Fonte atual: ${state.data.source} · bosses v${state.data.bosses.version} · builds v${state.data.builds.version}`),
+    h('div', { class: 'muted' }, state.data.catalog ? `Catálogo do jogo (d4data): build ${state.data.catalog.build}` : 'Catálogo do jogo ausente — rode npm run d4data'),
     h('label', {}, 'URL de dados remota (JSON com { bosses, builds })'),
     remoteInput,
     h('div', { class: 'row', style: 'margin-top:6px' },

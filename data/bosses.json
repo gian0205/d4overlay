@@ -1,11 +1,12 @@
 {
-  "version": "2026.09-s15-draft",
+  "version": "2026.09-s15-r2",
   "season": "Temporada 15 (Lord of Hatred)",
   "notes": [
-    "Todos os Lair Bosses podem dropar Únicos Míticos (versões Tormented por padrão).",
-    "Initiate Lair Bosses usam Lair Key e podem dar Greater Lair Key / Stygian Stone no baú.",
+    "Todos os Lair Bosses podem dropar Únicos Míticos; Míticos não são presos a um boss.",
+    "O primeiro Único do baú vem da tabela do boss; os seguintes têm 50% de chance de vir do pool geral (ex.: Frostburn, The Butcher's Cleaver, Azurewrath).",
+    "5 troféus do boss no Cubo Horádrico = 1 Único aleatório da tabela dele.",
     "Belial não tem tabela própria: no baú dele você escolhe a tabela de outro boss.",
-    "Itens com \"verified\": false foram coletados de fontes secundárias — confira antes de farmar."
+    "Listas PARCIAIS montadas a partir de buscas (os sites de loot não têm API). Todo nome foi conferido contra os arquivos do jogo (d4data); a associação item→boss ainda não é confirmada (\"?\")."
   ],
   "bosses": [
     {
@@ -13,25 +14,88 @@
       "name": "Grigoire, the Galvanic Saint",
       "tier": "initiate",
       "summon": "1 Lair Key",
-      "arena": { "name": "Hall of the Penitent", "region": "Kehjistan", "matchers": ["Hall of the Penitent", "Grigoire"] },
-      "tips": ["Fique longe das linhas de raio no chão.", "Na fase de muralha elétrica, procure o espaço aberto."],
+      "arena": {
+        "name": "Hall of the Penitent",
+        "region": "Kehjistan",
+        "matchers": [
+          "Hall of the Penitent",
+          "Grigoire"
+        ]
+      },
+      "tips": [
+        "Fique longe das linhas de raio no chão.",
+        "Na fase de muralha elétrica, procure o espaço aberto."
+      ],
+      "knownDropCount": 19,
       "drops": [
-        { "name": "Gohr's Devastating Grips", "classes": ["barbarian"], "verified": false },
-        { "name": "The Oculus", "classes": ["sorcerer"], "verified": false },
-        { "name": "Seed of Horazon", "verified": false },
-        { "name": "Hands of the Worldbreaker", "verified": false },
-        { "name": "Deathgrip", "verified": false },
-        { "name": "Vision of the Firestorm", "verified": false },
-        { "name": "Cage of Madness", "verified": false },
-        { "name": "The Maestro", "verified": false },
-        { "name": "The Basilisk", "verified": false },
-        { "name": "Bastion of Sir Matthias", "verified": false },
-        { "name": "Strike of Stormhorn", "verified": false },
-        { "name": "Might of Qual-Kehk", "verified": false },
-        { "name": "Hunter's Zenith", "verified": false },
-        { "name": "Will of Stone", "verified": false },
-        { "name": "The Mortacrux", "verified": false },
-        { "name": "Desperate March", "verified": false }
+        {
+          "name": "Seed of Horazon",
+          "verified": false
+        },
+        {
+          "name": "Hands of the Worldbreaker",
+          "verified": false
+        },
+        {
+          "name": "Deathgrip",
+          "verified": false
+        },
+        {
+          "name": "Vision of the Firestorm",
+          "verified": false
+        },
+        {
+          "name": "Cage of Madness",
+          "verified": false
+        },
+        {
+          "name": "The Maestro",
+          "verified": false
+        },
+        {
+          "name": "The Basilisk",
+          "verified": false
+        },
+        {
+          "name": "Bastion of Sir Matthias",
+          "verified": false
+        },
+        {
+          "name": "Gohr's Devastating Grips",
+          "verified": false
+        },
+        {
+          "name": "Strike of Stormhorn",
+          "verified": false
+        },
+        {
+          "name": "Might of Qual-Kehk",
+          "verified": false
+        },
+        {
+          "name": "Hunter's Zenith",
+          "verified": false
+        },
+        {
+          "name": "Will of Stone",
+          "verified": false
+        },
+        {
+          "name": "The Mortacrux",
+          "verified": false
+        },
+        {
+          "name": "Desperate March",
+          "verified": false
+        },
+        {
+          "name": "The Oculus",
+          "verified": false
+        }
+      ],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
     {
@@ -39,46 +103,207 @@
       "name": "The Beast in the Ice",
       "tier": "initiate",
       "summon": "1 Lair Key",
-      "arena": { "name": "Glacial Fissure", "region": "Fractured Peaks", "matchers": ["Glacial Fissure", "Beast in the Ice"] },
-      "tips": ["Destrua as poças de gelo rapidamente.", "Saia dos círculos de congelamento antes de explodirem."],
-      "drops": []
+      "arena": {
+        "name": "Glacial Fissure",
+        "region": "Fractured Peaks",
+        "matchers": [
+          "Glacial Fissure",
+          "Beast in the Ice"
+        ]
+      },
+      "tips": [
+        "Destrua as poças de gelo rapidamente.",
+        "Saia dos círculos de congelamento antes de explodirem."
+      ],
+      "knownDropCount": 19,
+      "drops": [
+        {
+          "name": "Accord of the Wilds",
+          "verified": false
+        },
+        {
+          "name": "Airidah's Inexorable Will",
+          "verified": false
+        },
+        {
+          "name": "Deathless Visage",
+          "verified": false
+        },
+        {
+          "name": "Gift of Frost",
+          "verified": false
+        },
+        {
+          "name": "Hellhound's Sabatons",
+          "verified": false
+        },
+        {
+          "name": "Howl from Below",
+          "verified": false
+        }
+      ],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "echo-of-varshan",
       "name": "Echo of Varshan",
       "tier": "initiate",
       "summon": "1 Lair Key",
-      "arena": { "name": "Malignant Burrow", "region": "Kehjistan", "matchers": ["Malignant Burrow", "Varshan"] },
-      "tips": ["Mate os corações malignos que ele invoca para reduzir o dano."],
-      "drops": []
+      "trophy": "Malignant Heart",
+      "arena": {
+        "name": "Malignant Burrow",
+        "region": "Hawezar (ao lado da Tree of Whispers)",
+        "matchers": [
+          "Malignant Burrow",
+          "Varshan"
+        ]
+      },
+      "tips": [
+        "Mate os corações malignos que ele invoca para reduzir o dano."
+      ],
+      "drops": [
+        {
+          "name": "Shard of Verathiel",
+          "verified": false
+        },
+        {
+          "name": "Deathspeaker's Pendant",
+          "verified": false
+        }
+      ],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "lord-zir",
       "name": "Lord Zir",
       "tier": "initiate",
       "summon": "1 Lair Key",
-      "arena": { "name": "Darkened Way", "region": "Fractured Peaks", "matchers": ["Darkened Way", "Lord Zir"] },
-      "tips": ["Quebre as pedras de sangue (Blood Stones) para interromper a cura.", "Evite as poças de sangue."],
-      "drops": []
+      "trophy": "Exquisite Blood",
+      "arena": {
+        "name": "Darkened Way",
+        "region": "Fractured Peaks (leste de Kyovashad)",
+        "matchers": [
+          "Darkened Way",
+          "Lord Zir"
+        ]
+      },
+      "tips": [
+        "Quebre as pedras de sangue (Blood Stones) para interromper a cura.",
+        "Evite as poças de sangue."
+      ],
+      "knownDropCount": 21,
+      "drops": [
+        {
+          "name": "Cruor's Embrace",
+          "verified": false
+        },
+        {
+          "name": "Dirge of Odium",
+          "verified": false
+        },
+        {
+          "name": "Elegy",
+          "verified": false
+        },
+        {
+          "name": "Fang of the Vipermagi",
+          "verified": false
+        },
+        {
+          "name": "Fields of Crimson",
+          "verified": false
+        },
+        {
+          "name": "Fleshwrit Carapace",
+          "verified": false
+        },
+        {
+          "name": "X'Fal's Corroded Signet",
+          "verified": false
+        }
+      ],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "urivar",
       "name": "Urivar",
       "tier": "initiate",
       "summon": "1 Lair Key",
-      "arena": { "name": "Urivar", "region": "Nahantu", "matchers": ["Urivar"] },
+      "arena": {
+        "name": "Urivar",
+        "region": "Nahantu",
+        "matchers": [
+          "Urivar"
+        ]
+      },
       "tips": [],
-      "drops": []
+      "drops": [],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "duriel",
       "name": "Duriel, King of Maggots",
       "tier": "greater",
       "summon": "1 Greater Lair Key",
-      "arena": { "name": "Gaping Crevasse", "region": "Kehjistan (leste de Gea Kul)", "matchers": ["Gaping Crevasse", "Duriel"] },
-      "tips": ["Quando ele entrar no chão, fique em movimento.", "Tenha Unstoppable para o agarrão."],
+      "trophy": "Shard of Agony",
+      "arena": {
+        "name": "Gaping Crevasse",
+        "region": "Kehjistan (leste de Gea Kul)",
+        "matchers": [
+          "Gaping Crevasse",
+          "Duriel"
+        ]
+      },
+      "tips": [
+        "Quando ele entrar no chão, fique em movimento.",
+        "Tenha Unstoppable para o agarrão."
+      ],
+      "knownDropCount": 23,
       "drops": [
-        { "name": "Razorplate", "verified": false }
+        {
+          "name": "Razorplate",
+          "verified": false
+        },
+        {
+          "name": "Bands of Ichorous Rose",
+          "verified": false
+        },
+        {
+          "name": "Blue Rose",
+          "verified": false
+        },
+        {
+          "name": "Condemnation",
+          "verified": false
+        },
+        {
+          "name": "Dark Stalker's Medallion",
+          "verified": false
+        },
+        {
+          "name": "Fractured Runestone",
+          "verified": false
+        },
+        {
+          "name": "Galvanic Azurite",
+          "verified": false
+        }
+      ],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
       ]
     },
     {
@@ -86,36 +311,112 @@
       "name": "Andariel, Maiden of Anguish",
       "tier": "greater",
       "summon": "1 Greater Lair Key",
-      "arena": { "name": "Hanged Man's Hall", "region": "Kehjistan", "matchers": ["Hanged Man's Hall", "Andariel"] },
-      "tips": ["Desvie das lâminas giratórias e do veneno no chão.", "Desde Lord of Hatred tem tabela própria (não compartilha com Duriel)."],
-      "drops": []
+      "trophy": "Pincushioned Doll",
+      "arena": {
+        "name": "Hanged Man's Hall",
+        "region": "Kehjistan",
+        "matchers": [
+          "Hanged Man's Hall",
+          "Andariel"
+        ]
+      },
+      "tips": [
+        "Desvie das lâminas giratórias e do veneno no chão.",
+        "Desde Lord of Hatred tem tabela própria (não compartilha com Duriel)."
+      ],
+      "knownDropCount": 21,
+      "drops": [
+        {
+          "name": "Anathema of the Primes",
+          "verified": false
+        },
+        {
+          "name": "Ancients' Oath",
+          "verified": false
+        },
+        {
+          "name": "Argent Veil",
+          "verified": false
+        },
+        {
+          "name": "Assassin's Stride",
+          "verified": false
+        },
+        {
+          "name": "Craze of the Dead God",
+          "verified": false
+        },
+        {
+          "name": "Dawnfire",
+          "verified": false
+        }
+      ],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "harbinger-of-hatred",
       "name": "Harbinger of Hatred",
       "tier": "greater",
       "summon": "1 Greater Lair Key",
-      "arena": { "name": "Harbinger of Hatred", "region": "", "matchers": ["Harbinger"] },
+      "trophy": "Abhorrent Heart",
+      "arena": {
+        "name": "Harbinger of Hatred",
+        "region": "",
+        "matchers": [
+          "Harbinger"
+        ]
+      },
       "tips": [],
-      "drops": []
+      "drops": [],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "the-butcher",
       "name": "The Butcher",
       "tier": "greater",
       "summon": "1 Greater Lair Key",
-      "arena": { "name": "The Butcher", "region": "", "matchers": ["Butcher"] },
-      "tips": ["Kite: ele puxa com o gancho e dá stun."],
-      "drops": []
+      "arena": {
+        "name": "The Butcher",
+        "region": "",
+        "matchers": [
+          "Butcher"
+        ]
+      },
+      "tips": [
+        "Kite: ele puxa com o gancho e dá stun."
+      ],
+      "drops": [],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     },
     {
       "id": "belial",
       "name": "Belial, Lord of Lies",
       "tier": "pinnacle",
       "summon": "Chaves de Greater Lair Bosses",
-      "arena": { "name": "Belial", "region": "", "matchers": ["Belial"] },
-      "tips": ["Melhor chance de Míticos; escolha a tabela de outro boss no baú."],
-      "drops": []
+      "arena": {
+        "name": "Belial",
+        "region": "",
+        "matchers": [
+          "Belial"
+        ]
+      },
+      "tips": [
+        "Melhor chance de Míticos; escolha a tabela de outro boss no baú."
+      ],
+      "drops": [],
+      "sources": [
+        "https://d4guides.gg/en/loot-table",
+        "https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet"
+      ]
     }
   ]
 }

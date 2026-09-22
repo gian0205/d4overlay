@@ -130,3 +130,8 @@ td:first-child { color: var(--muted); width: 38%; }
 
 .countdown { font-variant-numeric: tabular-nums; font-weight: 600; }
 a { color: var(--accent); cursor: pointer; }
+
+details.drop > summary { cursor: pointer; list-style: none; }
+details.drop > summary::-webkit-details-marker { display: none; }
+.power { color: var(--text); font-weight: normal; font-size: 12px; margin: 2px 0 6px; white-space: pre-line; }
+.drops li.mythic > details > summary { color: var(--mythic); }

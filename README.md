@@ -40,6 +40,7 @@ npm run validate-data  # valida data/*.json
 npm start              # roda com ow-electron (Windows, com Diablo IV)
 npm run start:electron # roda com Electron puro (qualquer SO)
 npm run dist           # instalador Windows via ow-electron-builder
+npm run d4data         # lê os arquivos do jogo (DiabloTools/d4data) e gera data/generated/
 ```
 
 Para publicar com overlay/GEP é necessário registrar o app no Overwolf (Developers Console).
@@ -56,14 +57,26 @@ src/main/        processo principal
   preload.js           ponte segura (contextBridge) para a UI
 src/shared/      lógica pura e testada (detecção de boss, fases do guia, estado do GEP)
 src/renderer/    interface (HTML/CSS/JS sem framework)
-data/            bosses.json e builds.json
+scripts/d4data/  leitor dos arquivos do jogo (DiabloTools/d4data)
+data/            bosses.json e builds.json (curados)
+data/generated/  uniques.json e skills.json (gerados pelo leitor)
 docs/            pesquisa de APIs
 ```
 
+## Catálogo do jogo (d4data)
+
+`npm run d4data` baixa só a parte necessária do [DiabloTools/d4data](https://github.com/DiabloTools/d4data)
+e gera `data/generated/uniques.json` (310 únicos com classe, tipo, poder e se é Mítico) e
+`data/generated/skills.json` (skills das 8 classes, incluindo Paladino e Warlock).
+O app usa isso para completar os drops (classe, tipo, poder) e `npm run validate-data`
+avisa quando um nome de item ou skill não existe no jogo. As **tabelas de loot por boss não
+existem** nos arquivos do cliente (são do servidor) — detalhes em `docs/PESQUISA.md`.
+
 ## Dados (importante)
 
-Os arquivos em `data/` são um **rascunho da Temporada 15**. Itens com `"verified": false`
-vieram de fontes secundárias e vários bosses ainda estão com a tabela de drops vazia; os
+Os arquivos em `data/` são um **rascunho da Temporada 15**. As listas de drops são parciais
+e marcadas com `"verified": false` (a associação item→boss veio de buscas; o nome do item foi
+conferido no catálogo do jogo). Urivar, Harbinger, Butcher e Belial ainda estão sem itens. Os
 builds são **modelos de guia** que apontam para o planner completo. Revise antes de usar.
 
 - **Bosses** (`data/bosses.json`): `arena.matchers` são trechos do nome da área que o GEP

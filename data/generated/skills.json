@@ -1,0 +1,1008 @@
+{
+ "build": "3.2.1.73552",
+ "source": "https://github.com/DiabloTools/d4data",
+ "generatedAt": "2026-09-22T20:48:05.897Z",
+ "classes": {
+  "barbarian": [
+   {
+    "id": "Barbarian_Bash",
+    "name": "Bash",
+    "description": "Generate Fury: #\nBash the enemy with your weapon, dealing # damage.\n\nEvery #th Bash will clobber, Stunning enemies for # seconds."
+   },
+   {
+    "id": "Barbarian_HammeroftheAncients",
+    "name": "Hammer of the Ancients",
+    "description": "Fury Cost: #\nSlam your hammer down with the fury of the Ancients, dealing # damage to a concentrated area."
+   },
+   {
+    "id": "Barbarian_Rend",
+    "name": "Rend",
+    "description": "Fury Cost: #\nCleave enemies in front of you, dealing # damage and inflicting # Bleeding damage over # seconds."
+   },
+   {
+    "id": "Barbarian_DoubleSwing",
+    "name": "Double Swing",
+    "description": "Fury Cost: #\nSweep your weapons from opposite directions, dealing # damage with each weapon. Enemies caught in the center are damaged by both."
+   },
+   {
+    "id": "Barbarian_GroundStomp",
+    "name": "Ground Stomp",
+    "description": "Generate Fury: #\nCooldown: # seconds\nSmash the ground, dealing # damage and Stunning surrounding enemies for # seconds.#"
+   },
+   {
+    "id": "Barbarian_RallyingCry",
+    "name": "Rallying Cry",
+    "description": "Fury Cost: #\nBellow a rallying cry, increasing your Movement Speed by # for # seconds.\n\nNearby allies gain half of Rallying Cry's effects."
+   },
+   {
+    "id": "Barbarian_Maim",
+    "name": "Flay",
+    "description": "Generate Fury: #\nFlay the enemy, dealing # damage and inflicting # Bleeding damage over # seconds."
+   },
+   {
+    "id": "Barbarian_Frenzy",
+    "name": "Frenzy",
+    "description": "Generate Fury: #\nUnleash a rapid flurry of blows, dealing # damage with each pair of hits.\n\nIf Frenzy hits an enemy, its Cast Speed is increased by # for # seconds, up to #."
+   },
+   {
+    "id": "Barbarian_LungingStrike",
+    "name": "Lunging Strike",
+    "description": "Generate Fury: #\nLunge forward and strike an enemy, dealing # damage."
+   },
+   {
+    "id": "Barbarian_Upheaval",
+    "name": "Upheaval",
+    "description": "Fury Cost: #\nTear into the ground with your weapon and fling debris forward, dealing # damage."
+   },
+   {
+    "id": "Barbarian_IronSkin",
+    "name": "Iron Skin",
+    "description": "Cooldown: # seconds"
+   },
+   {
+    "id": "Barbarian_Kick",
+    "name": "Kick",
+    "description": "Throw a powerful kick that deals # damage and Knocks Back enemies in front of you. Enemies who are Knocked Back into terrain take an additional # damage and are Stunned for # seconds."
+   },
+   {
+    "id": "Barbarian_WarCry",
+    "name": "War Cry",
+    "description": "Cooldown: # seconds\nBellow a mighty war cry, increasing your damage dealt by # for # seconds.\n\nNearby allies gain half of War Cry's effects."
+   },
+   {
+    "id": "Barbarian_Leap",
+    "name": "Leap",
+    "description": "#Generate Fury: #\nCooldown: # seconds\nLeap forward and then slam down, dealing # damage and Slowing enemies by # for # seconds."
+   },
+   {
+    "id": "Barbarian_Charge",
+    "name": "Charge",
+    "description": "Generate Fury: # per enemy hit\nCooldown: # seconds\nRush forward and push enemies before swinging your weapon, dealing # damage and Knocking Back enemies."
+   },
+   {
+    "id": "Barbarian_SteelGrasp",
+    "name": "Steel Grasp",
+    "description": "Throw out a trio of chains that deal # damage and Pull In enemies."
+   },
+   {
+    "id": "Barbarian_DeathBlow",
+    "name": "Death Blow",
+    "description": "Attempt a killing strike, dealing # damage to enemies in front of you."
+   },
+   {
+    "id": "Barbarian_Whirlwind",
+    "name": "Whirlwind",
+    "description": "Fury Cost: # per second\nRapidly attack surrounding enemies for # damage."
+   },
+   {
+    "id": "Barbarian_ChallengingShout",
+    "name": "Challenging Shout",
+    "description": "Cooldown: # seconds\nTaunt Nearby enemies and gain # Damage Reduction for # seconds."
+   },
+   {
+    "id": "Barbarian_Rupture",
+    "name": "Rupture",
+    "description": "Skewer enemies in front of you, dealing # damage, then rip your weapon out, inflicting # Bleeding damage over # seconds."
+   },
+   {
+    "id": "Barbarian_WrathoftheBerserker",
+    "name": "Wrath of the Berserker",
+    "description": "Cooldown: # seconds\nExplode into rage, Knocking Back surrounding enemies while gaining # increased damage, Berserking, and Unstoppable for # seconds."
+   },
+   {
+    "id": "Barbarian_IronMaelstrom",
+    "name": "Iron Maelstrom",
+    "description": "Cooldown: # seconds\nActivate three times to attach chains to each of your weapons and perform an attack:\nFirst, your Two-Handed Bludgeoning weapon slams into the ground, dealing # damage and Stunning enemies for # seconds.\nNext, your Two-Handed Slashing weapon swipes in front of you, dealing # damage and inflicting # Bleeding damage over # seconds.\nFinally, your Dual Wield weapons swing around you, dealing # damage per hit."
+   },
+   {
+    "id": "Barbarian_CalloftheAncients",
+    "name": "Call of the Ancients",
+    "description": "Cooldown: # seconds\nSummon # Ancients to aid you in battle for # seconds.\nKorlic leaps at enemies, dealing # damage and swings his weapons in a frenzy, dealing # damage per hit.\nTalic spins in a whirlwind rapidly attacking enemies for # damage.\nMadawc upheaves the ground, dealing # damage."
+   },
+   {
+    "id": "X1_Barbarian_WeaponThrow",
+    "name": "Mighty Throw",
+    "description": "Your weapon is hurled into the sky and drops back to the ground massive in size, dealing # damage."
+   }
+  ],
+  "druid": [
+   {
+    "id": "Druid_Earthspike_Instant",
+    "name": "Earth Spike",
+    "description": "Generate Spirit: #\nSunder the earth, impaling all enemies hit for # damage."
+   },
+   {
+    "id": "Druid_Pulverize",
+    "name": "Pulverize",
+    "description": "Spirit Cost: #\nShapeshift into a Werebear and slam the ground, dealing # damage to surrounding enemies."
+   },
+   {
+    "id": "Druid_EarthenBulwark",
+    "name": "Earthen Bulwark",
+    "description": "Cooldown: # seconds\nRocks surround you for # seconds, granting a Barrier that absorbs # of your Maximum Life (#) in damage."
+   },
+   {
+    "id": "Druid_DebilitatingRoar",
+    "name": "Debilitating Roar",
+    "description": "Cooldown: # seconds\nShapeshift into a Werebear and bellow a mighty roar reducing Nearby enemies' damage dealt by # for # seconds."
+   },
+   {
+    "id": "Druid_Claw",
+    "name": "Claw",
+    "description": "Generate Spirit: #\nShapeshift into a Werewolf and claw at enemies dealing # Physical damage."
+   },
+   {
+    "id": "Druid_StormStrike",
+    "name": "Storm Strike",
+    "description": "Generate Spirit: #\nElectricity gathers around your weapon, dealing # damage to your target and chaining up to # times to targets nearby."
+   },
+   {
+    "id": "Druid_Tornado",
+    "name": "Tornado",
+    "description": "Spirit Cost: #\nConjure a swirling tornado for # seconds that deals # damage to enemies."
+   },
+   {
+    "id": "Druid_LightningStorm",
+    "name": "Lightning Storm",
+    "description": "Spirit Cost: # per period\nConjure a growing lightning storm that deals # damage per strike. The number of strikes increases the longer the storm is channeled, up to a maximum of # strikes at once. Lightning Storm may grow up to # times.\n\nThe size of your Lightning Storm is preserved for # seconds after channeling."
+   },
+   {
+    "id": "Druid_Trample",
+    "name": "Trample",
+    "description": "Generates Spirit: #\nCooldown: # seconds\nShapeshift and charge forward, dealing # damage and Knocking Back enemies."
+   },
+   {
+    "id": "Druid_Hurricane",
+    "name": "Hurricane",
+    "description": "Form a hurricane around you that deals # damage to surrounding enemies over # seconds."
+   },
+   {
+    "id": "Druid_WindShear",
+    "name": "Wind Shear",
+    "description": "Generate Spirit: #\nConjure a piercing blade of wind, dealing # damage to enemies hit."
+   },
+   {
+    "id": "Druid_Boulder",
+    "name": "Boulder",
+    "description": "Cooldown: # seconds\nUnearth a large rolling boulder that repeatedly Knocks Back enemies, dealing # damage with each hit."
+   },
+   {
+    "id": "Druid_Maul",
+    "name": "Maul",
+    "description": "Generate Spirit: #\nShapeshift into a Werebear and maul enemies in front of you, dealing # damage."
+   },
+   {
+    "id": "Druid_Ravens",
+    "name": "Ravens",
+    "description": "Cooldown: # seconds\nPassive: Summon # |4Raven:Ravens; to fly above you, attacking enemies for # damage every # seconds.\n\nActive: The target area is swarmed with ravens, dealing # damage over # seconds."
+   },
+   {
+    "id": "Druid_VineCreeper",
+    "name": "Poison Creeper",
+    "description": "Cooldown: # seconds\nPassive: Summon # |4poison creeper:poison creepers; to periodically emerge from the ground every # seconds, applying # Poisoning damage over # seconds to an enemy in the area.\n\nActive: Vines strangle all enemies surrounding you, Immobilizing them for # seconds and Poisoning them for # damage over # seconds."
+   },
+   {
+    "id": "Druid_WolfPack",
+    "name": "Wolves",
+    "description": "Cooldown: # seconds\nPassive: Summon # wolf companions that bite enemies for # damage.\n\nActive: Command your wolves to use their Feral Dash ability, instantly lunging at the target dealing # damage and becoming Unstoppable."
+   },
+   {
+    "id": "Druid_CycloneArmor",
+    "name": "Cyclone Armor",
+    "description": "Cooldown: # seconds\nPassive: Powerful winds surround you, granting a # bonus to All Resistances.\n\nActive: The winds rapidly expand, Knocking Back enemies and dealing # damage."
+   },
+   {
+    "id": "Druid_BloodHowl",
+    "name": "Blood Howl",
+    "description": "#Cooldown: # seconds\nShapeshift into a Werewolf and howl furiously, Healing you for # of your Maximum Life (#)."
+   },
+   {
+    "id": "Druid_Rabies",
+    "name": "Rabies",
+    "description": "Cooldown: # seconds\nPerform an infectious bite against enemies in front of you, dealing # damage and applying an additional # Poisoning damage over # seconds.\n\nInfected enemies spread Rabies to other surrounding targets."
+   },
+   {
+    "id": "Druid_Cataclysm",
+    "name": "Cataclysm",
+    "description": "Cooldown: # seconds\nA massive storm follows you for # seconds. Twisters Knock Back enemies dealing # damage, and lightning strikes wildly dealing # damage."
+   },
+   {
+    "id": "Druid_GrizzlyRage",
+    "name": "Grizzly Rage",
+    "description": "Cooldown: # seconds\nShapeshift into a Dire Werebear for # seconds becoming Berserk and gaining # bonus Armor. Your damage is increased by # (max. #) each time you take or deal damage with a skill while Grizzly Rage is active."
+   },
+   {
+    "id": "Druid_Lacerate",
+    "name": "Lacerate",
+    "description": "Cooldown: # seconds\nShapeshift into a Werewolf, become Immune and quickly dash # times between enemies in the area dealing up to # total damage over # seconds."
+   },
+   {
+    "id": "Druid_Petrify",
+    "name": "Petrify",
+    "description": "Cooldown: # seconds\nEncase all Nearby enemies in stone, Stunning them for # seconds. Petrified enemies take # bonus Critical Strike Damage from you."
+   },
+   {
+    "id": "Druid_Shred_NEW",
+    "name": "Shred",
+    "description": "Spirit Cost: #\nShapeshift into a Werewolf and perform a trio of combo attacks:\n1st Attack: Deal # damage.\n2nd Attack: Deal # damage.\n3rd Attack: Perform a larger finishing move dealing # damage."
+   },
+   {
+    "id": "Druid_StoneBurst",
+    "name": "Stone Burst",
+    "description": "Spirit Cost: #\nGather stones beneath your enemies then detonate them dealing # damage.\n\nChanneling deals # damage and increases the size of the affected area, up to a #% radius increase over # seconds."
+   }
+  ],
+  "necromancer": [
+   {
+    "id": "Necromancer_BoneSplinters",
+    "name": "Bone Splinters",
+    "description": "Generate Essence: #\nFire # splinters of bone, dealing # damage each."
+   },
+   {
+    "id": "Necromancer_BoneSpear",
+    "name": "Bone Spear",
+    "description": "Essence Cost: #\nConjure a bone spear from the ground that pierces enemies, dealing # damage."
+   },
+   {
+    "id": "Necromancer_Blight",
+    "name": "Blight",
+    "description": "Essence Cost: #\nUnleash concentrated blight that deals # damage and leaves behind a defiled area, dealing # Corrupting damage over # seconds."
+   },
+   {
+    "id": "Necromancer_Sever",
+    "name": "Sever",
+    "description": "A specter of you charges forward, dealing # damage, then attacks with its scythe, dealing # damage."
+   },
+   {
+    "id": "Necromancer_Decompose",
+    "name": "Decompose",
+    "description": "Generate Essence: # per second\nTear the flesh from an enemy, dealing # Corrupting damage per second and forming a usable Corpse with the flesh every # |4second:seconds;."
+   },
+   {
+    "id": "Necromancer_Decrepify",
+    "name": "Decrepify",
+    "description": "Essence Cost: #\nCurse the target area. Enemies afflicted by Decrepify are Weakened and Slowed by # for # seconds."
+   },
+   {
+    "id": "Necromancer_BloodMist",
+    "name": "Blood Mist",
+    "description": "Cooldown: # seconds\nDisperse into a bloody mist, becoming Immune for # seconds. You deal # damage to enemies and Heal for # of your Maximum Life (#) over the duration."
+   },
+   {
+    "id": "Necromancer_BoneSpirit",
+    "name": "Bone Spirit",
+    "description": "Conjure a spirit of bone that seeks enemies and explodes, dealing # damage."
+   },
+   {
+    "id": "Necromancer_BloodSurge",
+    "name": "Blood Surge",
+    "description": "Essence Cost: #\nDraw blood from enemies, dealing # damage, then expel a blood nova, dealing # damage.\n\nBlood Surge's nova damage is increased by # for each enemy drawn from, up to #."
+   },
+   {
+    "id": "Necromancer_Reap",
+    "name": "Reap",
+    "description": "Generate Essence: #\nSweep an ethereal scythe in front of you, dealing # damage."
+   },
+   {
+    "id": "Necromancer_BonePrison",
+    "name": "Bone Prison",
+    "description": "Cooldown: # seconds\nUnearth a prison of bone with # Life that surrounds the target area for # seconds."
+   },
+   {
+    "id": "Necromancer_Golem",
+    "name": "Golem",
+    "description": "Passive: Raise a Golem that attacks for # damage. When your Golem dies, it respawns after # seconds."
+   },
+   {
+    "id": "Necromancer_CorpseExplosion",
+    "name": "Corpse Explosion",
+    "description": "Detonate a Corpse, dealing # damage to enemies."
+   },
+   {
+    "id": "Necromancer_IronMaiden",
+    "name": "Iron Maiden",
+    "description": "Essence Cost: #\nCurse the target area. Enemies afflicted by Iron Maiden take # damage every # seconds and # damage each time they deal direct damage for # seconds."
+   },
+   {
+    "id": "Necromancer_CorpseTendrils",
+    "name": "Corpse Tendrils",
+    "description": "Cooldown: # seconds\nBurst veins out of a Corpse, Slowing enemies by # for # seconds before Pulling them in and dealing # damage."
+   },
+   {
+    "id": "Necromancer_Hemorrhage",
+    "name": "Hemorrhage",
+    "description": "Generate Essence: #\nBurst an enemy's blood, dealing # damage. Hemorrhage has a # chance to form a Blood Orb."
+   },
+   {
+    "id": "Necromancer_ArmyoftheDead",
+    "name": "Army of the Dead",
+    "description": "Cooldown: # seconds\nCall forth the deep buried dead. Volatile Skeletons emerge over the next # seconds that explode when around enemies, dealing # damage and Stunning them for # seconds."
+   },
+   {
+    "id": "Necromancer_BoneStorm",
+    "name": "Bone Storm",
+    "description": "Cooldown: # seconds"
+   },
+   {
+    "id": "Necromancer_BloodLance",
+    "name": "Blood Lance",
+    "description": "Essence Cost: #\nThrow a blood lance, dealing # to an enemy that ricochets to another enemy. Enemies hit are lanced for # seconds.\n\nWhen Blood Lance hits an enemy, it deals damage to all other lanced enemies."
+   },
+   {
+    "id": "Necromancer_BloodWave",
+    "name": "Blood Wave",
+    "description": "Conjure a short wave of blood that deals # damage."
+   },
+   {
+    "id": "X1_Necromancer_Ultimate4",
+    "name": "Soulrift",
+    "description": "Cooldown: # seconds\nConsume surrounding enemies, dealing # Corrupting damage over # seconds.\n\nEvery # seconds you absorb the souls of # enemies, gaining # Essence per enemy. You absorb # souls at a time from Bosses."
+   },
+   {
+    "id": "Necromancer_SkeletonMage",
+    "name": "Skeleton Mage",
+    "description": "Essence Cost: #\nRaise a skeletal mage, up to a maximum of # mages. Skeletal mages deal # damage with each attack."
+   },
+   {
+    "id": "Necromancer_SkeletonWarrior",
+    "name": "Skeleton Warrior",
+    "description": "Cooldown: # seconds\nPassive: Raise a skeletal warrior from a nearby Corpse every 2 seconds, up to a maximum of # warriors. Skeletal warriors deal # with each attack.\n\nActive: Command your skeletal warriors to leap at an enemy and attack."
+   }
+  ],
+  "rogue": [
+   {
+    "id": "Rogue_Heartseeker",
+    "name": "Heartseeker",
+    "description": "Fire an arrow that seeks an enemy and pierces through its heart, dealing # damage."
+   },
+   {
+    "id": "Rogue_RapidFire",
+    "name": "Rapid Fire",
+    "description": "Energy Cost: #\nRapidly fire # arrows, each dealing # damage and ricocheting # times."
+   },
+   {
+    "id": "Rogue_Flurry",
+    "name": "Flurry",
+    "description": "Energy Cost: #\nUnleash a flurry of stabs and slashes, striking enemies in front of you # times and dealing a total of # damage to each."
+   },
+   {
+    "id": "Rogue_Barrage",
+    "name": "Barrage",
+    "description": "Energy Cost: #\nUnleash a barrage of # arrows that expands outwards, each dealing # damage and piercing up to # times. Arrows cannot hit the same target more than once."
+   },
+   {
+    "id": "Rogue_SmokeBomb",
+    "name": "Smoke Grenade",
+    "description": "Throw a smoky concoction at enemies that deals # damage and Dazes them for # seconds."
+   },
+   {
+    "id": "Rogue_Caltrops",
+    "name": "Caltrops",
+    "description": "Charges: #\nCharge Cooldown: # seconds\nThrow caltrops on the ground, dealing # damage. Affected enemies take # damage every second and are Slowed by #. Lasts # seconds."
+   },
+   {
+    "id": "Rogue_Puncture",
+    "name": "Puncture",
+    "description": "Throw blades a short distance, dealing # damage."
+   },
+   {
+    "id": "Rogue_InvigoratingStrike",
+    "name": "Invigorating Strike",
+    "description": "Melee attack an enemy, dealing # damage and also gain # Energy once every # seconds for # seconds."
+   },
+   {
+    "id": "Rogue_TwistingBlades",
+    "name": "Twisting Blades",
+    "description": "Energy Cost: #\nImpale an enemy with your blades, dealing # damage. After # seconds the blades return to you, piercing enemies for # damage."
+   },
+   {
+    "id": "Rogue_PoisonImbue",
+    "name": "Poison Imbuement",
+    "description": "Cooldown: # seconds\nImbue your weapons with lethal poison for # seconds. While imbued, your Imbueable Skills deal Poison damage and apply # of their Base damage as additional Poisoning damage over # seconds."
+   },
+   {
+    "id": "Rogue_ColdImbue",
+    "name": "Cold Imbuement",
+    "description": "Cooldown: # seconds\nImbue your weapons with frigid energies for # seconds. While imbued, your Imbueable Skills deal Cold damage, Chill enemies for # per hit, and Weaken enemies for # seconds."
+   },
+   {
+    "id": "Rogue_PenetratingShot",
+    "name": "Penetrating Shot",
+    "description": "Energy Cost: #\nFire an arrow that pierces through all enemies in a line, dealing # damage."
+   },
+   {
+    "id": "Rogue_ForcefulArrow",
+    "name": "Forceful Arrow",
+    "description": "Fire a powerful arrow at an enemy, dealing # damage and Propelling Close enemies, Knocking Back the enemy. Propel can occur once every # seconds per enemy."
+   },
+   {
+    "id": "Rogue_ShadowImbue",
+    "name": "Shadow Imbuement",
+    "description": "Cooldown: # seconds\nImbue your weapons with festering shadows for # seconds. While imbued, your Imbueable Skills deal Shadow damage and infect enemies for # seconds. Infected enemies explode on death, dealing # damage to all surrounding enemies.\n\nIf the infection expires before the enemy dies, it will deal # damage to only that enemy."
+   },
+   {
+    "id": "Rogue_DarkShroud",
+    "name": "Dark Shroud",
+    "description": "Cooldown: # seconds\nSurround yourself with up to # protective shadows. Gain # Resistance to All Elements per active shadow. If you have the maximum amount of shadows, direct damage is reduced by #. Each time you take direct damage, a shadow is consumed."
+   },
+   {
+    "id": "Rogue_Dash",
+    "name": "Dash",
+    "description": "Charges: #\nCharge Cooldown: # seconds\nDash forward and slash enemies for # damage. Any enemies hit are Slowed by # for # seconds."
+   },
+   {
+    "id": "Rogue_ShadowStep",
+    "name": "Shadow Step",
+    "description": "Quickly move through the shadows to stab your victim from behind for # damage and Execute them. Gain # increased Movement Speed for # seconds afterwards."
+   },
+   {
+    "id": "Rogue_BladeShift",
+    "name": "Blade Shift",
+    "description": "Quickly stab your victim for # damage and shift, making you Unhindered for # seconds. Moving through enemies refreshes the shift duration."
+   },
+   {
+    "id": "Rogue_PoisonTrap",
+    "name": "Poison Trap",
+    "description": "Place a trap that arms after # seconds. It activates when an enemy moves within range, applying # Poisoning damage over # seconds to enemies in the area.\n\nYou can have # armed traps out at once."
+   },
+   {
+    "id": "Rogue_RainofArrows",
+    "name": "Rain of Arrows",
+    "description": "Cooldown: # seconds\nArrows rain down over a large area dealing # damage and Immobilizing enemies for # seconds."
+   },
+   {
+    "id": "Rogue_DeathTrap",
+    "name": "Death Trap",
+    "description": "Cooldown: # seconds\nPlace a trap that arms after # seconds. It activates once an enemy is within range, dealing a total of # damage in the area."
+   },
+   {
+    "id": "Rogue_ShadowClone",
+    "name": "Shadow Clone",
+    "description": "Cooldown: # seconds\nSummon a shadow that mimics your actions for # seconds. This Shadow Clone deals # of your damage."
+   },
+   {
+    "id": "Rogue_Stealth",
+    "name": "Concealment",
+    "description": "Cooldown: # seconds\nVanish from sight, gaining an advanced form of Stealth for # seconds that will not be removed by taking damage.\n\nConcealment also makes you Unstoppable, grants # Movement Speed, and Unhindered for its duration.\n\nUsing an attack Skill during Concealment will break Concealment."
+   },
+   {
+    "id": "Rogue_DanceOfKnives",
+    "name": "Dance of Knives",
+    "description": "Energy Cost: # per second\n#Channel to launch knives at surrounding enemies with each knife dealing # damage. Attack Speed increases damage done rather than number of knives thrown."
+   }
+  ],
+  "sorcerer": [
+   {
+    "id": "Sorcerer_Spark",
+    "name": "Spark",
+    "description": "Launch a bolt of lightning that shocks an enemy # times, dealing # damage with each shock."
+   },
+   {
+    "id": "Sorcerer_Fireball",
+    "name": "Fireball",
+    "description": "Mana Cost: #\nHurl an exploding ball of fire, dealing # damage to enemies."
+   },
+   {
+    "id": "Sorcerer_IceShards",
+    "name": "Ice Shards",
+    "description": "Mana Cost: #\nLaunch # icy shards, dealing # damage each and piercing # time.\n\nIce Shards deals # increased damage to Frozen enemies."
+   },
+   {
+    "id": "Sorcerer_ChainLightning",
+    "name": "Chain Lightning",
+    "description": "Mana Cost: #\nUnleash a bolt of lightning that chains up to # times, dealing # damage.\n\nIf Chain Lightning fails to chain, # of the remaining chains damage is dealt as additional damage to the final target."
+   },
+   {
+    "id": "Sorcerer_FlameShield",
+    "name": "Flame Shield",
+    "description": "Engulf yourself in flames for # |4second:seconds;, becoming Immune and dealing # Burning damage over # seconds to surrounding enemies."
+   },
+   {
+    "id": "Sorcerer_FrostNova",
+    "name": "Frost Nova",
+    "description": "Unleash a torrent of frost, Freezing enemies around you for # seconds."
+   },
+   {
+    "id": "Sorcerer_FireBolt",
+    "name": "Fire Bolt",
+    "description": "Hurl a flaming bolt, dealing # damage and an additional # Burning damage over # seconds."
+   },
+   {
+    "id": "Sorcerer_ChargedBolt",
+    "name": "Charged Bolts",
+    "description": "Mana Cost: #\nRelease # bolts of piercing lightning that course along the ground, dealing # damage each."
+   },
+   {
+    "id": "Sorcerer_FrostBolt",
+    "name": "Frost Bolt",
+    "description": "Throw a bolt of frost at an enemy, dealing # damage and Chilling for #."
+   },
+   {
+    "id": "Sorcerer_IceArmor",
+    "name": "Ice Armor",
+    "description": "A Barrier of ice forms around you for # seconds, absorbing # of your Maximum Life (#) in damage."
+   },
+   {
+    "id": "Sorcerer_Firewall",
+    "name": "Firewall",
+    "description": "Mana Cost: #\nCreate a wall of fire, dealing # Burning damage over # seconds. Enemies continue Burning for # seconds after leaving the wall."
+   },
+   {
+    "id": "Sorcerer_Blizzard",
+    "name": "Blizzard",
+    "description": "Mana Cost: #\nCall forth a frigid blizzard that deals # Frostbite damage and continually Chills enemies for # over # seconds."
+   },
+   {
+    "id": "Sorcerer_Incinerate",
+    "name": "Incinerate",
+    "description": "Mana Cost: # per second\nChannel a beam of fire, dealing # damage and an additional # Burning damage over # seconds.\n\nIncinerate's damage increases by # every second you channel it, up to #."
+   },
+   {
+    "id": "Sorcerer_ArcLash",
+    "name": "Arc Lash",
+    "description": "Unleash arcing lightning, dealing # damage to enemies in front of you."
+   },
+   {
+    "id": "Sorcerer_Meteor",
+    "name": "Meteor",
+    "description": "Mana Cost: #\nCall down a meteor that crashes into enemies, dealing # damage and an additional # Burning damage over # seconds."
+   },
+   {
+    "id": "Sorcerer_IceBlades",
+    "name": "Ice Blades",
+    "description": "Cooldown: #\nConjure blades of ice for # seconds that rapidly slash enemies, dealing # damage and making them Vulnerable.\n\nYou may have up to # Ice Blades active at a time."
+   },
+   {
+    "id": "Sorcerer_Hydra",
+    "name": "Hydra",
+    "description": "Mana Cost: #\nSummon a #-headed Hydra for # seconds. Each head spits fire at enemies, dealing # damage.\n\nYou may have up to # |4Hydra:Hydras; active at a time."
+   },
+   {
+    "id": "Sorcerer_BallLightning",
+    "name": "Ball Lightning",
+    "description": "Mana Cost: #\nDischarge a ball of lightning that slowly moves forward and continuously zaps enemies, dealing # damage per second.#"
+   },
+   {
+    "id": "Sorcerer_Teleport",
+    "name": "Teleport",
+    "description": "Cooldown: # seconds\nTransform into lightning and surge to the target location, dealing # damage around you upon arrival."
+   },
+   {
+    "id": "Sorcerer_LightningSpear",
+    "name": "Lightning Spear",
+    "description": "Cooldown: # seconds\nSummon a spear of lightning that seeks out enemies for # seconds, dealing # damage per hit.\n\nYou may have up to # Lightning Spears active at a time."
+   },
+   {
+    "id": "Sorcerer_FrozenOrb",
+    "name": "Frozen Orb",
+    "description": "Mana Cost: #\nUnleash an whirling orb that deals # Frostbite damage over # seconds and Chills for #. After # second Frozen Orb will explode, dealing # damage."
+   },
+   {
+    "id": "Sorcerer_Inferno",
+    "name": "Inferno",
+    "description": "Cooldown: # seconds\nSummon a fiery serpent that deals # damage and Burns enemies for # damage over # seconds, stacking up to # times."
+   },
+   {
+    "id": "Sorcerer_DeepFreeze",
+    "name": "Deep Freeze",
+    "description": "Encase yourself in ice and become Immune for # seconds, Chilling surrounding enemies for # and continuously dealing # damage to them. When Deep Freeze ends, you explode for an additional # damage.\n\nCasting Deep Freeze again ends the effect early."
+   },
+   {
+    "id": "Sorcerer_UnstableCurrents",
+    "name": "Unstable Currents",
+    "description": "Cooldown: # seconds\nLightning surges within you for # seconds. Whenever you Cast, trigger a random Skill:\nBall Lightning\nChain Lightning\nCharged Bolts\nLightning Spear"
+   },
+   {
+    "id": "X1_Sorcerer_Familiar",
+    "name": "Familiar",
+    "description": "Charges: #\nCharge Cooldown: # seconds\nSummon a Fire Familiar for # seconds. It seeks enemies and periodically explodes, dealing # damage.\n\nYou may have up to # Familiars active at a time."
+   }
+  ],
+  "spiritborn": [
+   {
+    "id": "Spiritborn_Gorilla_Basic",
+    "name": "Rock Splitter",
+    "description": "Generate Vigor: #\nRush at a target and clobber enemies in front of you, dealing # damage.\n\nYour 3rd attack strikes enemies around you, dealing # damage."
+   },
+   {
+    "id": "Spiritborn_Eagle_Basic",
+    "name": "Thunderspike",
+    "description": "Generate Vigor: #\nQuickly jab forward with a piercing strike dealing # damage.\n\nYour 3rd attack pierces further, dealing # damage."
+   },
+   {
+    "id": "Spiritborn_Jaguar_Basic",
+    "name": "Thrash",
+    "description": "Generate Vigor: #\nDive at an enemy and slash into it dealing # damage.\n\nYour 3rd attack unleashes a rapid series of slashes around your target, dealing a total of # damage."
+   },
+   {
+    "id": "Spiritborn_Centipede_Basic",
+    "name": "Withering Fist",
+    "description": "Generate Vigor: #\nDart at and jab an enemy several times, dealing a total of # damage and applying # Poisoning damage over # seconds.\n\nYour 3rd attack bursts on your target, damaging surrounding enemies and Slowing them by # for # seconds."
+   },
+   {
+    "id": "Spiritborn_Gorilla_Core",
+    "name": "Crushing Hand",
+    "description": "Vigor Cost: #\nSmash down next to you with devastating force, creating 2 shockwaves on either side that overlap and each deal # damage."
+   },
+   {
+    "id": "Spiritborn_Eagle_Core",
+    "name": "Quill Volley",
+    "description": "Vigor Cost: #\nHurl # feathers that pierce through enemies, each dealing # damage."
+   },
+   {
+    "id": "Spiritborn_Jaguar_Core",
+    "name": "Rake",
+    "description": "Vigor Cost: #\nConjure claws that rake through enemies in front of you, dealing # damage before exploding for an additional # damage."
+   },
+   {
+    "id": "Spiritborn_Centipede_Core",
+    "name": "Stinger",
+    "description": "Vigor Cost: #\nStrike a small area, dealing # damage to enemies within as well as all surrounding Poisoned enemies."
+   },
+   {
+    "id": "Spiritborn_Gorilla_Potency",
+    "name": "Payback",
+    "description": "Cooldown: # seconds\nSmash enemies in front of you, dealing # damage.\n\nWhen attacked, you have a # chance to reset Payback's Cooldown."
+   },
+   {
+    "id": "Spiritborn_Eagle_Potency1",
+    "name": "Razor Wings",
+    "description": "Charges: #\nCharge Cooldown: # seconds\nWhirl out a cluster of razor sharp feathers that rebound back, dealing # damage each way."
+   },
+   {
+    "id": "Spiritborn_Jaguar_Potency",
+    "name": "Rushing Claw",
+    "description": "Charges: #\nCharge Cooldown: # per # seconds\nSlash a short distance through an enemy, striking all enemies along the way twice for a total of # total damage."
+   },
+   {
+    "id": "Spiritborn_Centipede_Potency",
+    "name": "Touch of Death",
+    "description": "Cooldown: # seconds\nStrike an enemy and infect them, dealing # damage and applying # Poisoning damage over # seconds.\n\nWhen the infection expires or the host dies, a swarm hatches and seeks enemies for # seconds, dealing # damage per hit.\n\nYou can have up to # swarms active at once."
+   },
+   {
+    "id": "Spiritborn_Gorilla_Defensive1",
+    "name": "Armored Hide",
+    "description": "Cooldown: # seconds\nPassive: Gain # Resolve every # seconds.\n\nActive: Encase yourself, gaining # Block Chance for # seconds."
+   },
+   {
+    "id": "Spiritborn_Gorilla_Defensive2",
+    "name": "Concussive Stomp",
+    "description": "Cooldown: # seconds\nStomp in front of you, releasing a shockwave that deals # damage and Knocks Down enemies for # seconds."
+   },
+   {
+    "id": "Spiritborn_Jaguar_Defensive",
+    "name": "Counterattack",
+    "description": "Charges: #\nCharge Cooldown: # seconds\nPassive: Gain # Dodge Chance and automatically retaliate against Close enemies for # damage when you Dodge their attacks.\n\nActive: Dodge all direct attacks for # seconds per cast, up to # seconds."
+   },
+   {
+    "id": "Spiritborn_Centipede_Defensive",
+    "name": "Scourge",
+    "description": "Cooldown: # seconds\nCall forth a wave of insects that bite enemies, Fearing and Slowing them by # for # seconds while applying # Poisoning damage over # seconds."
+   },
+   {
+    "id": "Spiritborn_Eagle_Focus",
+    "name": "Vortex",
+    "description": "Cooldown: # seconds\nCreate a cyclone that Pulls enemies inward followed by a crushing downdraft that deals # damage to them."
+   },
+   {
+    "id": "Spiritborn_Eagle_Focus2",
+    "name": "Soar",
+    "description": "Cooldown: # seconds\nFly into the air, creating a cloud which makes enemies at your target location Vulnerable for # seconds before you crash down upon them dealing # damage."
+   },
+   {
+    "id": "Spiritborn_Jaguar_Focus",
+    "name": "Ravager",
+    "description": "Cooldown: # seconds\nPassive: Minimum Ferocity increased by #.\n\nActive: Unleash a savage roar, causing each of your attacks to trigger an additional # damage strike per enemy for # seconds."
+   },
+   {
+    "id": "Spiritborn_Centipede_Focus",
+    "name": "Toxic Skin",
+    "description": "Cooldown: # seconds\nPassive: Enemies that attack you are Poisoned for # damage over # seconds.\n\nActive: Your toxins overflow, applying the Poisoning in a trail and making you Unhindered for # seconds."
+   },
+   {
+    "id": "Spiritborn_Gorilla_Ultimate",
+    "name": "The Protector",
+    "description": "Cooldown: # seconds\nThe Gorilla Spirit protects an area for # seconds, continuously smashing surrounding enemies for # damage and granting you Barrier for # of your Maximum Life (#) every # seconds."
+   },
+   {
+    "id": "Spiritborn_Eagle_Ultimate",
+    "name": "The Seeker",
+    "description": "Charges: #\nCharge Cooldown: # seconds\nThe Eagle Spirit swoops down and deals # damage. After a short delay it blasts off dealing # damage."
+   },
+   {
+    "id": "Spiritborn_Jaguar_Ultimate",
+    "name": "The Hunter",
+    "description": "Cooldown: # seconds\nBound across the battlefield with the Jaguar Spirit, dealing # damage upon landing and then rapidly slashing enemies in the area for # total damage over # strikes."
+   },
+   {
+    "id": "Spiritborn_Centipede_Ultimate",
+    "name": "The Devourer",
+    "description": "Cooldown: # seconds\nThe Centipede Spirit emerges, blasting enemies in a line for # damage and spitting at others for # damage. Lasts for # seconds."
+   }
+  ],
+  "paladin": [
+   {
+    "id": "Paladin_BlessedShield",
+    "name": "Blessed Shield",
+    "description": "Faith Cost: #\nBless and hurl your shield with Holy energy, dealing # damage that ricochets up to # times."
+   },
+   {
+    "id": "Paladin_ShieldBash",
+    "name": "Shield Bash",
+    "description": "Faith Cost: #\nCharge at an enemy and bash in front of you, dealing # damage."
+   },
+   {
+    "id": "Paladin_Punish",
+    "name": "Clash",
+    "description": "Generate Faith: #\nStrike an enemy with your weapon and shield, dealing # damage.\n\nStriking enemies with Clash grants you Crusader's March, increasing your Block Chance by # for # seconds."
+   },
+   {
+    "id": "Paladin_SpearOfTheHeavens",
+    "name": "Spear of the Heavens",
+    "description": "Cooldown: # seconds\nRain down # heavenly spears from the sky, dealing # damage and Knocking Down enemies for # seconds. After # seconds, the spears burst, dealing # damage."
+   },
+   {
+    "id": "Paladin_BlessedHammer",
+    "name": "Blessed Hammer",
+    "description": "Faith Cost: #Throw a Blessed Hammer that spirals out, dealing # damage."
+   },
+   {
+    "id": "Paladin_ShieldCharge_Channel_Short",
+    "name": "Shield Charge",
+    "description": "Cooldown: # seconds\nCharge with your shield and push enemies Back, granting # Armor and dealing # damage while Channeling."
+   },
+   {
+    "id": "Paladin_Impale",
+    "name": "Divine Lance",
+    "description": "Faith Cost: #Impale enemies with a heavenly lance, stabbing # times for # damage each."
+   },
+   {
+    "id": "Paladin_PreTrailZeal",
+    "name": "Zeal",
+    "description": "Faith Cost: #\nStrike enemies with blinding speed, dealing # damage followed immediately by # additional strikes dealing # damage each."
+   },
+   {
+    "id": "Paladin_Advance_lunge",
+    "name": "Advance",
+    "description": "Generate Faith: #\nAdvance forward with your weapon, dealing # damage."
+   },
+   {
+    "id": "Paladin_StormBolt",
+    "name": "Holy Bolt",
+    "description": "Generate Faith: #\nThrow a Holy hammer, dealing # damage."
+   },
+   {
+    "id": "Paladin_LanceDive_OLD",
+    "name": "Falling Star",
+    "description": "Cooldown: # seconds\nSoar into the air with angelic wings and dive onto the battlefield, dealing # damage on takeoff and # damage on landing."
+   },
+   {
+    "id": "Paladin_Defensive_Aura",
+    "name": "Defiance Aura",
+    "description": "Faith Cost: #\nCooldown: # seconds\nPassive: Your presence reinforces you and your allies, granting # Armor and # bonus on All Resistances.\n\nActive: You become Unstoppable for # seconds."
+   },
+   {
+    "id": "Paladin_Offensive_Aura",
+    "name": "Fanaticism Aura",
+    "description": "Faith Cost: #\nCooldown: # seconds\nPassive: Spending Faith emanates power from you, granting you and your allies # Attack Speed and # Critical Strike Chance for # seconds up to a maximum of # times.\n\nActive: Weaken all Nearby enemies for # seconds."
+   },
+   {
+    "id": "Paladin_Condemn",
+    "name": "Condemn",
+    "description": "Cooldown: # seconds\n#Harness the Light and Pull enemies in after # seconds, briefly Stunning them and dealing # damage.\n\nWhile Casting Condemn, you become Unhindered for # seconds."
+   },
+   {
+    "id": "Paladin_Smite_FalconPunch_Recast_1",
+    "name": "Aegis",
+    "description": "Cooldown: # seconds\nSurround yourself with shields of the Light, Taunting Close enemies and gaining # Block Chance and # Armor for # seconds."
+   },
+   {
+    "id": "Paladin_Purify",
+    "name": "Purify",
+    "description": "Cooldown: # seconds\nEnshroud your enemies in the Light, Dazing them for # seconds."
+   },
+   {
+    "id": "Paladin_Consecration",
+    "name": "Consecration",
+    "description": "Cooldown: # seconds\n#Bathe in the Light for # seconds, Healing you and your allies for # Maximum Life (#) per second and damaging enemies for # damage per second."
+   },
+   {
+    "id": "Paladin_Brandish",
+    "name": "Brandish",
+    "description": "Generate Faith: #\nBrandish the Light, unleashing an arc that deals # damage."
+   },
+   {
+    "id": "Paladin_HolyShock_Aura",
+    "name": "Holy Light Aura",
+    "description": "Cooldown: # seconds\nLucky Hit Chance: #%\nPassive: You and your allies emanate the Light, dealing # damage every # seconds to # random Nearby enemies. Attack Speed further increases this damage.\n\nActive: Unleash # pure bolts of light, dealing # Holy damage to the Closest enemy and chaining up to # additional enemies before returning to you. When your first bolt of light returns, Heal for # of your Maximum Life (#)."
+   },
+   {
+    "id": "Paladin_HeavensFury",
+    "name": "Heaven's Fury",
+    "description": "Cooldown: # seconds\n#Grasp the Light, dealing # damage around you per second before releasing it to seek Nearby enemies and dealing # damage per hit for # seconds."
+   },
+   {
+    "id": "Paladin_Disciple_of_Justice",
+    "name": "Arbiter of Justice",
+    "description": "Cooldown: # seconds\nAscend to the heavens and crash upon the battlefield as an Arbiter for # seconds, dealing # damage upon landing."
+   },
+   {
+    "id": "Paladin_Fortress",
+    "name": "Fortress",
+    "description": "Cooldown: # seconds\nMake your stand, becoming Immune for # seconds and create a defensive area around you for # seconds.\n\nStanding in your Fortress grants you and your allies # Resolve stacks every # seconds."
+   },
+   {
+    "id": "Paladin_Sacrifice",
+    "name": "Rally",
+    "description": "Health Cost:#\nRally forth, generating # Faith and gaining # Movement Speed for # seconds."
+   },
+   {
+    "id": "Paladin_Trinity",
+    "name": "Zenith",
+    "description": "Cooldown: # seconds\nLucky Hit Chance: #%\nSummon a divine sword that cleaves the battlefield for # damage.\n\nCasting Zenith again cuts through the battlefield for # damage and Knocks Down enemies for # seconds."
+   }
+  ],
+  "warlock": [
+   {
+    "id": "Warlock_Summon_Lunatic",
+    "name": "Command Fallen",
+    "description": "Generate Wrath: #\nSummon a Fallen Lunatic that charges your target and explodes, dealing # damage."
+   },
+   {
+    "id": "Warlock_BrimstoneOrb",
+    "name": "Molten Bomb",
+    "description": "Generate Wrath: #\nLob molten lava at an enemy, dealing # damage in a small area."
+   },
+   {
+    "id": "Warlock_HexCast",
+    "name": "Doom",
+    "description": "Generate Wrath: #\nBurst a sigil on your enemies, Hexing them and dealing # damage."
+   },
+   {
+    "id": "Warlock_TailWhip",
+    "name": "Hellion Sting",
+    "description": "Generate Wrath: #\nWhip a demon tail forward, dealing # damage with a # chance to Eviscerate enemies for # damage."
+   },
+   {
+    "id": "Warlock_DemonicBombard",
+    "name": "Bombardment",
+    "description": "Wrath Cost: #\nSmash down # demons into the ground, each dealing # damage."
+   },
+   {
+    "id": "Warlock_Fissure",
+    "name": "Hell Fracture",
+    "description": "Wrath Cost: #Summon the fires of hell to fracture the ground, dealing # damage to enemies in the area.\n\nThe fractures remain for # seconds and explode up to # more times when you cast Hell Fracture again."
+   },
+   {
+    "id": "Warlock_ChainLash",
+    "name": "Umbral Chains",
+    "description": "Wrath Cost: #\nSend forth a shadowy chain, dealing # damage along the way and linking up to # enemies for # seconds. Enemies caught in the chain are Slowed by # and take # damage per second."
+   },
+   {
+    "id": "Warlock_BurningSkull",
+    "name": "Blazing Scream",
+    "description": "Wrath Cost: #\nSend forth a Demon Skull dealing # damage as it travels."
+   },
+   {
+    "id": "Warlock_ShadowShred",
+    "name": "Dread Claws",
+    "description": "Wrath Cost: #\nBurst forth # shadowy claws, each dealing # damage."
+   },
+   {
+    "id": "Warlock_Demon_Wall",
+    "name": "Wall of Agony",
+    "description": "Dominance Cost: #\nSummon and fuse # frenzied demons into a line for # seconds. The demons block enemies and flail wildly, dealing # damage per hit to those in front of them."
+   },
+   {
+    "id": "Warlock_DemonDefender",
+    "name": "Tortured Wretch",
+    "description": "Dominance Cost: #\nSummon a tortured demon on your enemies, dealing # damage and Taunting them to attack it for # seconds."
+   },
+   {
+    "id": "Warlock_ChainTotem",
+    "name": "Dark Prison",
+    "description": "Cooldown: # seconds\nCreate a shadowy totem for # seconds that chains enemies, Tethering them to the area and preventing them from escaping."
+   },
+   {
+    "id": "Warlock_WraithStep",
+    "name": "Nether Step",
+    "description": "Cooldown: # seconds\nStep through the shadows of Hell to emerge at the target location, gaining # stacks of Shadowform as well as # increased Movement Speed which decays over # seconds."
+   },
+   {
+    "id": "Warlock_DemonicSlash",
+    "name": "Rampage",
+    "description": "Dominance Cost: #\nSummon a rampaging brute for # seconds that smashes wildly, dealing # damage with a # chance per hit to Eviscerate enemies for # damage."
+   },
+   {
+    "id": "Warlock_Demonic_Breath",
+    "name": "Infernal Breath",
+    "description": "Dominance Cost: #\nSummon a demonic head for # seconds that breathes fire on enemies dealing # damage per hit."
+   },
+   {
+    "id": "Warlock_DemonicGrasp",
+    "name": "Tyrant's Grasp",
+    "description": "Dominance Cost: #\nSummon a demon hand that Pulls enemies away from you, dealing # damage."
+   },
+   {
+    "id": "Warlock_Demonic_Drain",
+    "name": "Profane Sentinel",
+    "description": "Dominance Cost: #\nSummon a demonic eye for # seconds that focuses upon enemies with a beam that makes them Vulnerable and periodically blasts them, dealing # damage. Recast to direct the eye's targeting."
+   },
+   {
+    "id": "Warlock_SigilOfSummons",
+    "name": "Sigil of Summons",
+    "description": "Cooldown: # seconds\nCreate a binding ritual for # seconds that extends the duration of your Summons.\n\nKilling # enemies or Demons within fuels the ritual to summon a demon for # seconds which attacks nearby enemies, dealing # damage per hit.\n\nYou can have up to # demons active at once."
+   },
+   {
+    "id": "Warlock_SigilOfFlames",
+    "name": "Sigil of Chaos",
+    "description": "Cooldown: # seconds\nCreate a destructive ritual for # seconds that grants you Volatility while within.\n\nKilling enemies or Demons within fuels the ritual's chaotic hellfire, increasing the chance for each enemy to explode for # damage on death."
+   },
+   {
+    "id": "Warlock_SigilOfShadows",
+    "name": "Sigil of Subversion",
+    "description": "Cooldown: # seconds\nCreate a subversive ritual for # seconds that Hexes enemies.\n\nKilling # enemies or Demons within fuels the ritual to send forth shadow trails for # seconds that periodically grant you # stack of Shadowform while in them.\n\nYou can have up to # trails active at once."
+   },
+   {
+    "id": "Warlock_UltimateDemon",
+    "name": "Fiend of Abaddon",
+    "description": "Cooldown: # seconds\nSummon a massive fiend for # seconds that attacks enemies, dealing # damage per swipe."
+   },
+   {
+    "id": "Warlock_Doombringer",
+    "name": "Apocalypse",
+    "description": "Cooldown: # seconds\nCreate a massive sigil that detonates after # seconds dealing # damage to all enemies within.\n\nThis ritual does not benefit from Cooldown Reduction."
+   },
+   {
+    "id": "Warlock_HellStorm",
+    "name": "Terror Swarm",
+    "description": "Cooldown: # seconds\nSummon a terror from the depths that deals # damage and spews a voracious swarm that deals # damage per bite for # seconds."
+   },
+   {
+    "id": "Warlock_ArchDemon",
+    "name": "Metamorphosis",
+    "description": "Cooldown: # seconds\nTransform into a demon and gain:\nDemonform\nAll Archfiend Demonform Skill Variants\nAn Ultimate Archfiend Basic attack that deals # damage and generates # Dominance\n\nCast again while active to cancel."
+   },
+   {
+    "id": "Warlock_Command_Legion_Demon",
+    "name": "Command Ae'grom",
+    "description": "Cooldown: # seconds\nPassive: Ae'grom cleaves with its arms, dealing # damage\n\nActive: Command Ae'grom to spew # Vile Child Lesser Demons, dealing # damage when they land. Vile Children claw enemies, dealing #, and last for # seconds."
+   },
+   {
+    "id": "Warlock_Command_Vanguard_Demon",
+    "name": "Command Abodian",
+    "description": "Cooldown: # seconds\nPassive: Abodian bites and claws enemies that get Close to you, dealing # damage.\n\nActive: Command Abodian to enter Demonform for # seconds and mount Abodian, becoming Unstoppable and gaining # increased Movement Speed for # seconds. While mounted, chain enemies and Pull them behind you, dealing # damage every # seconds. After you dismount, Abodian slams the ground, dealing # damage.\n\nCast again while active to cancel."
+   },
+   {
+    "id": "Warlock_Command_Mastermind_Demon",
+    "name": "Command Laalish",
+    "description": "Cooldown: # seconds\nPassive: Laalish seeks enemies and applies Vulnerable and a # Slow to Close enemies that lingers for # seconds. When you attack enemies, it moves through the abyss to bite them, dealing # damage.\n\nActive: Command Laalish to create a Terror Realm for # seconds, applying Vulnerable and a # Slow to enemies within. Laalish devours enemies within Terror Realm, dealing # damage every # second.\n\nWhile you are within Terror Realm, gain # stacks of Shadowform every # seconds."
+   },
+   {
+    "id": "Warlock_Command_Ritualist_Demon",
+    "name": "Command Valloch",
+    "description": "Dominance Cost: #\nPassive: Valloch increases your Maximum Overpower by # and Maximum Wrath by #.\n\nActive: Command Valloch to siphon its power to overfill your Overpower by # and increase Wrath Regeneration by # for # seconds."
+   }
+  ]
+ }
+}

@@ -45,13 +45,14 @@ A forma "oficial" (aprovada pela Blizzard/Overwolf) de fazer overlay em jogo.
 
 | Fonte | O que tem | API? |
 |---|---|---|
-| [DiabloTools/d4data](https://github.com/DiabloTools/d4data) | arquivos do jogo extraídos em JSON (skills, itens, aspectos, paragon) | JSON bruto no GitHub; precisa de parser |
+| [DiabloTools/d4data](https://github.com/DiabloTools/d4data) | arquivos do jogo extraídos em JSON (skills, itens, aspectos, paragon) | JSON bruto no GitHub — **leitor implementado em `scripts/d4data/`** (ver seção 6) |
 | [d4parse](https://github.com/Dakota628/d4parse) | parser dos arquivos do jogo | biblioteca Go |
 | Maxroll, D4Guides, Mobalytics, Game8, Icy Veins | builds, tier lists, tabelas de loot | **sem API pública**; não fazer scraping (termos de uso) — usamos só como link |
 | d4armory.io / diablo4.life / helltides.com | horários de World Boss, Helltide, Legion | endpoints JSON não oficiais (podem mudar/bloquear) |
 
 ## 4. Estado atual do endgame (S15) relevante para os dados
 
+- Classes: Bárbaro, Druida, Necromante, Renegada, Feiticeiro, Espiritonato, Paladino e **Warlock** (nova em Lord of Hatred — confirmada nos arquivos do jogo).
 - **Initiate Lair Bosses** (1 Lair Key): Grigoire, The Beast in the Ice, Echo of Varshan, Lord Zir, Urivar.
 - **Greater Lair Bosses** (1 Greater Lair Key): Duriel, Andariel, Harbinger of Hatred, The Butcher.
 - **Belial**: topo da escada; sem tabela própria — no baú você escolhe a tabela de outro boss.
@@ -65,3 +66,39 @@ A forma "oficial" (aprovada pela Blizzard/Overwolf) de fazer overlay em jogo.
 - A janela "sempre no topo" do modo Electron puro só aparece com o jogo em *Tela cheia em janela*.
 - Tabelas de loot mudam a cada temporada → os dados ficam em JSON versionado e podem ser
   atualizados por URL remota sem recompilar o app.
+
+## 6. Leitor do d4data (`scripts/d4data/`)
+
+```bash
+npm run d4data          # sync + extract + validate-data
+npm run d4data:sync     # baixa só o necessário (~30 MB) em .cache/d4data
+npm run d4data:extract  # gera data/generated/uniques.json e skills.json
+```
+
+- `sync.js`: clone parcial (`--filter=blob:none`) + *sparse checkout* do repositório
+  (que tem ~870 mil arquivos). Só baixa Item/*_Unique_*, StringLists de Item/Affix/Power,
+  SkillKit, ItemType e PlayerClass.
+- `lib.js` (funções puras, testadas) + `extract.js` (I/O):
+  - **Únicos**: `Item/<id>.itm.json` → tipo (`snoItemType`), classes (`fUsableByClass`,
+    ordem: Feiticeiro, Druida, Bárbaro, Renegada, Necromante, Espiritonato, Paladino, Warlock),
+    Mítico (`eMagicType == 4`); nome/flavor em `StringList/Item_<id>`; poder em
+    `StringList/Affix_<id>` ou no primeiro `arForcedAffixes` que tiver texto.
+    Descarta placeholders (`[PH]`), transmog (`S10_`), Crucible (`S12_`), talismãs e peixes.
+  - **Skills**: `SkillKit/<Classe>.skl.json` → `arActiveSkillEntries` → `StringList/Power_<id>`.
+  - Textos: marcação do jogo (`{c_important}`, `{if:SF.IsMythic}…{else}…{/if}`, fórmulas `[...]`)
+    é limpa; valores numéricos viram `#` (dependem do item rolado).
+- Resultado no build 3.2.1.73552: 310 únicos (13 Míticos) e as skills ativas das 8 classes.
+
+### O que o d4data NÃO tem
+- **Tabelas de loot por boss.** O baú do boss (`Actor/EGB_Chest_*_Tormented`) só referencia a
+  chave e a condição de abate; o sorteio (TreasureClass) roda no servidor. Por isso a
+  associação item→boss continua vindo da comunidade.
+- Uso no app: o catálogo **valida** os nomes em `data/bosses.json`/`builds.json`
+  (`npm run validate-data`) e **completa** cada drop com classe, tipo e poder na interface.
+
+## 7. Nova verificação dos sites de loot (set/2026)
+Maxroll, D4Guides, Game8, Mobalytics, OP.GG, Icy Veins, PC Gamer, urgametips e
+d4armory continuam bloqueados no ambiente onde o app foi desenvolvido e nenhum tem API
+pública. As listas em `data/bosses.json` foram montadas a partir de trechos de busca e
+**cada nome foi conferido contra o catálogo do jogo** (45/45 existem). Os totais por boss
+(ex.: Duriel ~23, Grigoire ~19) indicam que as listas ainda estão parciais.

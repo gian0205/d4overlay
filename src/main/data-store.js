@@ -3,11 +3,24 @@
 const fs = require('fs');
 const path = require('path');
 const { validateData } = require('../shared/validate');
+const { enrichBosses } = require('../shared/catalog');
 
 const BUNDLED_DIR = path.join(__dirname, '..', '..', 'data');
+const GENERATED_DIR = path.join(BUNDLED_DIR, 'generated');
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+/** Catálogo extraído dos arquivos do jogo (npm run d4data). Opcional. */
+function loadCatalog() {
+  try {
+    const uniques = readJson(path.join(GENERATED_DIR, 'uniques.json'));
+    const skills = readJson(path.join(GENERATED_DIR, 'skills.json'));
+    return { build: uniques.build, uniques: uniques.uniques, skills: skills.classes };
+  } catch {
+    return null;
+  }
 }
 
 /**
@@ -19,6 +32,7 @@ function readJson(file) {
 class DataStore {
   constructor(userDataDir) {
     this.cacheFile = path.join(userDataDir, 'data-cache.json');
+    this.catalog = loadCatalog();
     this.data = this.loadLocal();
   }
 
@@ -56,8 +70,13 @@ class DataStore {
     }
   }
 
+  /** Dados prontos para a UI: drops completados com o catálogo do jogo. */
   get() {
-    return this.data;
+    return {
+      ...this.data,
+      bosses: enrichBosses(this.data.bosses, this.catalog?.uniques),
+      catalog: this.catalog ? { build: this.catalog.build, skills: this.catalog.skills } : null,
+    };
   }
 }
 
