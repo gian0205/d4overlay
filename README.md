@@ -81,25 +81,31 @@ existem** nos arquivos do cliente (são do servidor) — detalhes em `docs/PESQU
 
 ## Builds do Maxroll
 
-Na aba *Build*, cole o link de um build do planner (maxroll.gg/d4/planner/<id>) em
-**Importar build do Maxroll**. O app lê o JSON público planners.maxroll.gg/profiles/d4/<id>
+Na aba *Build*, cole o link de um build do planner (`maxroll.gg/d4/planner/<id>`) em
+**Importar build do Maxroll**. O app lê o JSON público `planners.maxroll.gg/profiles/d4/<id>`
 (o mesmo usado pelo [Diablo4Companion](https://github.com/josdemmers/Diablo4Companion)) e:
 
 - transforma cada perfil do planner em uma fase do guia. Leveling vale até o nível 69;
   Starter/Midgame/Endgame viram Paragon 0/100/200; variantes (Push, Speedfarm, Pit, Uber…)
   ficam para escolha manual (botão tracejado);
-- monta o checklist: barra de skills, cada único (com o boss que dropa), cada aspecto
-  (Códex ou masmorra), peças de conjunto do talismã, runas e tabuleiros/glifos de Paragon;
-- guarda o build em %APPDATA%/d4overlay/imported-builds.json (botões *Atualizar do Maxroll*
+- monta o checklist: barra de skills, cada único (com o boss que dropa), **todos** os aspectos
+  de cada peça (inclusive os 2 do amuleto lendário e o do amuleto único), com a masmorra e a
+  região que liberam o aspecto no Códex ou "obtido por drop", selo mítico e peças de conjunto do
+  talismã, runas e a etapa de Paragon da fase (tabuleiros, glifo com nível e rotação);
+- guarda o build em `%APPDATA%/d4overlay/imported-builds.json` (botões *Atualizar do Maxroll*
   e *Remover* no guia).
 
 ## Nomes em português
 
+`npm run d4companion` baixa do Diablo4Companion (licença MIT) os arquivos enUS/ptBR de únicos,
+aspectos, runas, sigilos (masmorras) e Paragon e gera `data/generated/d4companion.json`. Com isso
+os drops e o equipamento dos builds aparecem em português, com o nome em inglês ao lado (útil
+para trade e guias). Dá para desligar em *Config*.
 
-pm run d4companion baixa do Diablo4Companion (licença MIT) os arquivos enUS/ptBR de únicos,
-aspectos, runas e Paragon e gera data/generated/d4companion.json. Com isso os drops e o
-equipamento dos builds aparecem em português, com o nome em inglês ao lado (útil para trade e
-guias). Dá para desligar em *Config*.
+Rode `npm run d4data` antes: o nome pt-BR de um único só é usado quando o nome em inglês confere
+com `data/generated/uniques.json`, porque o Diablo4Companion junta numa entrada só itens com o
+mesmo poder (ex.: Flameweaver e Bucrani's Grip). Nesses casos o nome fica em inglês e só o poder
+aparece em português. Os créditos e licenças estão em [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 ## Dados (importante)
 

@@ -25,5 +25,16 @@ if (fs.existsSync(path.join(generated, 'uniques.json'))) {
   });
   for (const w of warnings) console.warn(`aviso: ${w}`);
   if (process.argv.includes('--strict') && warnings.length) process.exit(1);
+
+  // informativo (não falha o --strict): lacunas conhecidas dos dados gerados
+  const uniques = require(path.join(generated, 'uniques.json')).uniques;
+  const placeholders = uniques.filter((u) => /\(PH\)/i.test(u.power ?? '')).map((u) => u.name);
+  if (placeholders.length) console.log(`info: ${placeholders.length} único(s) com poder provisório "(PH)" nos arquivos do jogo: ${placeholders.join(', ')}`);
+  const companionFile = path.join(generated, 'd4companion.json');
+  if (fs.existsSync(companionFile)) {
+    const companion = require(companionFile);
+    const noPt = uniques.filter((u) => !companion.uniques?.[u.id]?.namePt).map((u) => u.name);
+    if (noPt.length) console.log(`info: ${noPt.length} único(s) sem nome pt-BR confiável (ficam em inglês): ${noPt.join(', ')}`);
+  }
 }
 console.log('Dados OK');

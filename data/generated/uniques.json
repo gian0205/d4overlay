@@ -1,7 +1,7 @@
 {
  "build": "3.2.1.73552",
  "source": "https://github.com/DiabloTools/d4data",
- "generatedAt": "2026-09-22T20:48:05.897Z",
+ "generatedAt": "2026-09-22T23:29:36.414Z",
  "uniques": [
   {
    "id": "Boots_Unique_Barb_100",
@@ -12,7 +12,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "When activating or refreshing the full Walking Arsenal Key Passive effect, you automatically cast Ground Stomp and gain # Fury. Can only occur once every # seconds.",
+   "power": "Ground Stomp's damage is increased by #% plus an additional amount based on the distance traveled since the last casted Ground Stomp's, up to #%.",
    "flavor": "\"While many Barbarians remained in the Dreadlands, small groups from the Oxen, Crane, and Bear tribes instead chose to search the land for a new home.\" -A History of the Children of Bul-Kathos"
   },
   {
@@ -24,7 +24,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Companion Skills each gain 1 additional |4companion:companions; and deal # bonus damage.\n\nGain the Passive Effect of Ravens, Wolves and Poison Creeper for free.",
+   "power": "Your Companion Skills each gain 1 additional companions and deal #% bonus damage.\n\nGain the Passive Effect of Ravens, Wolves and Poison Creeper for free.",
    "flavor": "You do not see your reflection on the ring's polished surface. Instead, you see other forms: creatures of fur and feather, of fang and claw."
   },
   {
@@ -36,7 +36,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Ae'grom and its summons deal # increased damage. You additionally summon Ae'grom's other half and gain a second Charge of Command Ae'grom.",
+   "power": "Ae'grom and its summons deal #% increased damage. You additionally summon Ae'grom's other half and gain a second Charge of Command Ae'grom.",
    "flavor": "\"Cut a demon nice and wide. Something rises from inside. Eye and fang, bone and sinew. What was one has become two.\" -Ravings of a mad Vizjerei"
   },
   {
@@ -61,7 +61,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Storm Strike chains to twice as many targets and gains # bonus damage.",
+   "power": "Storm Strike chains to twice as many targets and gains #% bonus damage.",
    "flavor": "\"When I was born, I breathed in the wind and the storm and they gave me life. When I die, I will breath out, and return that gift to the skies.\"\n- Journal excerpt"
   },
   {
@@ -73,7 +73,7 @@
    "slot": "Sword2H",
    "slotPt": "Espada de 2 mãos",
    "mythic": false,
-   "power": "Hitting enemies with a Core Skill increases the damage they take from you by # per Skill, up to #. Archfiend Demonform Skill Variants are Core Skills and cost Wrath.",
+   "power": "Hitting enemies with a Core Skill increases the damage they take from you by #% per Skill, up to #%. Archfiend Demonform Skill Variants are Core Skills and cost Wrath.",
    "flavor": "Hatred begins the first cut. Terror holds the wound. Destruction comes at last, patient and certain, to devour what remains."
   },
   {
@@ -85,7 +85,7 @@
    "slot": "Axe2H",
    "slotPt": "Machado de 2 mãos",
    "mythic": false,
-   "power": "Steel Grasp launches 2 additional chains. Enemies hit by Steel Grasp take # increased damage from you for # seconds.",
+   "power": "Enemies hit by Steel Grasp take #% increased damage from you for # seconds.",
    "flavor": "\"Weapons wielded by the fiercest warriors often catch the eye of the Ancient spirits. If the wielder is worthy, the spirits may bless the steel with their strength.\" -Gerti, Oxen Tribe Forgemaster"
   },
   {
@@ -95,7 +95,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": true,
-   "power": "Lucky Hit: Up to a # chance to trigger a poison nova that deals # of the damage dealt over # seconds to enemies in the area.",
+   "power": "Lucky Hit: Up to a #% chance to trigger a poison nova that deals #% of the damage dealt over # seconds to enemies in the area.",
    "flavor": "The horrific whispers of the Maiden of Anguish flicker through your mind, pushing you ever closer to madness..."
   },
   {
@@ -107,7 +107,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Rally Fortifies you for # of your Maximum Life. Whenever you recover # of your Maximum Life, gain a charge of Rally.",
+   "power": "Rally Fortifies you for #% of your Maximum Life. Whenever you recover #% of your Maximum Life, gain a charge of Rally.",
    "flavor": "No wasteland may weary the bearer of Arcadia. Beneath their path, the soil remembers its first spring, and blades of war soften into petals."
   },
   {
@@ -119,7 +119,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Arbiter's Evade triggers a random equipped non-Channeled Core Skill for every # meters traveled.\n\nCore Skills deal # increased damage during Arbiter's Evade and for # seconds after.",
+   "power": "Arbiter's Evade triggers a random equipped non-Channeled Core Skill for every # meters traveled.\n\nCore Skills deal #% increased damage during Arbiter's Evade and for # seconds after.",
    "flavor": "\"And the moon looked upon the pilgrims and wept a path of light. Through her tears they walked unseen, and night remembered them no more.\" - Orison XVII: Creed of the Dove"
   },
   {
@@ -133,7 +133,7 @@
    "slot": "Polearm",
    "slotPt": "Arma de haste",
    "mythic": false,
-   "power": "Gain # Deadly Strike Chance. Your Deadly Strikes deal # increased damage.",
+   "power": "Gain #% Deadly Strike Chance. Your Deadly Strikes deal #% increased damage.",
    "flavor": "For decades, the spearhead lay encased in resin, warded with runes, and sealed in a block of granite. So feared was the venom infused in its tip, taken from the fang of a great spider, long extinct."
   },
   {
@@ -145,7 +145,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Your Ancients are empowered:\n\nKorlic creates an Earthquake that deals # Physical damage over # seconds when he leaps.\nTalic leaves behind Dust Devils that deal # damage while he whirlwinds.\nMadawc ignites the earth, Burning enemies for an additional # damage over # seconds when he upheaves the ground.",
+   "power": "Your non-Ultimate Skills that summon Ancients will now summon an additional one. Skills that summon Ancients deal #% increased damage.",
    "flavor": "\"Rise clansmen and reclaim our trampled honor! Ancients' blood runs through us all! We are storms: earth breaking, maelstrom wielding. The fire of the gods burn still! They are with us!\" -Ealda"
   },
   {
@@ -157,7 +157,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Hits with this weapon increase your Attack Speed by # and damage by # for # seconds, up to # and # respectively.",
+   "power": "Hits with this weapon increase your Attack Speed by #% and damage by #% for # seconds, up to #% and #% respectively.",
    "flavor": "When Caldeum's gates closed, Asheara led her Iron Wolves out of the city knowing full well they would never return. Instead they roamed Kehjistan pledging their blades to any who were in need."
   },
   {
@@ -169,7 +169,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Mobility Skills are always Shadow Imbued with # increased potency.\n\nLucky Hit: Damaging an Elite or Boss with a Mobility Skill has up to a # chance to instantly trigger a free Shadow Imbuement explosion.",
+   "power": "Mobility Skills are always Shadow Imbued with #% increased potency.\n\nLucky Hit: Damaging an Elite or Boss with a Mobility Skill has up to a #% chance to instantly trigger a free Shadow Imbuement explosion.",
    "flavor": "The Viz-Jaq'taar descended on the mages indiscriminately and silently as a plague. The wise took flight, whilst the foolish fortified their dwellings as if walls or wards protected from shadow."
   },
   {
@@ -181,7 +181,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Wind Shear now deals # Poisoning damage over # seconds.\n\nLucky Hit: Wind Shear has up to a # chance to restore # Spirit.",
+   "power": "Wind Shear now deals # Poisoning damage over # seconds.\n\nLucky Hit: Wind Shear has up to a #% chance to restore # Spirit.",
    "flavor": "\"Lo, Éirin has departed, she wanders with us no longer. May her peace be everlasting under the branches of Glór-an-Fháidha.\" -Inscription at Túr Dúlra"
   },
   {
@@ -193,7 +193,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Casting Chain Lightning has a # chance to activate # to # additional times.",
+   "power": "Casting Chain Lightning has a #% chance to activate # to # additional times.",
    "flavor": "\"Do not confuse your manipulation of lightning as control. The azure flame is its own master and needs no hand to wield it. You are merely a conduit for its chaos.\" -Ascribed to the mage Woh"
   },
   {
@@ -211,7 +211,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "After Freeze expires, enemies take # of the damage you dealt to them while Frozen.",
+   "power": "After Freeze expires, enemies take #% of the damage you dealt to them while Frozen.",
    "flavor": "The ancient runeblade of the angel Izual, Azurewrath was miraculously spared the corruption that consumed its master."
   },
   {
@@ -223,7 +223,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Your Casts damage Close enemies for # of your Thorns and also deals # of this damage as Poisoning over # seconds.\n\nEach time you've retaliated with Thorns, for # seconds the Poisoning damage is increased by #, up to #.",
+   "power": "Your Casts damage Close enemies for #% of your Thorns and also deals #% of this damage as Poisoning over # seconds.\n\nEach time you've retaliated with Thorns, for # seconds the Poisoning damage is increased by #%, up to #%.",
    "flavor": "\"Know the dangers of fang and root. One hides in the leaf, the berry, the still water. The other waits in the bite, the stinger, the wound.\" - Teachings of Balazan, Verse III"
   },
   {
@@ -235,7 +235,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Casting Evade consumes # |4stack:stacks; of Resolve to increase your damage dealt by # for # seconds.\n\nGain Armored Hide's Passive Effect.",
+   "power": "Casting Evade consumes # stacks of Resolve to increase your damage dealt by #% for # seconds.\n\nGain Armored Hide's Passive Effect.",
    "flavor": "A gentle whisper glides upon the winds. The words elude the grasp of mortal ken. They weave through the soul like a melody forgotten, and from this arises a name: Adarja, the First-Breather."
   },
   {
@@ -247,7 +247,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Lucky Hit: Poison or Cold Imbued Skills have up to a # chance to deploy a Poison Trap while it is equipped, depending on your equipped Poison Trap's element.\n\nPoison Trap gains the Infiltrator Variant for free and deals # increased damage.",
+   "power": "Lucky Hit: Poison or Cold Imbued Skills have up to a #% chance to deploy a Poison Trap while it is equipped, depending on your equipped Poison Trap's element.\n\nPoison Trap gains the Infiltrator Variant for free and deals #% increased damage.",
    "flavor": "From the stump of the Blood Rose oozes a foul and black ichor—bane to flesh and blood. Blade and hide treated in the toxics are worth the fortunes of kings."
   },
   {
@@ -259,7 +259,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Every # seconds, your next Mighty Throw detonates its pulses instantly as Fire Damage and deals # increased damage.",
+   "power": "While channeling Whirlwind, you now periodically hurl out a Mighty Throw that deals #% increased damage.",
    "flavor": "Before Baal's hosts blighted Daken-Shar, the outnumbered northmen clad themselves in barbed mail so that even in death, the demons still bled."
   },
   {
@@ -275,7 +275,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "After you spend # of your Primary Resource, gain # stacks of Overpower. Consuming Overpower increases your Critical Strikes damage by # for # seconds.",
+   "power": "After you spend # of your Primary Resource, gain # stacks of Overpower. Consuming Overpower increases your Critical Strikes damage by #% for # seconds.",
    "flavor": "\"His name has been lost to history, but to have been exiled from a land as cursed as Hawezar, his deeds must have been truly depraved.\"\n- Scholar's Notes"
   },
   {
@@ -287,7 +287,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Blocking has a # chance to retaliate with a Shield Bash. Your Shield Bash damage is increased by #.",
+   "power": "Blocking has a #% chance to retaliate with a Shield Bash. Your Shield Bash damage is increased by #%.",
    "flavor": "...And when the enemy pressed too near, his bulwark became a hammer."
   },
   {
@@ -299,7 +299,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Frenzy gains the Barrage Variant for free and can stack # additional times. While at maximum stacks, you deal # increased damage and your other Skills gain # increased Attack Speed.",
+   "power": "Frenzy gains the Barrage Variant for free and can stack # additional times. While at maximum stacks, you deal #% increased damage and your other Skills gain #% increased Attack Speed.",
    "flavor": "\"The change that overtook my brother in battle was terrifying. His eyes turned hard like diamonds, and the way he moved... it was like he was dancing to music only he could hear.\"\n- Captain Dervin"
   },
   {
@@ -311,7 +311,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "When you Cast a non-Channeled Ultimate Skill, it Consumes all of your Energy and deals # increased damage per Energy Consumed.\n\nUsing a Cooldown restores # Energy.",
+   "power": "When you Cast a non-Channeled Ultimate Skill, it Consumes all of your Energy and deals #% increased damage per Energy Consumed.\n\nUsing a Cooldown restores # Energy.",
    "flavor": "\"Genai grew proud and fond of boasting of her hunting prowess. She claimed she was fast enough to catch even the spirit Leraye, who cursed her for such an insult.\"\n- Fable of Genai's Twenty Trials"
   },
   {
@@ -321,7 +321,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Lucky Hit: Up to a # chance to Moo when hitting an enemy.\n\nLucky Moo: Up to a # chance to summon a Cow that explodes for # Fire damage. This damage is increased by # on Tuesdays.",
+   "power": "Lucky Hit: Up to a #% chance to Moo when hitting an enemy.\n\nLucky Moo: Up to a #% chance to summon a Cow that explodes for # Fire damage. This damage is increased by #% on Tuesdays.",
    "flavor": "\"The fever racks my body. It dances... rhythmless, endless! I fear there is but one remedy. MORE! I must hear more...\" -Lester the Farmer"
   },
   {
@@ -333,7 +333,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Casting Dark Prison consumes # of your Maximum Life to reset its Cooldown. You gain # Damage Reduction while Dark Prison is active.",
+   "power": "Casting Dark Prison consumes #% of your Maximum Life to reset its Cooldown. You gain #% Damage Reduction while Dark Prison is active.",
    "flavor": "\"What is more perfect than blood? A single drop can consecrate, empower, or curse. Know this: The most potent form is not blood stolen from others, but given from one's self.\" -Elias"
   },
   {
@@ -345,7 +345,7 @@
    "slot": "Scythe",
    "slotPt": "Foice",
    "mythic": false,
-   "power": "Corpse Explosion consumes up to # additional Corpses around the initial Corpse, gaining # damage and # Size per additional Corpse consumed.",
+   "power": "Corpse Explosion consumes up to # additional Corpses around the initial Corpse, gaining #% damage and #% Size per additional Corpse consumed.",
    "flavor": "\"The scrolls describe a river of tar that separated the living from the land of the dead. Any unfortunate soul who tried to cross would be dragged down into oblivion.\" -Notes of Scholar Kamien"
   },
   {
@@ -369,7 +369,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Your Summons have a # chance to randomly inflict Decrepify or Iron Maiden when they deal damage.\n\nYou deal # increased Critical Strike Damage to enemies affected by your Curses.",
+   "power": "Your Summons have a #% chance to randomly inflict Decrepify or Iron Maiden when they deal damage.\n\nYou deal #% increased Critical Strike Damage to enemies affected by your Curses.",
    "flavor": "A naturally occurring curiosity, the blood moon persists as a sign of woe for the most superstitious Zakarum faithful. Children born under it are often considered cursed and cast out, lest it spread."
   },
   {
@@ -381,7 +381,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Blood Mist casts Corpse Explosion on surrounding Corpses. When Blood Mist detonates a Corpse, its Cooldown is reduced by # second and you gain # increased Movement Speed for # seconds.",
+   "power": "Blood Mist casts Corpse Explosion on surrounding Corpses. When Blood Mist detonates a Corpse, its Cooldown is reduced by # second and you gain #% increased Movement Speed for # seconds.",
    "flavor": "\"These Priests of Rathma are quite peculiar. Is it possible to dabble in the forbidden yet uphold Balance? Too often, the power of such magic leads to corruption.\" –The Writings of Abd al-Hazir"
   },
   {
@@ -391,7 +391,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "You are always Berserking but take # increased damage as Burning over # seconds. While Burning, Berserking grants an additional # increased damage.",
+   "power": "You are always Berserking but take #% increased damage as Burning over # seconds. While Burning, Berserking grants an additional #% increased damage.",
    "flavor": "\"The relic was fashioned for the broken-hearted and the battle-mad, for those whose rage has nowhere left to dwell.\" - Notes from Sister Octavia on the Burnt Knights"
   },
   {
@@ -403,7 +403,7 @@
    "slot": "Scythe2H",
    "slotPt": "Foice de 2 mãos",
    "mythic": false,
-   "power": "Your Darkness Skills Chill enemies for up to # and deal # increased damage to Frozen enemies and bosses.\n\nEvery # times you damage enemies with Darkness Skills, all Nearby enemies are Feared for # seconds before Freezing for # more seconds.",
+   "power": "Your Darkness Skills Chill enemies for up to #% and deal #% increased damage to Frozen enemies and bosses.\n\nEvery # times you damage enemies with Darkness Skills, all Nearby enemies are Feared for # seconds before Freezing for # more seconds.",
    "flavor": "\"My companion swung her odd weapon in a wide arc, and our pursuer stopped short. The look of horror on his face as his body fell to pieces will haunt me forever.\" -The Ebon Pages, Canto II, Verse XI"
   },
   {
@@ -415,7 +415,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Skills that form Ice Spikes deal # increased damage.\n\nLucky Hit: Up to a # chance to form an exploding Ice Spike, dealing # Cold damage.",
+   "power": "Skills that form Ice Spikes deal #% increased damage.\n\nLucky Hit: Up to a #% chance to form an exploding Ice Spike, dealing # Cold damage.",
    "flavor": "\"Her lover's spirit faded, and in her sorrow she wept frozen tears. Where they fell, roses of the purest ice would blossom each winter.\"\n- Greenslade's Tales, Chapter 7: \"The Myth of Irina Coldheart\""
   },
   {
@@ -427,7 +427,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Your Brimstones and Molten Bomb deal # increased damage. Molten Bomb explodes all Brimstones instantly if there are at least 4 total but enemy proximity no longer detonates them.",
+   "power": "Your Brimstones and Molten Bomb deal #% increased damage. Molten Bomb explodes all Brimstones instantly if there are at least 4 total but enemy proximity no longer detonates them.",
    "flavor": "\"Destruction can be become an addiction, it is said. The first taste of it leaves you wanting more. Something within us craves ruin, yearns for annihilation.\" -Black Book of Lam Esen"
   },
   {
@@ -439,7 +439,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Casting Fire Bolt through your Firewall causes it to split into # bolts, each dealing # increased damage.",
+   "power": "Casting Fire Bolt through your Firewall causes it to split into # bolts, each dealing #% increased damage.",
    "flavor": "\"Kin of Bo'a, beloved of Bucrani,\nWhose path led into the wine-dark pasture.\nThe victor's sword swings for this alone,\nTo lop off all thought and memory–a final mercy.\"\nLow of Bo'a, Verse 50-54"
   },
   {
@@ -451,7 +451,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Casting Chain Lightning has a # chance to activate # to # additional times.",
+   "power": "Casting Chain Lightning has a #% chance to activate # to # additional times.",
    "flavor": "\"...In those days, the children of Bucrani were known to many. Great was their sway, and mighty was their squall! How could any realm hold such strong souls?\" -Oxridge, Common Histories, fragment II"
   },
   {
@@ -463,7 +463,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Your Critical Strike Chance is increased by # of your Movement Speed bonus.\n\nCurrent Bonus: #",
+   "power": "Your Critical Strike Chance is increased by #% of your Movement Speed bonus.\n\nCurrent Bonus: #%",
    "flavor": "\"Changing, consuming, becoming: this is the way of all life.\nI give myself to you, my children, so that you may live.\"\nLow of Bo'a, Verse 112-113"
   },
   {
@@ -475,7 +475,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Teleport pulls Close enemies to you and you gain # Damage Reduction for # seconds.",
+   "power": "Teleport pulls Close enemies to you and you gain #% Damage Reduction for # seconds.",
    "flavor": "The leather feels warm to the touch, as through life clings to it. A divine purpose still trembles in each fold."
   },
   {
@@ -487,7 +487,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Your Evade transforms you into an angry Lunatic for up to # seconds that explodes dealing Command Fallen's Base damage and you gain # increased Command Fallen damage every second you are transformed.\n\nWhile you are an angry Lunatic, your Movement speed is increased by # and you periodically spawn a Mini Lunatic that seeks enemies.\n\nCommand Fallen deals # increased damage.",
+   "power": "Your Evade transforms you into an angry Lunatic for up to # seconds that explodes dealing Command Fallen's Base damage and you gain #% increased Command Fallen damage every second you are transformed.\n\nWhile you are an angry Lunatic, your Movement speed is increased by #% and you periodically spawn a Mini Lunatic that seeks enemies.\n\nCommand Fallen deals #% increased damage.",
    "flavor": "\"Sin begets sins as men beget men. Terror begets Hate and Hate begets Destruction. Destruction begets Terror as Terror begets Hate...\" -Inscription carved inside the helm"
   },
   {
@@ -499,7 +499,7 @@
    "slot": "Bow",
    "slotPt": "Arco",
    "mythic": false,
-   "power": "Your Arrow Storms last # seconds shorter, deal # increased damage, and, when created, have a # chance to create an additional Arrow Storm on a nearby target.",
+   "power": "Your Arrow Storms last # seconds shorter, deal #% increased damage, and, when created, have a #% chance to create an additional Arrow Storm on a nearby target.",
    "flavor": "\"Tell us, Oracle Queen, of our great Amazon Sister, who wandered far from her home into the Heart of Terror.\" -Ode to the Warmatron"
   },
   {
@@ -511,7 +511,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Consuming Judgement # times calls down Spear of the Heavens on a random enemy. Judgement on Bosses counts as #.\n\nYour Spear of the Heavens damage is increased by #.",
+   "power": "Consuming Judgement # times calls down Spear of the Heavens on a random enemy. Judgement on Bosses counts as #.\n\nYour Spear of the Heavens damage is increased by #%.",
    "flavor": "Sing. And so too will they sing. Rejoice. And so too will they rejoice. Fight. And so too will they fight."
   },
   {
@@ -523,7 +523,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Casting a damaging Brawling Skill disables it afterwards. When all of these Skills that are on your Action Bar are disabled, they become re-enabled with their Cooldowns refreshed. Brawling Skills you Cast deal # increased damage for each disabled Skill.",
+   "power": "Casting a damaging Brawling Skill disables it afterwards. When all of these Skills that are on your Action Bar are disabled, they become re-enabled with their Cooldowns refreshed. Brawling Skills you Cast deal #% increased damage for each disabled Skill.",
    "flavor": "To chain the kin of Bul-Kathos is to gift them a weapon."
   },
   {
@@ -535,7 +535,7 @@
    "slot": "Bow",
    "slotPt": "Arco",
    "mythic": false,
-   "power": "# chance to cluck on Cast.",
+   "power": "#% chance to cluck on Cast.",
    "flavor": "This bow has been tainted by some strange magic indeed."
   },
   {
@@ -560,7 +560,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Your Core Skills deal # increased damage for # seconds when Consuming 3 Combo Points. Casting Basic Skills always generates 3 Combo Points.\n\nGenerating Combo Points allows you to generate the same amount of Combo Points for # |4second:seconds; when you spend them.",
+   "power": "Your Core Skills deal #% increased damage for # seconds when Consuming 3 Combo Points. Casting Basic Skills always generates 3 Combo Points.\n\nGenerating Combo Points allows you to generate the same amount of Combo Points for # seconds when you spend them.",
    "flavor": "\"I've never seen such ruthless butchery. He deserves to be shipped off to die in the swamps with the rest of the godless murderers.\"\n- Witness to the murder of Sergeant Walcot"
   },
   {
@@ -574,7 +574,7 @@
    "slot": "Polearm",
    "slotPt": "Arma de haste",
    "mythic": false,
-   "power": "Lucky Hit: Damage to Injured enemies has up to a # chance to spawn a flock of explosive chickens.",
+   "power": "Lucky Hit: Damage to Injured enemies has up to a #% chance to spawn a flock of explosive chickens.",
    "flavor": "Mercy ends where the flock begins."
   },
   {
@@ -586,7 +586,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Hex dooms enemies, maintaining the Hex and dealing # of Doom's damage every second until they die. Doom deals # increased damage.",
+   "power": "Hex dooms enemies, maintaining the Hex and dealing #% of Doom's damage every second until they die. Doom deals #% increased damage.",
    "flavor": "\"The doomed do not fall at once. They linger, falter in purpose, and then unravel. Breath shortens. Will erodes. Fortune abandons them. When death finally comes, 'tis merely overdue.\" -Warlord Bartuc"
   },
   {
@@ -598,7 +598,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Lucky Hit: Imbued Skills have up to a # chance to trigger a large explosion, dealing # of the damage dealt and applying the Imbuement effect to each enemy it hits with # Potency.",
+   "power": "Lucky Hit: Imbued Skills have up to a #% chance to trigger a large explosion, dealing #% of the damage dealt and applying the Imbuement effect to each enemy it hits with #% Potency.",
    "flavor": "\"He is banished from the Guild, his name stricken from the Book. His punishment is to never have been.\"\n- Excerpt from a burned parchment"
   },
   {
@@ -610,7 +610,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Direct damage is distributed as Poisoning over the next # seconds and reduced by #.\n\nLucky Hit: Direct damage has up to a # chance based on your Poisoned Life percentage to infect an enemy with Touch of Death.",
+   "power": "Direct damage is distributed as Poisoning over the next # seconds and reduced by #%.\n\nLucky Hit: Direct damage has up to a #% chance based on your Poisoned Life percentage to infect an enemy with Touch of Death.",
    "flavor": "T'an seized a spear and drove it thrice into his mad brother Tan. Alas, the craftier of the twin gods wove one last cunning snare. In place of blood, the wound wept venom and consumed all in its wake."
   },
   {
@@ -620,7 +620,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Each time you use a Skill with a Primary Resource Cost, gain # increased damage and Resource Cost is increased by # for # seconds, stacking up to # times.",
+   "power": "Each time you use a Skill with a Primary Resource Cost, gain #% increased damage and Resource Cost is increased by #% for # seconds, stacking up to # times.",
    "flavor": "The prince of Hatred, fair as maggots over carrion. He claims no throne, crafts no realms, reigning over only a blackened, bitter heart. Some legends name him banished, while others dread his return."
   },
   {
@@ -632,7 +632,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Casting Blood Surge picks up # Blood Orbs around you to expel smaller blood novas, dealing # of normal damage.",
+   "power": "Casting Blood Surge picks up # Blood Orbs around you to expel smaller blood novas, dealing #% of normal damage.",
    "flavor": "In the blood dancer's grasp, a victim lies,\nA vessel dried 'neath darkened skies.\nTheir life extinguished, veins burst and drained,\nIn Cruor's embrace, forever enchained."
   },
   {
@@ -644,7 +644,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Debilitating Roar is now a Werewolf Skill. In addition, Debilitating Roar increases your damage by # while in Werewolf form for the duration.",
+   "power": "Debilitating Roar is now a Werewolf Skill. In addition, Debilitating Roar increases your damage by #% while in Werewolf form for the duration.",
    "flavor": "\"They who live by fang and claw forget the feeling of human feet on soil. Of cold air on bare skin. Man and beast...thoughts, desires...merge together like blood spilled in a stream.\" -Nafain"
   },
   {
@@ -656,7 +656,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Casting a Skill with a Two-Handed Bludgeoning, Two-Handed Slashing, or Dual-Wielded weapon grants # increased damage for # seconds.\n\nWhile all three bonuses are active, you gain # Crowd Control Duration and Attack Speed.",
+   "power": "Casting a Skill with a Two-Handed Bludgeoning, Two-Handed Slashing, or Dual-Wielded weapon grants #% increased damage for # seconds.\n\nWhile all three bonuses are active, you gain #% Crowd Control Duration and Attack Speed.",
    "flavor": "\"Tried dying once. Didn't care for it.\" -Renit the Dark Stalker"
   },
   {
@@ -668,7 +668,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Holy Light's passive now deals # Fire Damage every second in a small area around you. Each time an enemy dies within this aura, it increases its damage by # and burn area by # for # seconds, up to # times.\n\nActivating Holy Light Aura refreshes this duration.",
+   "power": "Holy Light's passive now deals # Fire Damage every second in a small area around you. Each time an enemy dies within this aura, it increases its damage by #% and burn area by #% for # seconds, up to # times.\n\nActivating Holy Light Aura refreshes this duration.",
    "flavor": "\"Kindle your inner flame. With it, we are the dawn that breaks the night.\" - Paladin Justelle"
   },
   {
@@ -680,7 +680,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Dance of Knives drops knives from enemies hit. Picking them up grants you # Energy and increases your Dance of Knives damage by # for # seconds, stacking up to # times.",
+   "power": "Dance of Knives drops knives from enemies hit. Picking them up grants you # Energy and increases your Dance of Knives damage by #% for # seconds, stacking up to # times.",
    "flavor": "\"The assassin moved as though in a dance - left, pivot, cut. The guests did not realize they had been split until their screams gurgled through the slits in their necks.\" - An Account at the Red Feast"
   },
   {
@@ -692,7 +692,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Your maximum number of Skeleton Warriors is increased by #. Skeleton Warriors cleave with their attacks and deal # increased damage.\n\nCommanding them onto a target increases the damage that target takes from your Skeleton Warriors by #.",
+   "power": "Your maximum number of Skeleton Warriors is increased by #. Skeleton Warriors cleave with their attacks and deal #% increased damage.\n\nCommanding them onto a target increases the damage that target takes from your Skeleton Warriors by #%.",
    "flavor": "\"There is something akin to desire that I have sensed in the dead. A longing to serve, to be of purpose in their new state of being. Do not deny them that purpose.\" -Books of Kalan"
   },
   {
@@ -704,7 +704,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Critical Strikes with Bone Spear form an echo that bursts, dealing # of its normal damage.\n\nBone Spear deals # increased Critical Strike Damage.",
+   "power": "Critical Strikes with Bone Spear form an echo that bursts, dealing #% of its normal damage.\n\nBone Spear deals #% increased Critical Strike Damage.",
    "flavor": "\"Rathma is endless. He was the first Ancient, and will remain at the end. He is the master of the Great Cycle of Being. When Death comes for him, why should he fear it?\" -Vauntus, Acolyte of Rathma"
   },
   {
@@ -716,7 +716,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Flurry gains the Transporter Variant for free. You can now overexert yourself while Casting Flurry, spending # life when you don't have enough Energy. Spending life to Cast Flurry increases its damage by # and your Attack Speed by # for # seconds.",
+   "power": "Flurry gains the Transporter Variant for free. You can now overexert yourself while Casting Flurry, spending #% life when you don't have enough Energy. Spending life to Cast Flurry increases its damage by #% and your Attack Speed by #% for # seconds.",
    "flavor": "Beware, for the serpent's spirit lingers. Those who don the Nirmitruq's visage may find their hearts entwined with the viper's wrath."
   },
   {
@@ -728,7 +728,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Blood Surge casts a mini nova on your Minions, dealing # damage. Damage is increased by # per target drained by the initial cast, up to #.",
+   "power": "Blood Surge casts a mini nova on your Minions, dealing # damage. Damage is increased by #% per target drained by the initial cast, up to #%.",
    "flavor": "Once a sanctum for Rathma's studies, the Temple of the Deathspeaker became a proving grounds for potential leaders of his priesthood. Its halls are filled with the corpses of those who failed."
   },
   {
@@ -740,7 +740,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Evading leaves behind Caltrops. Caltrops gain # increased Size and deal # increased damage.",
+   "power": "Evading leaves behind Caltrops. Caltrops gain #% increased Size and deal #% increased damage.",
    "flavor": "\"My feet do not ache—there is no greater pain than stopping.\nInto the Abyss I go. I will find her. I will bring her home.\nHell cannot keep me from her, but it is welcome to try.\"\n- Unknown"
   },
   {
@@ -752,7 +752,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Storm Skills that you Cast grant # Spirit and deal # bonus damage. These bonuses are doubled when damaging a Vulnerable, Immobilized or Slowed enemy.",
+   "power": "Storm Skills that you Cast grant # Spirit and deal #% bonus damage. These bonuses are doubled when damaging a Vulnerable, Immobilized or Slowed enemy.",
    "flavor": "\"I saw her climb to the peak of the mountains. She played a song on her talharpa, so sad it made the sky darken and rumble with thunder.\" -A History of Scosglen, Chapter IV"
   },
   {
@@ -764,7 +764,7 @@
    "slot": "Axe2H",
    "slotPt": "Machado de 2 mãos",
    "mythic": false,
-   "power": "Your Basic Skills deal # increased damage per Wrath you have but you lose # Wrath per second. Every # Wrath gained beyond your Maximum generates # Dominance.",
+   "power": "Your Basic Skills deal #% increased damage per Wrath you have but you lose #% Wrath per second. Every # Wrath gained beyond your Maximum generates # Dominance.",
    "flavor": "\"I am the voice of vengeance unsated. Brandish me and my enmity shall walk with thine. Thy grief is thy tithe. My dirge, the dread reward.\""
   },
   {
@@ -776,7 +776,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Boulder deals # increased damage and explodes when it expires.",
+   "power": "Boulder deals #% increased damage and explodes when it expires.",
    "flavor": "As the hateful mob beat on his door, he gripped the pulsing shard tightly and screamed for calm. When he opened his eyes, all that greeted him was silence and the blood-smeared ruins of his cottage."
   },
   {
@@ -794,7 +794,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": true,
-   "power": "Lucky Hit: Up to a # chance to deal # Shadow damage to surrounding enemies and reduce their damage dealt by # for # seconds.",
+   "power": "Lucky Hit: Up to a #% chance to deal # Shadow damage to surrounding enemies and reduce their damage dealt by #% for # seconds.",
    "flavor": "Whenever this ancient sword has reappeared throughout history, it portends a time of great strife, as well as a devastating loss of life."
   },
   {
@@ -806,7 +806,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Casting Pyromancy Skills Burns you for # of your Maximum Life over # seconds. You inflict # increased Burning damage based on how much of your Life is Burning.",
+   "power": "Casting Pyromancy Skills Burns you for #% of your Maximum Life over # seconds. You inflict #% increased Burning damage based on how much of your Life is Burning.",
    "flavor": "Made from the finger of a silver-haired mage"
   },
   {
@@ -818,7 +818,7 @@
    "slot": "Bow",
    "slotPt": "Arco",
    "mythic": false,
-   "power": "Penetrating Shot bounces off walls and deals # more damage.",
+   "power": "Penetrating Shot bounces off walls and deals #% more damage.",
    "flavor": "\"Scholars have been unable to decipher the runes carved into this bow, however all agree they are related to its uncanny ability to bend arrows towards their targets.\"\n- Barrett's Book of Implements"
   },
   {
@@ -830,7 +830,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Casts of Landslide leave behind Tectonic Spikes that deal # Physical damage over # seconds.\n\nSpawning a Landslide pillar within Tectonic Spikes has a # chance to spawn two instead.",
+   "power": "Casts of Landslide leave behind Tectonic Spikes that deal # Physical damage over # seconds.\n\nSpawning a Landslide pillar within Tectonic Spikes has a #% chance to spawn two instead.",
    "flavor": "When Arreat was sundered, the world quaked. The Druid Aglainn journeyed far to chronicle the aftermath. Grief-stricken by the great mountain king's fall, he rent the earth anew."
   },
   {
@@ -842,7 +842,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Blight also shoots # smaller piercing projectiles, each dealing # of Blight's defiled area damage.",
+   "power": "Blight also shoots # smaller piercing projectiles, each dealing #% of Blight's defiled area damage.",
    "flavor": "This talisman was the life's work of Deathspeaker Jurdann. Following his premature demise, Jurdann's successor wore the amulet in tribute as they trialed against the Temple of the Deathspeaker."
   },
   {
@@ -854,7 +854,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "You deal # increased damage to Vulnerable enemies.\n\nAfter making an enemy Vulnerable, your next direct damage dealt to them:\nHeals you for # of your Maximum Life\nGenerates # Vigor\nRemoves the Vulnerable effect",
+   "power": "You deal #% increased damage to Vulnerable enemies.\n\nAfter making an enemy Vulnerable, your next direct damage dealt to them:\nHeals you for #% of your Maximum Life\nGenerates # Vigor\nRemoves the Vulnerable effect",
    "flavor": "\"Strike once to expose weakness, strike again to exploit it.\" -Teachings of Ysevete, the First Spiritborn"
   },
   {
@@ -909,7 +909,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Blazing Scream is now an Archfiend Skill and deals # increased damage. Blazing Scream gains the Skull Splitter Variant for free and the Lesser Demon skulls deal the same damage as the main skull.",
+   "power": "Blazing Scream is now an Archfiend Skill and deals #% increased damage. Blazing Scream gains the Skull Splitter Variant for free and the Lesser Demon skulls deal the same damage as the main skull.",
    "flavor": "Weave a song from the damned. Pluck their sorrows like harp strings, for there is fuel in the tears of the profane."
   },
   {
@@ -921,7 +921,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Overpower increases your Pyromancy Skill damage by # and size, Mana cost and Cooldowns by #.",
+   "power": "Overpower increases your Pyromancy Skill damage by #% and size, Mana cost and Cooldowns by #%.",
    "flavor": "The greatest power is often the shortest lived."
   },
   {
@@ -933,7 +933,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Berserking's damage bonus is increased by #. While not Healthy, you are always Berserk.",
+   "power": "Berserking's damage bonus is increased by #%. While not Healthy, you are always Berserk.",
    "flavor": "An old mark of office from the town of Staalbreak, in the Dreadlands. The rage of its last owner still emanates from within."
   },
   {
@@ -943,7 +943,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "When you would be damaged for at least #% of your Maximum Life at once, it is instead distributed over the next # seconds and reduced by #.",
+   "power": "When you would be damaged for at least #% of your Maximum Life at once, it is instead distributed over the next # seconds and reduced by #%.",
    "flavor": "Despite the Light's blessings, countless Knights Penitent were hewn apart by the infernal hordes. Remnants of their steel lie scattered through the Hells – dwindling lights in the chaos."
   },
   {
@@ -955,7 +955,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Crackling Energy's discharge rate is increased by your Attack Speed, it's damage is increased by #, and each hit has a # chance to reduce a random Cooldown by # second.",
+   "power": "Crackling Energy's discharge rate is increased by your Attack Speed, it's damage is increased by #%, and each hit has a #% chance to reduce a random Cooldown by # second.",
    "flavor": "The only thing more potent than Esadora's magic was her endless hatred of humanity. As she lay dying, the pale amulet around her neck drank in both."
   },
   {
@@ -967,7 +967,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Your Critical Strike Chance is increased by # of your Movement Speed bonus.\n\nCurrent Bonus: #",
+   "power": "Your Critical Strike Chance is increased by #% of your Movement Speed bonus.\n\nCurrent Bonus: #%",
    "flavor": "\"While scholars have proven these boots were not created by Esu herself, it is noteworthy that they have been passed down since the formation of the Mage Clans.\"\n- Barrett's Book of Implements"
   },
   {
@@ -979,7 +979,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Dealing # different types of Non-Physical damage increases the Potency of your Imbuement Skills by # and Non-Physical damage by # for # seconds.\n\nBasic Skills are now Imbueable.",
+   "power": "Dealing # different types of Non-Physical damage increases the Potency of your Imbuement Skills by #% and Non-Physical damage by #% for # seconds.\n\nBasic Skills are now Imbueable.",
    "flavor": "\"Prepare thoroughly before approaching any warlock. Fill your elixirs, replenish your arrows. Oil and sheath your blades before you depart.\" -Arts of the Viz-Jaq'taar"
   },
   {
@@ -991,7 +991,7 @@
    "slot": "Focus",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "Soul Shard Skills and their demons deal # increased damage. Casting a Soul Shard Skill increases all your damage by # for # seconds, up to #.",
+   "power": "Soul Shard Skills and their demons deal #% increased damage. Casting a Soul Shard Skill increases all your damage by #% for # seconds, up to #%.",
    "flavor": "\"When the moon turns crimson, it is Baal's eye opening. Show him acts of destruction, and he will reward you with power.\" -Rites of the Triune"
   },
   {
@@ -1003,7 +1003,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Death Trap deals # increased damage and will rearm itself after activating, once every # seconds.",
+   "power": "Death Trap deals #% increased damage and will rearm itself after activating, once every # seconds.",
    "flavor": "\"And so, when the sun dipped behind the hills each night, he knew that Ashen Jack would soon be near. Watching, and waiting.\"\n- Greenslade's Tales, Chapter 2: \"Each Long Night\""
   },
   {
@@ -1015,7 +1015,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Inferno constricts the area # more times and deals # increased damage.",
+   "power": "Inferno constricts the area # more times and deals #% increased damage.",
    "flavor": "The venom from these fangs was known to cause severe blisters and burns - forever. The Zann Esu were known to use them to fashion blades, supplementing their own abilities."
   },
   {
@@ -1027,7 +1027,7 @@
    "slot": "Sword2H",
    "slotPt": "Espada de 2 mãos",
    "mythic": false,
-   "power": "While using this weapon, damaging at least one enemy with Rupture creates a blood pool that inflicts # Bleeding damage over # seconds. Enemies standing in the pool take # increased damage from all sources.",
+   "power": "Rupture's rip deals #% of the total Bleeding damage on an enemy instantly, removing all Bleeding damage from them.",
    "flavor": "\"We've been fighting these flesh-eaters for so long, been soaked in so much blood, that after a while it's difficult to tell what side you're truly on.\" -Daelyr, Crane Tribe warrior"
   },
   {
@@ -1039,7 +1039,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Damaging a Close enemy with Marksman or Cutthroat Skills each grant a # Attack Speed bonus for # seconds.\n\nWhile both Attack Speed bonuses are active, you deal # increased damage to Close enemies.",
+   "power": "Damaging a Close enemy with Marksman or Cutthroat Skills each grant a #% Attack Speed bonus for # seconds.\n\nWhile both Attack Speed bonuses are active, you deal #% increased damage to Close enemies.",
    "flavor": "\"She wished only to protect her sister. She journeyed far to Ivgorod. After years of training she returned home, being the only outsider to ever master the six techniques.\" -Legends of the Iron Rose"
   },
   {
@@ -1049,7 +1049,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Your attacks randomly deal # to # of their normal damage.",
+   "power": "Your attacks randomly deal #% to #% of their normal damage.",
    "flavor": "\"Will you let fear cheat you, or will you risk everything to find understanding? After all, death is simply the coin with which we purchase life.\"\n- Zurke"
   },
   {
@@ -1061,7 +1061,7 @@
    "slot": "Wand",
    "slotPt": "Varinha",
    "mythic": false,
-   "power": "Incinerate gains one final charge, irradiating the area around you and increasing damage dealt by # but costing an additional # Mana per second.",
+   "power": "Incinerate gains one final charge, irradiating the area around you and increasing damage dealt by #% but costing an additional # Mana per second.",
    "flavor": "The burn may heal, but the pain is eternal."
   },
   {
@@ -1073,7 +1073,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Casting Fire Bolt through your Firewall causes it to split into # bolts, each dealing # increased damage.",
+   "power": "Casting Fire Bolt through your Firewall causes it to split into # bolts, each dealing #% increased damage.",
    "flavor": "Driven to surpass Esu, the wizard Naridan's reckless enchantments caused an inferno, devastating the ancient town of Cagrim. Only the gauntlets remained - a solemn warning to all who dare tame fire."
   },
   {
@@ -1085,7 +1085,7 @@
    "slot": "Mace",
    "slotPt": "Maça",
    "mythic": false,
-   "power": "Tornadoes deal # increased damage and when expire, they instead seek back toward you.",
+   "power": "Tornadoes deal #% increased damage and when expire, they instead seek back toward you.",
    "flavor": "\"This weapon is a reminder of the unbridled savagery of our druidic ancestors, the wisdom of which I see more clearly with every day that passes.\"\n- Moreg, Druidic Scholar"
   },
   {
@@ -1097,7 +1097,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Sigil Skills deal # increased damage. Active Sigils gain # |4kill:kills; every second and unused kills are saved when they expire.",
+   "power": "Sigil Skills deal #% increased damage. Active Sigils gain # kills every second and unused kills are saved when they expire.",
    "flavor": "\"...Our rites are written not with ink, but with blood. Not upon stone, but upon the living flesh...\" -Taphya 13:6"
   },
   {
@@ -1131,7 +1131,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Earth Skills deal # bonus Critical Strike damage. This bonus is increased to # with at least # stacks of Overpower. You passively gain 2 stacks of Overpower every # seconds.",
+   "power": "Your Earth Skills deal #% bonus Critical Strike damage. This bonus is increased to #% with at least # stacks of Overpower. You passively gain 2 stacks of Overpower every # seconds.",
    "flavor": "\"The runestones in Scosglen are fascinating. Some act as wards, but others are conduits. They tap into the deepest power of the earth itself.\" -Donan"
   },
   {
@@ -1143,7 +1143,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Casting a Core Skill has a # chance to summon a Conjuration of the same element.\n\nEach active Conjuration grants:\n# increased damage\n# Mana per second\n# Movement Speed\n# Damage Reduction",
+   "power": "Casting a Core Skill has a #% chance to summon a Conjuration of the same element.\n\nEach active Conjuration grants:\n#% increased damage\n# Mana per second\n#% Movement Speed\n#% Damage Reduction",
    "flavor": "Winterglass refracts light and also manipulates mana - forming complex arrays of spells and enchantments. These distinct characteristics possess great power, yet the outcomes remain unpredictable."
   },
   {
@@ -1153,7 +1153,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Lucky Hit: Up to a # chance to Freeze enemies for # second.\n\nYou deal # increased damage to Frozen enemies.",
+   "power": "Lucky Hit: Up to a #% chance to Freeze enemies for # second.\n\nYou deal #% increased damage to Frozen enemies.",
    "flavor": "A touch so frigid it stops the heart and chills the very soul."
   },
   {
@@ -1165,7 +1165,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "When you Shapeshift into either Werewolf or Werebear form, you gain Berserking for # seconds. Additionally, Berserking grants # stack of Ferocity every # second while active.\n\nBerserking's damage bonus is increased by #.",
+   "power": "When you Shapeshift into either Werewolf or Werebear form, you gain Berserking for # seconds. Additionally, Berserking grants # stack of Ferocity every # second while active.\n\nBerserking's damage bonus is increased by #%.",
    "flavor": "The ring pulses with primal power, but its design is delicate. Perhaps its main purpose is to remind the wearer that they are still human."
   },
   {
@@ -1177,7 +1177,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Cast Shock Skill damage leaves enemies Magnetized for # seconds, causing them to emit Crackling Energy and receive # increased Shock damage from you.\n\nCrackling Energy's damage Pulls Magnetized enemies together.",
+   "power": "Cast Shock Skill damage leaves enemies Magnetized for # seconds, causing them to emit Crackling Energy and receive #% increased Shock damage from you.\n\nCrackling Energy's damage Pulls Magnetized enemies together.",
    "flavor": "\"This gem acts as a conduit for aetheric filaments, enabling the wielder to summon atmospheric discharge at will.\" - Excerpt from Volatus Arcanum: Of Skybinding and Stormcraft"
   },
   {
@@ -1189,7 +1189,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Juggernaut Core Skills are empowered, dealing # increased damage to the first enemy hit and storing the damage dealt to that target, up to # times.\n\nFortress unleashes this stored damage to all enemies within its area.",
+   "power": "Juggernaut Core Skills are empowered, dealing #% increased damage to the first enemy hit and storing the damage dealt to that target, up to # times.\n\nFortress unleashes this stored damage to all enemies within its area.",
    "flavor": "Between fire and darkness, I hold the gate."
   },
   {
@@ -1201,7 +1201,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Cyclone Armor is automatically triggered once every # seconds.\n\nGain Cyclone Armor's passive and it grants you # Damage Reduction if you are Human.",
+   "power": "Cyclone Armor is automatically triggered once every # seconds.\n\nGain Cyclone Armor's passive and it grants you #% Damage Reduction if you are Human.",
    "flavor": "'Twas Gathlen, most tender warden of the elder realm, who reigneth o'er grove and glade. Whosoever he favors shall inherit the wilds. Utter his name, and be embraced."
   },
   {
@@ -1213,7 +1213,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "While Fiend of Abaddon is alive you periodically sacrifice all other Archfiend Summons, dealing Fiend of Abaddon's damage around them and increasing Fiend of Abaddon's damage by # per demon killed, up to # for # seconds.",
+   "power": "While Fiend of Abaddon is alive you periodically sacrifice all other Archfiend Summons, dealing Fiend of Abaddon's damage around them and increasing Fiend of Abaddon's damage by #% per demon killed, up to #% for # seconds.",
    "flavor": "All of Abaddon is unshrouded before you. The denizens of Sheol tremble, for these hands are the touch of those unutterable ruins."
   },
   {
@@ -1225,7 +1225,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Ice Armor gains the Permafrost Variant for free and has # increased potency.",
+   "power": "Ice Armor gains the Permafrost Variant for free and has #% increased potency.",
    "flavor": "Legend says those who survive the Hall of Mirrors emerge forever changed, able to enchant objects with an innate cold."
   },
   {
@@ -1237,7 +1237,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "The first direct damage you deal to an enemy is a guaranteed Critical Strike. When a Marksman Skill first Critically Strikes, it gains # increased damage, and you gain # Overpower. This can stack up to # over your Maximum Overpower.",
+   "power": "The first direct damage you deal to an enemy is a guaranteed Critical Strike. When a Marksman Skill first Critically Strikes, it gains #% increased damage, and you gain # Overpower. This can stack up to # over your Maximum Overpower.",
    "flavor": "The Philios Games were said to welcome the prideful, the reckless, and the condemned."
   },
   {
@@ -1249,7 +1249,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Fireball now bounces as it travels, exploding each time it hits the ground, but its explosion deals # of normal damage.",
+   "power": "Fireball now bounces as it travels, exploding each time it hits the ground, but its explosion deals #% of normal damage.",
    "flavor": "After Inarius returned to Sanctuary, he sought a way back to the High Heavens. His first step was to reignite the religion he had abandoned millennia before: the Cathedral of Light."
   },
   {
@@ -1259,7 +1259,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "When you attempt to Incapacitate an enemy, you mark them and all surrounding enemies, pulling them in and dealing # increased damage to them.",
+   "power": "When you attempt to Incapacitate an enemy, you mark them and all surrounding enemies, pulling them in and dealing #% increased damage to them.",
    "flavor": "\"The Sahptev faithful believe in a thousand and one gods. If it takes me as many lifetimes, I will find and kill them all.\"\n- Gaspar Stilbian, Veradani Outcast"
   },
   {
@@ -1271,7 +1271,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Whirlwind explodes every # seconds dealing # increased damage as Fire. Critical Strikes with Whirlwind reduce the time until the next explosion by # seconds down to # second.",
+   "power": "Whirlwind deals #% increased damage and pulls enemies to you every # seconds.",
    "flavor": "\"The brutish construction of these gloves belies the strength they bestow. Gohr was clearly no craftsman, but it would be foolish to ignore the triumph of his work.\" -Barrett's Book of Implements"
   },
   {
@@ -1283,7 +1283,7 @@
    "slot": "FocusBookOffHand",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "Your Basic Skills gain all Upgrades for free. Damaging an enemy with a Basic Skill causes them to take # increased damage from your other Basic Skills for # seconds.",
+   "power": "Your Basic Skills gain all Upgrades for free. Damaging an enemy with a Basic Skill causes them to take #% increased damage from your other Basic Skills for # seconds.",
    "flavor": "\"Tremble not before the one who has mastered a thousand incantations. Tremble before the one who has made a single spell his gospel, his body, his breath.\" -One Who Never Sleeps"
   },
   {
@@ -1295,7 +1295,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Casting a Marksman or Cutthroat Skill has a # chance to Summon a Shadow Clone that mimics that Skill.",
+   "power": "Casting a Marksman or Cutthroat Skill has a #% chance to Summon a Shadow Clone that mimics that Skill.",
    "flavor": "Dark wisps creep hungrily across these gloves, like an assassin's blade seeking a life to steal on a moonless night."
   },
   {
@@ -1307,7 +1307,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Your Essence Generation is increased by #. Your Bone Skills deal # increased damage for each point of Essence you have when Cast, up to #.",
+   "power": "Your Essence Generation is increased by #%. Your Bone Skills deal #% increased damage for each point of Essence you have when Cast, up to #%.",
    "flavor": "\"There is a point one can reach, a oneness with the Balance, when a single, silent gesture is enough to summon an army of bone to your command.\" -Necromancer Mehtan"
   },
   {
@@ -1319,7 +1319,7 @@
    "slot": "Staff",
    "slotPt": "Cajado",
    "mythic": false,
-   "power": "Claw gains all Variants for free and deals # increased damage.",
+   "power": "Claw gains all Variants for free and deals #% increased damage.",
    "flavor": "\"She has existed in Scosglen since before Fiacla-Géar walked the land. Her purpose is a mystery to us all. However, approach her with deference; she may grant you her counsel.\"-Airidah, to Donan"
   },
   {
@@ -1343,7 +1343,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Poison Creeper gains the Germinate Variant for free and deals # increased damage.",
+   "power": "Poison Creeper gains the Germinate Variant for free and deals #% increased damage.",
    "flavor": "Ciódan was known to be a true friend of the Deep Forest. In gratitude, he was protected fiercely by nature itself."
   },
   {
@@ -1355,7 +1355,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Casting or Channeling a Human Skill has a #% chance to trigger an additional equipped non-Ultimate Human Skill. Human Skills deal # bonus damage.",
+   "power": "Casting or Channeling a Human Skill has a #% chance to trigger an additional equipped non-Ultimate Human Skill. Human Skills deal #% bonus damage.",
    "flavor": "\"Do not speak to nature. Listen to it. Learn from it. That is the only true path of knowledge.\"\n-Code of the Scéal Fada"
   },
   {
@@ -1367,7 +1367,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Dealing direct damage grants # increased Critical Strike Damage for each enemy hit within # seconds, up to #.\n\nAt Maximum you gain:\n\nLucky Hit: Critical Strikes have up to a # chance to deal double damage, Heal for # Life, and refresh the duration of the bonus.",
+   "power": "Dealing direct damage grants #% increased Critical Strike Damage for each enemy hit within # seconds, up to #%.\n\nAt Maximum you gain:\n\nLucky Hit: Critical Strikes have up to a #% chance to deal double damage, Heal for # Life, and refresh the duration of the bonus.",
    "flavor": "Griswold created wonders at his anvil. But, none ever stilled his hands - for every new blade bore dissatisfaction. Though his final work was left unfinished, it was hailed as his greatest."
   },
   {
@@ -1379,7 +1379,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Gain Ice Shards' Piercing Cold upgrade. Ice Shards deals # bonus damage.",
+   "power": "Gain Ice Shards' Piercing Cold upgrade. Ice Shards deals #% bonus damage.",
    "flavor": "\"Ere the age of mage and king, storms raged so dread and fell that men named it the wrath of gods. Its hail smote the earth till mountains were wrought...\" -Tome recovered from Kasama"
   },
   {
@@ -1391,7 +1391,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Any Demonform grants you all Metamorphosis Upgrades for free and they are # more potent.",
+   "power": "Any Demonform grants you all Metamorphosis Upgrades for free and they are #% more potent.",
    "flavor": "\"There are certain thresholds one must not cross. Not because the demonologist will lose their way back, but because they will not return the same as they were before.\" -Grimoire of Reckoning"
   },
   {
@@ -1403,7 +1403,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Apocalypse deals up to # increased damage when cast in Sigil of Chaos based on the number of kills the Sigil has stored.\n\nApocalypse is now also a Sigil Skill.",
+   "power": "Apocalypse deals up to #% increased damage when cast in Sigil of Chaos based on the number of kills the Sigil has stored.\n\nApocalypse is now also a Sigil Skill.",
    "flavor": "\"For demons whose nature is to destroy, where does it end? If everything around them is brought to ruin, I believe their final act of destruction would be themselves.\" -Deckard Cain"
   },
   {
@@ -1415,7 +1415,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Sever deals # increased damage and sends out # additional specter to attack a nearby enemy.",
+   "power": "Sever deals #% increased damage and sends out # additional specter to attack a nearby enemy.",
    "flavor": "\"The executioner's hands are imprinted with the essence of every life they have taken. They do not understand this, though. But we who seek Balance do.\" -Books of Kalan"
   },
   {
@@ -1437,7 +1437,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "According to your secondary Spirit Hall choice, your Skills are all additionally Jaguar, Eagle, Gorilla, or Centipede Skills.\n\nYour Skills deal # increased damage per Spirit type they have.",
+   "power": "According to your secondary Spirit Hall choice, your Skills are all additionally Jaguar, Eagle, Gorilla, or Centipede Skills.\n\nYour Skills deal #% increased damage per Spirit type they have.",
    "flavor": "Only Ebewaka has walked amid a dozen Guardians. In death, they waged war for his spirit, yet none prevailed. Thus, the Guardians shared dominion, granting Ebewaka to roam freely amid all their realms."
   },
   {
@@ -1449,7 +1449,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "When you hit at least 1 enemy with Maul, increase its Attack Speed by # and damage by # for # seconds, stacking up to # times.",
+   "power": "When you hit at least 1 enemy with Maul, increase its Attack Speed by #% and damage by #% for # seconds, stacking up to # times.",
    "flavor": "\"You kept us from harm. Forever will you hold a place of honor. We will always look up to you...brother.\" -Grey of Clan Skeld"
   },
   {
@@ -1461,7 +1461,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Tyrant's Grasp deals # increased damage and summons # additional demonic hands in all directions.",
+   "power": "Tyrant's Grasp deals #% increased damage and summons # additional demonic hands in all directions.",
    "flavor": "\"The creatures of Hell are craven, wretched things, clawing at scraps like mongrels. Hells' hundred hands do not fight. They clamber forward like cowards in the dark.\" -Tal Rasha"
   },
   {
@@ -1471,7 +1471,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": true,
-   "power": "Succumb to hatred and earn Mother's Favor. Slaughtering enemies briefly steals # Critical Strike Chance from surrounding allies with Mother's Favor.\nMother's Favor always grants you # increased damage.",
+   "power": "Succumb to hatred and earn Mother's Favor. Slaughtering enemies briefly steals #% Critical Strike Chance from surrounding allies with Mother's Favor.\nMother's Favor always grants you #% increased damage.",
    "flavor": "Beware false prophets donned as sheep yet bearing the stench of wolves. Thou shalt know them by their fruits. For a tree of good cannot produce evil, nor thorns yield a harvest sweet and fair."
   },
   {
@@ -1483,7 +1483,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Sigil of Chaos gains the Diabolic Rebuke Variant for free and deals # increased damage.",
+   "power": "Sigil of Chaos gains the Diabolic Rebuke Variant for free and deals #% increased damage.",
    "flavor": "\"The fire of that realm is not like the fire of our world. It seems alive. Not mindless, but imbued with purpose. As if it were blood flowing through unknowable veins.\" -Jere Harash"
   },
   {
@@ -1495,7 +1495,7 @@
    "slot": "Mace2H",
    "slotPt": "Maça de 2 mãos",
    "mythic": false,
-   "power": "Upheaval deals # increased damage to Burning enemies, and also ignites the ground Burning enemies for an additional # damage over # seconds.",
+   "power": "Upheaval gains the Iron Burst Variant for free and deals #% increased damage.",
    "flavor": "The demon prince Ikonoth slew hundreds of the Heavenly Host with this infernal hammer before falling to none other than the Archangel Imperius himself."
   },
   {
@@ -1507,7 +1507,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Abodian deals # increased damage. Command Abodian periodically triggers your Non-Archfiend Hellfire Skills while moving and its Cooldown is reduced by #.",
+   "power": "Abodian deals #% increased damage. Command Abodian periodically triggers your Non-Archfiend Hellfire Skills while moving and its Cooldown is reduced by #%.",
    "flavor": "\"As loyal as we may think they might be, they are still demons. And they will take any chance they can to destroy us.\" -Book of Adria"
   },
   {
@@ -1521,7 +1521,7 @@
    "slot": "Focus",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "You gain Primary Stat equal to # of your Dexterity.#",
+   "power": "You gain Primary Stat equal to #% of your Dexterity.",
    "flavor": "\"It's just a cat,\" said Ankaj. Her uncle leaned in, \"You are spiritborn. Look deeper.\" In its amber eyes, Ankaj saw the passing of ages, fixed on a single thought: \"Mouse.\" The cat smacked its lips."
   },
   {
@@ -1533,7 +1533,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Gain # increased Strength, Resistance, Armor and Retribution Chance.\n\nRetribution gains # increased Size.",
+   "power": "Gain #% increased Strength, Resistance, Armor and Retribution Chance.\n\nRetribution gains #% increased Size.",
    "flavor": "\"Praise Akarat, His will be done. Lead us to darkness, so our Light may shine and purify.\" - Zakarum prayer"
   },
   {
@@ -1545,7 +1545,7 @@
    "slot": "Mace",
    "slotPt": "Maça",
    "mythic": false,
-   "power": "Blessed Hammer deals # increased damage.\n\nLucky Hit: Up to a # chance to spawn a base Blessed Hammer on the target hit.",
+   "power": "Blessed Hammer deals #% increased damage.\n\nLucky Hit: Up to a #% chance to spawn a base Blessed Hammer on the target hit.",
    "flavor": "First in the Swan, the Herald by name. This is the star of morning that shines brightest, which marshals the order of all other celestial bodies."
   },
   {
@@ -1557,7 +1557,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "The Protector can be invoked at range and Pulls inward with its smashes. Enemies in its area take # increased damage from your Gorilla Skills, doubled while they are Knocked Down or a Boss.",
+   "power": "The Protector can be invoked at range and Pulls inward with its smashes. Enemies in its area take #% increased damage from your Gorilla Skills, doubled while they are Knocked Down or a Boss.",
    "flavor": "Wreathed in bark and bone, these gauntlets carry the strength of old simian spirits - wardens of root and canopy."
   },
   {
@@ -1569,7 +1569,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Casting a Basic Skill while at Maximum Fury causes your Fury to increasingly Drain until you run out, during which your Basic skills now cleave dealing # increased damage.",
+   "power": "Casting a Basic Skill while at Maximum Fury causes your Fury to increasingly Drain until you run out, during which your Basic skills now cleave dealing #% increased damage.",
    "flavor": "Break their bones beneath your weight,\nFell their walls and breach their gate.\nIn his halls we'll boast and sing,\nAnd praise our honored mountain king!"
   },
   {
@@ -1581,7 +1581,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Instead of detonating immediately, Corpse Explosion now Summons a Volatile Skeleton that charges at a random enemy and explodes.\n\nCorpse Explosion deals # increased damage.",
+   "power": "Instead of detonating immediately, Corpse Explosion now Summons a Volatile Skeleton that charges at a random enemy and explodes.\n\nCorpse Explosion deals #% increased damage.",
    "flavor": "\"Can you not hear it? That endless scream from the cold earth beneath your feet!? They are down there, trapped, blind with rage! Waiting to drag us down into the sod!\" -Ravings of Madman Gustav"
   },
   {
@@ -1593,7 +1593,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "When Hurricane ends or after it lasts # seconds, an explosion occurs dealing # of the total damage dealt by up to # hits of Hurricane.",
+   "power": "When Hurricane ends or after it lasts # seconds, an explosion occurs dealing #% of the total damage dealt by up to # hits of Hurricane.",
    "flavor": "\"By fang, claw, spear, or sword - send the bastards back to the flames from which they crawled! Soak the peat with their blood! For Fiacla-Géar! For Scosglen!\"\n- Nafain, during the Days of Ash"
   },
   {
@@ -1605,7 +1605,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Your Conjurations periodically unleash Frost Nova. Enemies affected by Frost Nova take # increased damage from you.",
+   "power": "Your Conjurations periodically unleash Frost Nova. Enemies affected by Frost Nova take #% increased damage from you.",
    "flavor": "The mad artisan saw his fingers turn black from frostbite as he worked the cloth, but refused to stay the needle and thread for even a moment."
   },
   {
@@ -1617,7 +1617,7 @@
    "slot": "OffHandTotem",
    "slotPt": "Totem",
    "mythic": false,
-   "power": "Grizzly Rage is now a Werewolf Skill and Shapeshifts you into a Dire Werewolf. Dire Werewolves gain # Critical Strike Damage, # bonus Poisoning damage and Spirit Cost Reduction instead of Armor. In addition, kills Heal you for # of your Maximum Life.",
+   "power": "Grizzly Rage is now a Werewolf Skill and Shapeshifts you into a Dire Werewolf. Dire Werewolves gain #% Critical Strike Damage, #% bonus Poisoning damage and Spirit Cost Reduction instead of Armor. In addition, kills Heal you for #% of your Maximum Life.",
    "flavor": "Fiacla-Géar's druids lived in harmony with nature. The Talons of Ifeh walked a different path. They surrendered their souls to the wilds, becoming more beast than man."
   },
   {
@@ -1647,7 +1647,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Blood Wave is additionally a Bone Skill. It spawns a Bone Prison at its end point and increases your Blood Skill damage by # for # seconds when Cast.\n\nAll Bone Spears are additionally Blood Skills. Your Bone Spears consume a Corpse to launch another Bone Spear and drain # of your Maximum Life.",
+   "power": "Blood Wave is additionally a Bone Skill. It spawns a Bone Prison at its end point and increases your Blood Skill damage by #% for # seconds when Cast.\n\nAll Bone Spears are additionally Blood Skills. Your Bone Spears consume a Corpse to launch another Bone Spear and drain #% of your Maximum Life.",
    "flavor": "\"The tears of Linarian turned bloody over Indira's torn body. Many days, unyielding, he poured his magic into sundered bone and rended sinew. Though the flesh did mend, his beloved did not rise...\""
   },
   {
@@ -1659,7 +1659,7 @@
    "slot": "Focus",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "Your Archfiend Skills deal # increased damage and casting any Archfiend Skill activates all their Lesser Demon Upgrades for free with # longer durations.",
+   "power": "Your Archfiend Skills deal #% increased damage and casting any Archfiend Skill activates all their Lesser Demon Upgrades for free with #% longer durations.",
    "flavor": "It grows restless in silence, thrashing against its bindings. Though the body is small, it dreams of carnage unimaginable."
   },
   {
@@ -1671,7 +1671,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "For # seconds after Casting Trample, you may Cast Trample again without incurring the Cooldown. Trample additionally deals # bonus damage.",
+   "power": "For # seconds after Casting Trample, you may Cast Trample again without incurring the Cooldown. Trample additionally deals #% bonus damage.",
    "flavor": "When the Days of Ash began, the great druid Nafain reminded his disciples that nothing, not even the loss of their humanity, was too great a sacrifice to protect Túr Dúlra from Astaroth's flames."
   },
   {
@@ -1683,7 +1683,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Spending Vigor Heals you for # of your Maximum Life.\n\nEvery second, your active Cooldowns each drain # Maximum Life from you to reduce their durations by # seconds.",
+   "power": "Spending Vigor Heals you for #% of your Maximum Life.\n\nEvery second, your active Cooldowns each drain #% Maximum Life from you to reduce their durations by # seconds.",
    "flavor": "This ceremonial armor was once adorned during the He Sutsar Puchē, where sacred blood is drawn by jacinth lancets and offered to flames. It retains the scents of incensed smoke and scorched copper."
   },
   {
@@ -1695,7 +1695,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Arbiter of Justice gains all Variants and grants you # increased damage and Damage Reduction for each Skill Rank it has while in Arbiter form. This bonus doubles for # seconds after Arbiter of Justice lands.",
+   "power": "Arbiter of Justice gains all Variants and grants you #% increased damage and Damage Reduction for each Skill Rank it has while in Arbiter form. This bonus doubles for # seconds after Arbiter of Justice lands.",
    "flavor": "At dawn, she sits in Judgment's stead. The host shall kneel in her radiance."
   },
   {
@@ -1707,7 +1707,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Lucky Hit: Judicator Skills have up to a # chance to call down a Blessed Spear that carries a Judgement mark and deals Judgement's damage on impact.",
+   "power": "Lucky Hit: Judicator Skills have up to a #% chance to call down a Blessed Spear that carries a Judgement mark and deals Judgement's damage on impact.",
    "flavor": "\"Let the righteous spear judge what man cannot. Its point unmasks the heretic, its edge silences their defiance.\" - Judicator Moseph of the Fourth Inquisition"
   },
   {
@@ -1719,7 +1719,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Wall of Agony gains the Fallen Army Variant for free and deals # increased damage.",
+   "power": "Wall of Agony gains the Fallen Army Variant for free and deals #% increased damage.",
    "flavor": "In the Sunless Depths, Kabraxis wailed.\nNo vessel could bare the Imprisoned Lord.\nCreation could not sustain the road he traveled, only madness remained."
   },
   {
@@ -1743,7 +1743,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Earthen Bulwark gains the Earthen Shrapnel Variant for free and deals # increased damage.",
+   "power": "Earthen Bulwark gains the Earthen Shrapnel Variant for free and deals #% increased damage.",
    "flavor": "Once worn by the lost druids who sang the sandy gales to sleep. When their line was broken, the desert rose in mourning, staining the sky blood-red as Kehjistan choked beneath fifty years of dust."
   },
   {
@@ -1755,7 +1755,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Ravens deal # increased damage and Shapeshifting into a different form or activating a Companion Skill Summons a Raven that attacks nearby enemies. Summoning a Raven has a chance to call forth an Unkindness for # seconds, increasing the number of Ravens Summoned to # for the duration.",
+   "power": "Ravens deal #% increased damage and Shapeshifting into a different form or activating a Companion Skill Summons a Raven that attacks nearby enemies. Summoning a Raven has a chance to call forth an Unkindness for # seconds, increasing the number of Ravens Summoned to # for the duration.",
    "flavor": "\"The moors once belonged to the raven-changelings, child. They came with the full moon and read fate through the eyes of the dead. But that time has withered. Their songs are stilled.\" - Airidah"
   },
   {
@@ -1765,7 +1765,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "This item counts as Jewelry and increases the effect of any gem socketed into the helm by #",
+   "power": "This item counts as Jewelry and increases the effect of any gem socketed into the helm by #%",
    "flavor": "\"Heavy, isn't it?\" Leoric said, fussing with his new crown, \"The weight alone might topple me from the throne.\" Archbishop Lazarus only smiled, calm and cold. \"It catches the Light well, your grace.\""
   },
   {
@@ -1777,7 +1777,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Spark shocks enemies #-# additional times and deals # increased damage.",
+   "power": "Spark shocks enemies #-# additional times and deals #% increased damage.",
    "flavor": "The bandit lay on the floor, as a bolt of lightning arced between his friends. He watched the Sorceress walk away calmly as his friends fell to the floor, one by one."
   },
   {
@@ -1789,7 +1789,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Lucky Hit: While you have an active Bone Storm, hitting an enemy has up to a # chance to spawn a Bone Storm around their location.\n\nEach Sacrifice bonus increases this chance by # and allows you to spawn # additional Bone Storm. Each active Bone Storm grants # Critical Strike Damage, up to #.",
+   "power": "Lucky Hit: While you have an active Bone Storm, hitting an enemy has up to a #% chance to spawn a Bone Storm around their location.\n\nEach Sacrifice bonus increases this chance by #% and allows you to spawn # additional Bone Storm. Each active Bone Storm grants #% Critical Strike Damage, up to #%.",
    "flavor": "Initially an unpopular choice to replace Mendeln as Deathspeaker, Daros quickly proved his worth with the creation of this masterpiece."
   },
   {
@@ -1801,7 +1801,7 @@
    "slot": "Flail",
    "slotPt": "Mangual",
    "mythic": false,
-   "power": "Enemies impaled by the first strike of Divine Lance take # increased damage from Divine Lance's subsequent hits.",
+   "power": "Enemies impaled by the first strike of Divine Lance take #% increased damage from Divine Lance's subsequent hits.",
    "flavor": "\"Stand tall, for on this day we bring the Light of Inarius to a land consumed by darkness!\" - Urivar, before the Battle for Scosglen"
   },
   {
@@ -1813,7 +1813,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Dread Claws deals # increased damage and additional claws fire out when you gain a stack of Shadowform.",
+   "power": "Dread Claws deals #% increased damage and additional claws fire out when you gain a stack of Shadowform.",
    "flavor": "\"Adiya shrouded herself in shadow and walked amongst men. From her countless mouths poured the song of the abyss. Its sound drowned the mind in fog as she came to feed.\" -Annals of Hadal"
   },
   {
@@ -1823,7 +1823,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Critical Strikes deal # increased damage but your Critical Strike Chance is reduced by #.",
+   "power": "Critical Strikes deal #% increased damage but your Critical Strike Chance is reduced by #%.",
    "flavor": "A single petal of the Mother's own blood, slowly wilting under glass."
   },
   {
@@ -1835,7 +1835,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "While your Spirit Hall choices match:\nTheir bonuses are # more potent.\nSkills of their Base Spirit gain # Vigor Cost Reduction.\nSkills of their Base Spirit gain # Cooldown Reduction.",
+   "power": "While your Spirit Hall choices match:\nTheir bonuses are #% more potent.\nSkills of their Base Spirit gain #% Vigor Cost Reduction.\nSkills of their Base Spirit gain #% Cooldown Reduction.",
    "flavor": "During a Trial of Mists, a small spirit noticed an unclaimed boy. In pity, it spared him. \"I will follow you always,\" vowed the boy. He remained true even after Ah Bulan called the spirit home."
   },
   {
@@ -1847,7 +1847,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Rampage deals # increased damage. Each enemy or demon killed by Rampage increases the size of the brute and its smashes by #, up to #.",
+   "power": "Rampage deals #% increased damage. Each enemy or demon killed by Rampage increases the size of the brute and its smashes by #%, up to #%.",
    "flavor": "\"It glows because it is pleased.\" -Author Unknown, blood used as inscription"
   },
   {
@@ -1859,7 +1859,7 @@
    "slot": "Mace",
    "slotPt": "Maça",
    "mythic": false,
-   "power": "Your Golem will consume one of your Skeleton Mages or Skeleton Warriors every # seconds, healing to full Life and gaining # increased damage for # seconds.",
+   "power": "Your Golem will consume one of your Skeleton Mages or Skeleton Warriors every # seconds, healing to full Life and gaining #% increased damage for # seconds.",
    "flavor": "\"Listen, no Skeleton is gonna be my King. Leoric is King. King, so you hear me? Hail to the King!\" -Farnham"
   },
   {
@@ -1871,7 +1871,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Lacerate has no Cooldown, costs # Spirit to cast and deals # bonus damage but no longer grants Immunity.\n\nLacerate is also a Core Skill.",
+   "power": "Lacerate has no Cooldown, costs # Spirit to cast and deals #% bonus damage but no longer grants Immunity.\n\nLacerate is also a Core Skill.",
    "flavor": "\"He was not a victim of the curse. He sought it out. As his muscles grew and body changed from man to beast, his laughter never ceased.\"\n– Tale of the Mad Nobleman"
   },
   {
@@ -1883,7 +1883,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Blood Howl is automatically cast when you Shapeshift into a Werewolf and every # seconds while in Werewolf form. In addition, you gain # bonus damage for # seconds whenever Blood Howl is triggered.",
+   "power": "Blood Howl is automatically cast when you Shapeshift into a Werewolf and every # seconds while in Werewolf form. In addition, you gain #% bonus damage for # seconds whenever Blood Howl is triggered.",
    "flavor": "\"Túr Dúlra sat empty and the Cathedral sent forth two units. The full moon was thought to be a fair omen from the Heavens. They soon learned what else drew from its power.\" - History of Scosglen VI"
   },
   {
@@ -1895,7 +1895,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Hammer of the Ancients also forms a seismic line that deals its damage and Slows enemies hit by # for # seconds. Earthquakes it passes through explode for their total damage and are consumed.",
+   "power": "Casting Hammer of the Ancients on an Earthquake explodes for their total damage and are consumed, and also causes your Hammer of the Ancients to deal #% increased damage for # seconds.",
    "flavor": "\"What you feel is the Ancients high on the mountain, my son. When they stomp their feet, the earth trembles! But fear not—it's our enemies they mean to warn.\" -Chieftess Naarah"
   },
   {
@@ -1907,7 +1907,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Juggernaut Oath makes your Juggernaut Skills # larger but Consumes up to # Resolve, granting # increased Juggernaut Skill damage for each point Consumed.",
+   "power": "Juggernaut Oath makes your Juggernaut Skills #% larger but Consumes up to # Resolve, granting #% increased Juggernaut Skill damage for each point Consumed.",
    "flavor": "The ensign bears the words: 'Beneath Saint Lalszo the Grey's gentle gaze, the cruel laid down their wrath, and the meek rose as lions. By his grace, no lost soul shall tread alone.'"
   },
   {
@@ -1919,7 +1919,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Advance deals # increased damage, gains # Skill Ranks, and travels twice as far.",
+   "power": "Advance deals #% increased damage, gains # Skill Ranks, and travels twice as far.",
    "flavor": "\"...and though he marched through shadow and storm, his flame never waned. On the thirtieth day, he arrived to spread the word of Akarat's passing.\" - Scrolls of Yaerius"
   },
   {
@@ -1931,7 +1931,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Gain # bonus Poisoning damage.\nDirect damage from Werewolf Skills gain a bonus equal to # of your bonus Poisoning damage, up to #.\nPoison damage from Werewolf Skills gain a bonus equal to # of your bonus Attack Speed and Critical Strike Chance, up to #.\n\nCurrent Direct Damage bonus: #\nCurrent Poison Damage bonus: #",
+   "power": "Gain #% bonus Poisoning damage.\nDirect damage from Werewolf Skills gain a bonus equal to #% of your bonus Poisoning damage, up to #%.\nPoison damage from Werewolf Skills gain a bonus equal to #% of your bonus Attack Speed and Critical Strike Chance, up to #%.\n\nCurrent Direct Damage bonus: #%\nCurrent Poison Damage bonus: #%",
    "flavor": "\"The tales spoke of a one-eyed wolf, a creature so cunning that it outsmarted the greatest trappers in the world. It makes you wonder if it was a wolf at all.\" -A History of Scosglen, Chapter IX"
   },
   {
@@ -1941,7 +1941,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": true,
-   "power": "Damage is dealt to your Primary Resource before Life and damage taken this way is drastically reduced.\n\nYour Primary Resource is doubled but Maximum Life is reduced by #.",
+   "power": "Damage is dealt to your Primary Resource before Life and damage taken this way is drastically reduced.\n\nYour Primary Resource is doubled but Maximum Life is reduced by #%.",
    "flavor": "\"Do not allow your passions to become obsessions. Fuel the fire that burns within you, but it is madness to allow yourself to become ash to please an uncaring universe.\"\n- Last words of Master Selig"
   },
   {
@@ -1957,7 +1957,7 @@
    "slot": "Axe2H",
    "slotPt": "Machado de 2 mãos",
    "mythic": false,
-   "power": "Lucky Hit: Attacks have up to a # chance to explode, dealing # Fire Damage and reducing your Cooldowns by 1 second.",
+   "power": "Lucky Hit: Attacks have up to a #% chance to explode, dealing # Fire Damage and reducing your Cooldowns by 1 second.",
    "flavor": "Before the ashes of Old Tristram had cooled, the scavengers crept in—down into the crumbling cathedral to snatch anything of value. The late Prince Aidan's greataxe would fetch a fine price indeed."
   },
   {
@@ -1969,7 +1969,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Mighty Throw now gains multiplicative damage instead of cooldown from Cooldown Reduction at # effectiveness.",
+   "power": "Mighty Throw now gains multiplicative damage instead of cooldown from Cooldown Reduction at #% effectiveness.",
    "flavor": "\"Even as a boy, Qual-Kehk's strength was the stuff of legend. It was said he could split oak trees in two with one throw of his blade.\" -Feats of Arreat, Vol. IV"
   },
   {
@@ -1981,7 +1981,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Gain # bonus Werebear damage for each stack of Resolve while in Werebear form. Additionally, you automatically gain # stack of Resolve every # seconds while in Werebear form.",
+   "power": "Gain #% bonus Werebear damage for each stack of Resolve while in Werebear form. Additionally, you automatically gain # stack of Resolve every # seconds while in Werebear form.",
    "flavor": "\"To speak the tongue of a beast is more than just trading words. It changes how you see the world. It changes how you know fear, strength, and tenacity.\" -Greenwalker Ciórdan"
   },
   {
@@ -1993,7 +1993,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Lucky Hit: Dealing damage to an enemy affected by a Trap Skill has up to a # chance to:\nReduce the active Cooldowns of your Trap Skills by #\nIncrease your Trap Skill damage by # for # seconds, up to #",
+   "power": "Lucky Hit: Dealing damage to an enemy affected by a Trap Skill has up to a #% chance to:\nReduce the active Cooldowns of your Trap Skills by #%\nIncrease your Trap Skill damage by #% for # seconds, up to #%",
    "flavor": "A trapped prey only awaits a swift death. Sisters of the Sightless Eye will grant them this mercy."
   },
   {
@@ -2005,7 +2005,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "While Cataclysm is active, you gain unlimited Spirit and deal # increased damage.",
+   "power": "While Cataclysm is active, you gain unlimited Spirit and deal #% increased damage.",
    "flavor": "A singed wedding band, faintly crackling. It evokes an old rhyme where a bride receives a ring from her beloved, causing them to be struck thrice by lightning. Only the bride was unscathed."
   },
   {
@@ -2017,7 +2017,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Hellfire Skills deal # increased damage for every Skill you have Empowered by Volatility. Casting a Volatility Empowered Skill increases you Core Stats by # for # seconds, up to #.",
+   "power": "Hellfire Skills deal #% increased damage for every Skill you have Empowered by Volatility. Casting a Volatility Empowered Skill increases you Core Stats by #% for # seconds, up to #%.",
    "flavor": "\"Therefore, behold, the days come that it shall no more be called thine own body, nor thine own heart, but the heart of Moloch, for each heartbeat shall roar with the flames of Hell...\" -Taphya 3:26"
   },
   {
@@ -2029,7 +2029,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Pyromancy Critical Strike Damage is increased by # against Healthy enemies and your Pyromancy Critical Strike Chance is increased by # against Injured enemies.\n\nKilling an enemy with a Critical Strike grants both bonuses against all enemies as well as # Attack Speed for # seconds.",
+   "power": "Your Pyromancy Critical Strike Damage is increased by #% against Healthy enemies and your Pyromancy Critical Strike Chance is increased by #% against Injured enemies.\n\nKilling an enemy with a Critical Strike grants both bonuses against all enemies as well as #% Attack Speed for # seconds.",
    "flavor": "Pillaged from the charred remains of Lord Bareen. It still feels hot to the touch."
   },
   {
@@ -2041,7 +2041,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "You cannot recover above # of your Maximum Life but your Defensive Skills deal # increased damage.",
+   "power": "You cannot recover above #% of your Maximum Life but your Defensive Skills deal #% increased damage.",
    "flavor": "\"The morlu are incredibly resilient. Stories from the Sin War describe them fighting despite heavy wounds.\" -Book of Adria"
   },
   {
@@ -2051,7 +2051,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "If a Core Skill hits # or more enemies, # of the Resource cost is refunded.",
+   "power": "If a Core Skill hits # or more enemies, #% of the Resource cost is refunded.",
    "flavor": "\"Every tome, every scroll, every book in this temple produces the same answer. The only being willing to stand against the Eternal Conflict, against the Prime Evils, was Lilith.\"\n- Elias"
   },
   {
@@ -2063,7 +2063,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "You are Blood Lanced, and when Blood Lance would deal damage to you, it instead Fortifies you for # of your Maximum Life and has a # chance to form a Blood Orb.\n\nBlood Lance deals # increased damage.",
+   "power": "You are Blood Lanced, and when Blood Lance would deal damage to you, it instead Fortifies you for #% of your Maximum Life and has a #% chance to form a Blood Orb.\n\nBlood Lance deals #% increased damage.",
    "flavor": "\"The Cathedral of Light's earliest attempts at crafting their penitent armor was to infuse the plate with painful blood magic, before such acts were deemed heretical.\" -Barrett's Book of Implements"
   },
   {
@@ -2075,7 +2075,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Hellion Sting deals # increased damage and bursts out of enemies when you Eviscerate them. Hellion Sting gains # Eviscerate Chance each second it has not Eviscerated.",
+   "power": "Hellion Sting deals #% increased damage and bursts out of enemies when you Eviscerate them. Hellion Sting gains #% Eviscerate Chance each second it has not Eviscerated.",
    "flavor": "\"Bind them as a sign on your hand, and the fiend shall be as frontlets between your eyes. Nail yourself to your crucibles, for pain is the road where domination is won.\" -The Magnus"
   },
   {
@@ -2109,7 +2109,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Your Abyss Skills deal # increased damage for each stack of Shadowform. This bonus is increased by # while you have Stealth.",
+   "power": "Your Abyss Skills deal #% increased damage for each stack of Shadowform. This bonus is increased by #% while you have Stealth.",
    "flavor": "\"Sleep, my child, shut fast thine eyes,\nKeep thee still until sunrise.\nAstrogha's brood will hear thy breath,\nAnd lull thee close to dreaming death.\" -Westmarch lullaby"
   },
   {
@@ -2121,7 +2121,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Core Skills deal # increased damage, but cost # more Fury. The damage is doubled against Injured and Healthy enemies.",
+   "power": "Core Skills deal #% increased damage, but cost #% more Fury. The damage is doubled against Injured and Healthy enemies.",
    "flavor": "\"O Crane, what news do you bring from our mountain?\nLong have I been away, in strange lands.\nI yearn for home, for the highland snows,\nWhy silent, Crane? Have you no news from Arreat?\""
   },
   {
@@ -2145,7 +2145,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "A dark aura surrounds you, inflicting Decrepify and Iron Maiden on enemies around you and increasing your damage to Close enemies by #.\n\nCurses inflicted this way spread to surrounding targets every second.",
+   "power": "A dark aura surrounds you, inflicting Decrepify and Iron Maiden on enemies around you and increasing your damage to Close enemies by #%.\n\nCurses inflicted this way spread to surrounding targets every second.",
    "flavor": "\"I have lost, more than I can put into words. Perhaps there are better ways to express loss than words....\" -Rathma"
   },
   {
@@ -2157,7 +2157,7 @@
    "slot": "FocusBookOffHand",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "Frozen Orb now returns to you dealing # increased damage.",
+   "power": "Frozen Orb now returns to you dealing #% increased damage.",
    "flavor": "Many adventurers have sailed the Frozen Sea, but most are lost to the depths. Legend has it the first to return spoke of a vast treasure. Alas, he could not carry it alone. Save for one relic."
   },
   {
@@ -2169,7 +2169,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Hydra is now a Core Skill with increased Mana cost and its attacks now explode dealing # increased damage.",
+   "power": "Hydra is now a Core Skill with increased Mana cost and its attacks now explode dealing #% increased damage.",
    "flavor": "\"Threefold was the sight of Oriax. He stirred the wrath of his lord Baal, and his eyes were torn and cast into the dust. Lo, the viper now crawls blind, writhing in misery.\" - Librarius Ex Horadrim"
   },
   {
@@ -2181,7 +2181,7 @@
    "slot": "Crossbow2H",
    "slotPt": "Besta",
    "mythic": false,
-   "power": "Basic and Core Skills that use this weapon now Reload.\nReload Skills deal # increased damage and every second Reload Skill increases this bonus by # for # seconds.",
+   "power": "Basic and Core Skills that use this weapon now Reload.\nReload Skills deal #% increased damage and every second Reload Skill increases this bonus by #% for # seconds.",
    "flavor": "This crossbow is marred by a hundred battles. Mercy is its stranger. When its quarrel flies, a generation weeps."
   },
   {
@@ -2193,7 +2193,7 @@
    "slot": "Mace",
    "slotPt": "Maça",
    "mythic": false,
-   "power": "For each Defensive Skill not on your Action Bar, you deal # increased damage and gain its associated Enchantment effect.",
+   "power": "For each Defensive Skill not on your Action Bar, you deal #% increased damage and gain its associated Enchantment effect.",
    "flavor": "Lo, its strike is thunder, its sting a dirge. Those smote are unmade, scattered as chaff before the breath of ancients."
   },
   {
@@ -2205,7 +2205,7 @@
    "slot": "Mace2H",
    "slotPt": "Maça de 2 mãos",
    "mythic": false,
-   "power": "Death Blow creates a shockwave, dealing # of its Base damage to enemies. Enemies who die to this effect also reset Death Blow’s Cooldown.",
+   "power": "Death Blow gains all Upgrades for free and deals #% increased damage.",
    "flavor": "The malformed snake creatures that live in the swamps are not content with simply killing their prey. They seem to take a malicious pleasure from inflicting as much suffering as possible before death."
   },
   {
@@ -2217,7 +2217,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Minions gain # Attack Speed and Critical Strike Chance.\n\nWhen one of your Minions die, your other Minions enrage, dealing # increased damage for # seconds.",
+   "power": "Your Minions gain #% Attack Speed and Critical Strike Chance.\n\nWhen one of your Minions die, your other Minions enrage, dealing #% increased damage for # seconds.",
    "flavor": "\"Can one befriend the dead? What loyalty is earned or granted in the act of reanimation? On this subject, there is much I have yet to understand.\" -Deckard Cain"
   },
   {
@@ -2227,7 +2227,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Damaging enemies with a Non-Basic Skill cast marks them for # seconds. When a Basic Skill first hits a marked enemy, the Basic Skill's damage is echoed to all marked enemies, dealing # increased damage.",
+   "power": "Damaging enemies with a Non-Basic Skill cast marks them for # seconds. When a Basic Skill first hits a marked enemy, the Basic Skill's damage is echoed to all marked enemies, dealing #% increased damage.",
    "flavor": "Crafted from fragments of Duriel's carapace, wearing these gloves, or being struck by them, causes an agonizing sensation akin to pushing one's hands through a thousand shards of glass."
   },
   {
@@ -2263,7 +2263,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "While you have at least # stacks of Ferocity, you gain # increased damage and # increased Armor.\n\nGaining Ferocity also grants Resolve.",
+   "power": "While you have at least # stacks of Ferocity, you gain #% increased damage and #% increased Armor.\n\nGaining Ferocity also grants Resolve.",
    "flavor": "\"In Natsalarwaka, no blood shall mar the earth. Even bitter enemies must forgo their blades before entering the haven. Breaking this accord will invoke Wasipotsu's wrath.\" - Oral Oaxazi Scripture"
   },
   {
@@ -2273,7 +2273,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "You are permanently Unhindered and leave behind a trail of frost that Chills enemies.\n\nYour Chill effects cause enemies to take # increased damage from you.",
+   "power": "You are permanently Unhindered and leave behind a trail of frost that Chills enemies.\n\nYour Chill effects cause enemies to take #% increased damage from you.",
    "flavor": "Remorseful devotees of the Cathedral of Light must undertake a grueling pilgrimage, journeying across the frigid glacier known as the Serac Rapture. Only then may their gravest sins be forgiven."
   },
   {
@@ -2285,7 +2285,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Smoke Grenade bounces and detonates a second time. Smoke Grenade's damage is increased by # and Duration is increased by #.",
+   "power": "Smoke Grenade bounces and detonates a second time. Smoke Grenade's damage is increased by #% and Duration is increased by #%.",
    "flavor": "\"Ploughin' told you already! Hidden weapons are out – Yes, especially grenades! Behave yourself, or Morrick will skin you lot.\"- Purveyor of the Gea Kul fighting pits, on the eve of Morrick's murder"
   },
   {
@@ -2297,7 +2297,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "The Base Spirit of a Skill cast grants:\nEagle: # Movement Speed\nGorilla: # Damage Reduction\nJaguar: # Attack Speed\nCentipede: # Life per Second\n\nCasting a Skill of a different Base Spirit:\nSwaps to the new bonus\nIncreases Core Stats by # for # seconds.",
+   "power": "The Base Spirit of a Skill cast grants:\nEagle: #% Movement Speed\nGorilla: #% Damage Reduction\nJaguar: #% Attack Speed\nCentipede: #% Life per Second\n\nCasting a Skill of a different Base Spirit:\nSwaps to the new bonus\nIncreases Core Stats by #% for # seconds.",
    "flavor": "\"Nahantu is everchanging. Nahantu is everlasting. When the Burning Hells become ash and soot, and when the High Heavens come crashing down, Nahantu will remain.\" -Excerpt from Defiance of Enkasi"
   },
   {
@@ -2309,7 +2309,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "While moving, you gain # Dodge Chance and Damage Reduction.\n\nAfter standing still for # seconds, you become Unstoppable until you move.",
+   "power": "While moving, you gain #% Dodge Chance and Damage Reduction.\n\nAfter standing still for # seconds, you become Unstoppable until you move.",
    "flavor": "\"To commune with spirits, listen to whispers unseen. Root yourself unto the earth and let its pulse still the mind. Hear the ancient guardians – they rise to aid you.\" -Ysevete, the First Spiritborn"
   },
   {
@@ -2321,7 +2321,7 @@
    "slot": "Mace2H",
    "slotPt": "Maça de 2 mãos",
    "mythic": false,
-   "power": "Pulverize pulls Distant enemies towards you. In addition, Pulverize deals # bonus damage. This damage bonus is increased to # if the target was pulled towards you, is Unstoppable or a Boss.",
+   "power": "Pulverize pulls Distant enemies towards you. In addition, Pulverize deals #% bonus damage. This damage bonus is increased to #% if the target was pulled towards you, is Unstoppable or a Boss.",
    "flavor": "\"The Cathedral fled south, leaving sanctums hollow and songs unsung. What was left—stone, silver, and sanctified relics—were claimed and bent to the will of elder root and spirit.\" -Bryona"
   },
   {
@@ -2333,7 +2333,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Inflicting Damage Over Time on an enemy has up to a # chance to reduce the Cooldowns of your Skills by # |4second:seconds;.",
+   "power": "Inflicting Damage Over Time on an enemy has up to a #% chance to reduce the Cooldowns of your Skills by # seconds.",
    "flavor": "Harrogath, the final bastion of resistance against Baal's assault on Mt. Arreat was destroyed along with the Worldstone. The survivors never forgave the betrayal that led to the loss of their home."
   },
   {
@@ -2345,7 +2345,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Teleport pulls Close enemies to you and you gain # Damage Reduction for # seconds.",
+   "power": "Teleport pulls Close enemies to you and you gain #% Damage Reduction for # seconds.",
    "flavor": "The power you have is never enough."
   },
   {
@@ -2357,7 +2357,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Blizzard's effects linger on enemies for an additional # of its duration.",
+   "power": "Blizzard's effects linger on enemies for an additional #% of its duration.",
    "flavor": "The Firstborn sorrow is not forgotten, but sleeps in the sea, and in time wakes again."
   },
   {
@@ -2379,7 +2379,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Skills deal # increased damage per point of Fury you have, but # Fury Drains per second while in combat.",
+   "power": "Skills deal #% increased damage per point of Fury you have, but #% Fury Drains per second while in combat.",
    "flavor": "\"Without him the wine is less sweet, the hearth less warm, and our blades less keen. Our blood brother is gone, but Bul-Kathos willing, we will meet again one day.\"\n- Sorrowsong for Ramaladni"
   },
   {
@@ -2389,7 +2389,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Thorns has a # chance to deal # increased damage.",
+   "power": "Thorns has a #% chance to deal #% increased damage.",
    "flavor": "Crafted by the cannibal Armoda, each piece of this interlocking armor has been sharpened into a knife's edge. Even a century after death, the plate remained on her corpse, unable to be removed safely."
   },
   {
@@ -2401,7 +2401,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Gain # Maximum Overpower. Blood Orbs grant # stacks of Overpower.\n\nYour Blood Skills consume # stack of Overpower to deal # increased damage.",
+   "power": "Gain # Maximum Overpower. Blood Orbs grant # stacks of Overpower.\n\nYour Blood Skills consume # stack of Overpower to deal #% increased damage.",
    "flavor": "\"The spark of life flows through blood, just as the spark of unlife flows through desiccated bone. There is power in both, if one knows how to use it.\" -Necromancer Zayl"
   },
   {
@@ -2413,7 +2413,7 @@
    "slot": "Sword2H",
    "slotPt": "Espada de 2 mãos",
    "mythic": false,
-   "power": "Zeal gains the Death or Glory Variant for free and deals # increased damage.",
+   "power": "Zeal gains the Death or Glory Variant for free and deals #% increased damage.",
    "flavor": "\"Thus spake Que-Hegan Sankekur the righteous: when prayer fails man, let the blade be our psalm. May the blood of unbelievers be the ink which we write our faith anew.\" -Excerpt from Brother Ismail"
   },
   {
@@ -2425,7 +2425,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Command Laalish is now an Ultimate Skill and deals # increased damage. Command Laalish's Terror Realm lasts # longer and while within your Abyss Skill casts do not break Shadowform Stealth.",
+   "power": "Command Laalish is now an Ultimate Skill and deals #% increased damage. Command Laalish's Terror Realm lasts #% longer and while within your Abyss Skill casts do not break Shadowform Stealth.",
    "flavor": "\"We found eight corpses, arranged around a summoning circle. No wounds or blood. They were frozen in mid-scream. Whatever had appeared in the circle was gone.\" -Caldeum guard report"
   },
   {
@@ -2437,7 +2437,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Frost Bolt pierces through Crowd Controlled and Unstoppable enemies and deals # increased damage.",
+   "power": "Frost Bolt pierces through Crowd Controlled and Unstoppable enemies and deals #% increased damage.",
    "flavor": "\"We passed through the Fields of Judgement. The cold there...it chills your bones, and freezes your soul. Only I made it to the summit. The rest sit in prayer for eternity.\"\n- The Pilgrimage of Agoa"
   },
   {
@@ -2461,7 +2461,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "After spending # Fury within # seconds, your next non-Channeled Core or Weapon Mastery Skill Cast within # seconds is a guaranteed Critical Strike and deals # bonus Critical Strike Damage. Excess Fury grants # additional bonus.",
+   "power": "After spending # Fury within # seconds, your next non-Channeled Core or Weapon Mastery Skill Cast within # seconds is a guaranteed Critical Strike and deals #% bonus Critical Strike Damage. Excess Fury grants #% additional bonus.",
    "flavor": "\"Anger brings strength but clouds the mind. You must learn to focus your fury, direct it with purpose. Keep our sacred duty at the forefront of your mind, always.\"\n- Talic, to Madawc"
   },
   {
@@ -2471,7 +2471,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": true,
-   "power": "Spending your Primary Resource reduces the Resource cost of your Skills and increases your damage by # for # seconds, up to #.",
+   "power": "Spending your Primary Resource reduces the Resource cost of your Skills and increases your damage by #% for # seconds, up to #%.",
    "flavor": "\"Yours is the power to pluck the stars from the heavens with the ease of a child gathering fruit from the bough.\"\n- Unknown"
   },
   {
@@ -2483,7 +2483,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Maximum Vigor is increased by #, and killing an enemy grants you # Vigor.\n\nWhile you have Ferocity, your new Poisoning effects last # longer.",
+   "power": "Your Maximum Vigor is increased by #%, and killing an enemy grants you # Vigor.\n\nWhile you have Ferocity, your new Poisoning effects last #% longer.",
    "flavor": "\"At midday thundered the first brother, Nyamoyo, lord of predators. Survival is his blessing, hunting is his prayer. Honor him and prowess shall be your reward.\" - The Nitī Sē, Verse IV"
   },
   {
@@ -2495,7 +2495,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "When you Critically Strike, you regain # of the Vigor you've spent in the last # seconds.\n\nGain Counterattack's Passive Effect.",
+   "power": "When you Critically Strike, you regain #% of the Vigor you've spent in the last # seconds.\n\nGain Counterattack's Passive Effect.",
    "flavor": "\"At midnight laughed the second brother, Nebahayomo, spirit of cunning. Trickery is his blessing, suffering is his prayer. Honor him and shrewdness shall be your reward.\" - The Nitī Sē, Verse V"
   },
   {
@@ -2507,7 +2507,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Rend's duration is increased by # seconds.\n\nDamaging enemies with your Brawling Skills applies # stacks of Rend's Bleed. This can only affect each enemy once every # second.",
+   "power": "Rend's duration is increased by # seconds and deals #% increased damage.\n\nDamaging enemies with your Brawling Skills applies # stacks of Rend's Bleed. This can only affect each enemy once every # seconds.",
    "flavor": "\"The hunger, it starts so small, like a tickle in the back of your mind. You believe the lie that you still have control until you're so far gone you can't even recognize yourself.\" -Varyana"
   },
   {
@@ -2543,7 +2543,7 @@
    "slot": "Quarterstaff",
    "slotPt": "Bordão",
    "mythic": false,
-   "power": "Your Core Skills are now additionally Basic Skills and free to cast.\n\nWhen cast at Maximum Vigor, your Core Skills Consume all Vigor to cast at their largest Size, and become guaranteed Critical Strikes, with # increased Critical Strike Damage for each point of Vigor spent this way.",
+   "power": "Your Core Skills are now additionally Basic Skills and free to cast.\n\nWhen cast at Maximum Vigor, your Core Skills Consume all Vigor to cast at their largest Size, and become guaranteed Critical Strikes, with #% increased Critical Strike Damage for each point of Vigor spent this way.",
    "flavor": "\"Beyond the world disc doth lie the keeper serpent Kepeleke. Ceaseless the serpent grows, and thus must ever consume his own tail, lest the world be overtaken.\" - Lintel XII"
   },
   {
@@ -2555,7 +2555,7 @@
    "slot": "Mace2H",
    "slotPt": "Maça de 2 mãos",
    "mythic": false,
-   "power": "Every # seconds, Pulverize forms a puddle that deals # of its damage as Poisoning damage over # seconds.\n\nPulverizing the puddle splashes an additional # of the puddle's total damage within the area and around it.",
+   "power": "Every # seconds, Pulverize forms a puddle that deals #% of its damage as Poisoning damage over # seconds.\n\nPulverizing the puddle splashes an additional #% of the puddle's total damage within the area and around it.",
    "flavor": "\"The Cathedral fled south, leaving sanctums hollow and songs unsung. What was left - stone, silver, and sanctified relics - were claimed and bent to the will of elder root and spirit.\" - Bryona"
   },
   {
@@ -2571,7 +2571,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Deal # increased damage to isolated enemies.",
+   "power": "Deal #% increased damage to isolated enemies.",
    "flavor": "This blade favors the unguarded, the unmourned, the straggler. For it knows that all bonds weaken in time, and that even kings may be found unguarded if patience is infinite."
   },
   {
@@ -2583,7 +2583,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Grenades gain # increased Size and deal # increased damage.\n\nEnemies damaged by Grenade Skills become either Vulnerable or Weakened for # seconds.",
+   "power": "Your Grenades gain #% increased Size and deal #% increased damage.\n\nEnemies damaged by Grenade Skills become either Vulnerable or Weakened for # seconds.",
    "flavor": "\"The element of surprise is the starting point. In this moment, be sure to finish it.\" - Kashya"
   },
   {
@@ -2595,7 +2595,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "You gain # increased damage for each damaging Skill you have equipped, and an additional # for # seconds when each of those Skills are used.",
+   "power": "You gain #% increased damage for each damaging Skill you have equipped, and an additional #% for # seconds when each of those Skills are used.",
    "flavor": "A foul blizzard trapped the clans after the Battle of Nine Winters. Then came a pale stallion born of the peaks, and the storm parted before him. Tsasgal, they named him - chief of all horses."
   },
   {
@@ -2607,7 +2607,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Arbiter form increases Aura Potency by # and Wing Strike damage by #",
+   "power": "Arbiter form increases Aura Potency by #% and Wing Strike damage by #%",
    "flavor": "A token wrought from the siege of Kethamar. May the keep's defenders be anointed and borne aloft on hallow'd flame."
   },
   {
@@ -2619,7 +2619,7 @@
    "slot": "Sword2H",
    "slotPt": "Espada de 2 mãos",
    "mythic": false,
-   "power": "Your Summons' damage afflict enemies with Vampiric Curse. Consuming a Corpse also contributes # souls to Vampiric Curse, which can now stack up to # souls.\n\nOnly Army of the Dead can now unleash the souls from Vampiric Curse, causing both Army of the Dead and the souls to deal # increased damage per soul unleashed.",
+   "power": "Your Summons' damage afflict enemies with Vampiric Curse. Consuming a Corpse also contributes # souls to Vampiric Curse, which can now stack up to # souls.\n\nOnly Army of the Dead can now unleash the souls from Vampiric Curse, causing both Army of the Dead and the souls to deal #% increased damage per soul unleashed.",
    "flavor": "The parched blade keens, longing to serve its master."
   },
   {
@@ -2631,7 +2631,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Summon a Tortured Wretch when your Current Life drops below # of your Maximum Life. Enemies Tortured Wretch attempts to Taunt take # increased damage and deal # less damage for # seconds.",
+   "power": "Summon a Tortured Wretch when your Current Life drops below #% of your Maximum Life. Enemies Tortured Wretch attempts to Taunt take #% increased damage and deal #% less damage for # seconds.",
    "flavor": "\"Though unruly, demons are compelled to abide by certain rules. When a pact is forged, whether by force or choice, it must be upheld.\" -Deckard Cain"
   },
   {
@@ -2643,7 +2643,7 @@
    "slot": "Mace2H",
    "slotPt": "Maça de 2 mãos",
    "mythic": false,
-   "power": "You can now equip all Ultimate Skills and gain # Ranks in them. Hitting enemies with Non-Ultimate Skills builds up your Ultimate Skill damage by #, up to #. After starting Ultimate Skills the damage bonus is reset once all have ended.",
+   "power": "You can now equip all Ultimate Skills and gain # Ranks in them. Hitting enemies with Non-Ultimate Skills builds up your Ultimate Skill damage by #%, up to #%. After starting Ultimate Skills the damage bonus is reset once all have ended.",
    "flavor": "\"The Primes warred, but not for glory. They did so for the joy of mayhem. How many legions of demons died simply to delight the lords of Hell?\" -Tal Rasha"
   },
   {
@@ -2655,7 +2655,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Your Evade is now Soar.\n\nSoar deals # increased damage and triggers Vortex at its landing location",
+   "power": "Your Evade is now Soar.\n\nSoar deals #% increased damage and triggers Vortex at its landing location",
    "flavor": "\"Sky Spirits weave the winds. Thunder is their laughter and auroras their crowns. Those they bless learn to scorn the earth, for from above, it is but a distant memory.\" - Lintel VII"
   },
   {
@@ -2667,7 +2667,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Gain # Ferocity every # seconds as long as no enemies are Close to you.\n\nYour Marksman Skills deal # increased damage per stack of Ferocity.",
+   "power": "Gain # Ferocity every # seconds as long as no enemies are Close to you.\n\nYour Marksman Skills deal #% increased damage per stack of Ferocity.",
    "flavor": "\"This'll blow your hair back.\"\n- Lyndon"
   },
   {
@@ -2679,7 +2679,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Your Trap Skills can be thrown and deal # increased damage.",
+   "power": "Your Trap Skills can be thrown and deal #% increased damage.",
    "flavor": "\"Rumor has it he lost them in a game of Skull & Anchor, but the boss is a devil with the dice. I think he wanted to give the poor sod something to keep him warm without wounding his pride.\"\n- Elstir"
   },
   {
@@ -2691,7 +2691,7 @@
    "slot": "Flail",
    "slotPt": "Mangual",
    "mythic": false,
-   "power": "Umbral Chains gains the Epicenter Variant for free and deals # increased damage.",
+   "power": "Umbral Chains gains the Epicenter Variant for free and deals #% increased damage.",
    "flavor": "\"Whereas Andariel relishes the anticipation of pain and the fear it creates, Duriel only cares of the existence and propagation of agony.\" -Book of Adria"
   },
   {
@@ -2703,7 +2703,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Casting or Channeling a Cutthroat Skill grants a stack of Momentum, up to #. Casting a Marksman Skill removes a stack of Momentum.\n\nFor each stack of Momentum, you gain:\n# Maximum Energy\n# Energy Regeneration\n# Increased Damage",
+   "power": "Casting or Channeling a Cutthroat Skill grants a stack of Momentum, up to #. Casting a Marksman Skill removes a stack of Momentum.\n\nFor each stack of Momentum, you gain:\n#% Maximum Energy\n#% Energy Regeneration\n#% Increased Damage",
    "flavor": "Pirates rarely gather under a single Captain, but when they do, they raid from Skovos to Xiansai. The last was known as the Scourge of the Twin Seas, and left a crimson wake for decades."
   },
   {
@@ -2715,7 +2715,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Profane Sentinel deals # increased damage and summons an additional eye that follows you for # seconds.",
+   "power": "Profane Sentinel deals #% increased damage and summons an additional eye that follows you for # seconds.",
    "flavor": "Upon the seal was graven the Name of the Ophanim. And though they were not demon, their will bent the same."
   },
   {
@@ -2727,7 +2727,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Judgement deals # increased damage and has a # chance to explode twice when using the Judicator Oath.",
+   "power": "Judgement deals #% increased damage and has a #% chance to explode twice when using the Judicator Oath.",
    "flavor": "\"So is it written: when the Second Trumpet sounds, the wicked shall fall as stars cast down from their firmament.\" - Canticle of the Judgement, Verse XII"
   },
   {
@@ -2739,7 +2739,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Your Demonology Skills deal # increased damage per Wrath you have and you take # reduced damage per Dominance you have.",
+   "power": "Your Demonology Skills deal #% increased damage per Wrath you have and you take #% reduced damage per Dominance you have.",
    "flavor": "\"In all dealings with Hells' spawn, names are both key and chain. To speak a demon's true name is to invite its presence, and seize some small dominion over it.\" -Master Horazon"
   },
   {
@@ -2751,7 +2751,7 @@
    "slot": "Quarterstaff",
    "slotPt": "Bordão",
    "mythic": false,
-   "power": "Your Basic Skills deal # increased damage and always use their 3rd attack.\n\nEvery 3rd cast of a Basic Skill strikes three times.",
+   "power": "Your Basic Skills deal #% increased damage and always use their 3rd attack.\n\nEvery 3rd cast of a Basic Skill strikes three times.",
    "flavor": "To the silent skies, the hunter Etzlek raised his staff and then smote the numen. \"Release her!\" came his cries as he desecrated the hallowed ground. On the third strike, the spirit answered..."
   },
   {
@@ -2763,7 +2763,7 @@
    "slot": "FocusBookOffHand",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "Deep Freeze gains the Glacier Variant for free and its final blast deals # increased damage.",
+   "power": "Deep Freeze gains the Glacier Variant for free and its final blast deals #% increased damage.",
    "flavor": "Mage halls across Sanctuary boast of their prodigious alumni, trained from an early age. However, one might argue that these talented children would have become powerful Wizards in their own right."
   },
   {
@@ -2781,7 +2781,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Basic Skills deal # increased damage but additionally cost # Primary Resource.",
+   "power": "Basic Skills deal #% increased damage but additionally cost # Primary Resource.",
    "flavor": "This blade once bore divine purpose wielded by the angel Verathiel. Like its keeper, the sword fell to Infernal depths. Yet beneath this corruption, is a heartbeat of a past memory, holding steadfast."
   },
   {
@@ -2805,7 +2805,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": true,
-   "power": "When you would be dealt fatal damage, instead you Heal to full Life, gain a Barrier for # of your Maximum Life for # seconds, and Knock Back Close enemies. This power is disabled once used until you return to town.",
+   "power": "When you would be dealt fatal damage, instead you Heal to full Life, gain a Barrier for #% of your Maximum Life for # seconds, and Knock Back Close enemies. This power is disabled once used until you return to town.",
    "flavor": "\"Auriel alone saw past Lucion's guise. With Al'maiesh aloft, she smote the vile prince. Hatred's seed feigned death and waited, loath to enter the Abyss again.\" - The Great Conflict, Tome I"
   },
   {
@@ -2829,7 +2829,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Whenever you gain Stealth, you also gain Concealment. Gain # increased Damage Reduction while Stealthed and for # seconds after breaking it.",
+   "power": "Whenever you gain Stealth, you also gain Concealment. Gain #% increased Damage Reduction while Stealthed and for # seconds after breaking it.",
    "flavor": "\"Deep in the Labyrinth, I found true darkness. The Hidden became my shadow, their attacks sudden and relentless. But I studied them, and found I too can enter the ether.\" -Moreina's Journals"
   },
   {
@@ -2841,7 +2841,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Gain Familiar's Enchantment and Familiar's Potency is increased by #.",
+   "power": "Gain Familiar's Enchantment and Familiar's Potency is increased by #%.",
    "flavor": "\"While known for their proclivity for mischief, the Sidhe, as the Druids call them, are fiercely loyal and will defend all they consider friend...\" - Sarnakyle"
   },
   {
@@ -2851,7 +2851,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Freeze effects cause enemies to permanently take # increased Cold damage from you for each second they are Frozen.",
+   "power": "Your Freeze effects cause enemies to permanently take #% increased Cold damage from you for each second they are Frozen.",
    "flavor": "Ksathra's strike roiled the seas, swallowing the land. The sky raged, unleashing devastating storms. In a moment, their empire gone. Their bond forever broken. Her sister, no more."
   },
   {
@@ -2863,7 +2863,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Infernal Breath gains the Explosive Death Variant for free and deals # increased damage.",
+   "power": "Infernal Breath gains the Explosive Death Variant for free and deals #% increased damage.",
    "flavor": "\"Azmodan has plied the honeyed lures of sin. Where terror and hatred break the soul, temptation bends the faithful knee for use.\" -Of Primes and Lesser Evils, Volume I"
   },
   {
@@ -2875,7 +2875,7 @@
    "slot": "Bow",
    "slotPt": "Arco",
    "mythic": false,
-   "power": "Every consecutive Cast of Rapid Fire increases the amount of arrows it fires by #, up to #. Rapid Fire deals # increased damage.",
+   "power": "Every consecutive Cast of Rapid Fire increases the amount of arrows it fires by #, up to #. Rapid Fire deals #% increased damage.",
    "flavor": "\"Genai took up her bow and aimed at the sun itself. The light burned her eyes, but her arrow flew true. Wounded, the sun hid, and brought forth the first night.\"\n- Fable of the Great Sky-Hunt"
   },
   {
@@ -2895,7 +2895,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Your Healing Potions grant a Barrier for # of your Maximum Life for # second.\n\nYou gain # Damage Reduction while you have a Barrier and may drink your Healing Potion while at full Life.",
+   "power": "Your Healing Potions grant a Barrier for #% of your Maximum Life for # second.\n\nYou gain #% Damage Reduction while you have a Barrier and may drink your Healing Potion while at full Life.",
    "flavor": "\"To create such an artifact would require an impossible mastery over alchemy, transmutation and the subtle magics of the soul. By all rights, it should not exist, yet it does.\"\n- Artisan Callas"
   },
   {
@@ -2907,7 +2907,7 @@
    "slot": "Mace",
    "slotPt": "Maça",
    "mythic": false,
-   "power": "Hell Fracture deals # increased damage and every #rd cast creates a triple fracture.",
+   "power": "Hell Fracture deals #% increased damage and every #rd cast creates a triple fracture.",
    "flavor": "\"...Tathamet's blackened, smoldering husk spiraled into the lower darkness of reality. From his putrid flesh grew the realms of the Burning Hells.\" -The Black Book of Lam Esen"
   },
   {
@@ -2917,7 +2917,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "While not taking damage, you take up to 50% more damage and deal up to # more damage. This bonus is reset upon losing Life.",
+   "power": "While not taking damage, you take up to 50% more damage and deal up to #% more damage. This bonus is reset upon losing Life.",
    "flavor": "It looks like the blouse of a street urchin with a crude stone pendant. But the inside is lined with hidden pockets and sinister sheathes. And on the back of the pendant? A old runic word: \"Kantwirt.\""
   },
   {
@@ -2929,7 +2929,7 @@
    "slot": "Staff",
    "slotPt": "Cajado",
    "mythic": false,
-   "power": "Fireball deals # increased damage and every 3rd Cast launches 2 additional projectiles.",
+   "power": "Fireball deals #% increased damage and every 3rd Cast launches 2 additional projectiles.",
    "flavor": "\"Leaving even blackened bones for your kin to mourn is too good an end for you.\"\n- Josiah"
   },
   {
@@ -2941,7 +2941,7 @@
    "slot": "Staff",
    "slotPt": "Cajado",
    "mythic": false,
-   "power": "Charged Bolts deal # increased damage, last # longer and seek enemies.",
+   "power": "Charged Bolts deal #% increased damage, last #% longer and seek enemies.",
    "flavor": "\"Also known as the Greatstaff of the Old Religion, this powerful relic is one of only a small handful of Skatsimi artifacts that have survived to this day.\"\n- Barrett's Book of Implements"
   },
   {
@@ -2953,7 +2953,7 @@
    "slot": "Staff",
    "slotPt": "Cajado",
    "mythic": false,
-   "power": "Unstable Currents increases your Armor and Resistances by # and kills increase your damage by # for the duration.",
+   "power": "Unstable Currents increases your Armor and Resistances by #% and kills increase your damage by #% for the duration.",
    "flavor": "\"To walk the Path of Zerae, do not seek to control the storm within. Lose yourself to it, let it leave your body and become your shroud. Then you will see yourself as its master.\" -Queen Xaera"
   },
   {
@@ -2965,7 +2965,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Meteor Casts consume Overpower when possible, dropping an additional Meteor for every # Overpower consumed.\n\nMeteor deals # increased damage.",
+   "power": "Meteor Casts consume Overpower when possible, dropping an additional Meteor for every # Overpower consumed.\n\nMeteor deals #% increased damage.",
    "flavor": "\"The elders say they saw a star falling from the sky many years ago. A sign from the heavens that the end times were nigh. A rallying cry to take up arms and protect Sanctuary!\"\n- Crusader Hamilton"
   },
   {
@@ -2975,7 +2975,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Your Resistances are each equal to your highest, and you deal # more damage of that Element.",
+   "power": "Your Resistances are each equal to your highest, and you deal #% more damage of that Element.",
    "flavor": "Nine out of ten appraisers would see a dull stone. Crudely cut. Simply set. But a trained eye might see past the illusion placed by its Ammuit craftsman...and marvel at the wellspring of magic within."
   },
   {
@@ -2987,7 +2987,7 @@
    "slot": "OffHandTotem",
    "slotPt": "Totem",
    "mythic": false,
-   "power": "Gain # to All Resistances while channeling Stone Burst. Stone Burst's final explosion deals # bonus damage split between all targets caught in the blast.",
+   "power": "Gain #% to All Resistances while channeling Stone Burst. Stone Burst's final explosion deals #% bonus damage split between all targets caught in the blast.",
    "flavor": "Long ago, the Stone Clan laid the foundations of Old Kurast. They shaped earthen marvels, but wars with the Vizjerei turned chisel into spear. Now the only stone they wield is when cast against foe."
   },
   {
@@ -2999,7 +2999,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Your Wolf Companions are infused with the power of the storm, dealing # increased Lightning damage and gaining the Storm Howl ability.",
+   "power": "Your Wolf Companions are infused with the power of the storm, dealing #% increased Lightning damage and gaining the Storm Howl ability.",
    "flavor": "\"The storm's rage is my own, brother. I call, and the skies roar in reply.\"\n- Vasily, to Bul-Kathos"
   },
   {
@@ -3011,7 +3011,7 @@
    "slot": "FocusBookOffHand",
    "slotPt": "Foco",
    "mythic": false,
-   "power": "Ball Lightning deals # increased damage and explodes for # of its total damage when dissipating.",
+   "power": "Ball Lightning deals #% increased damage and explodes for #% of its total damage when dissipating.",
    "flavor": "The height of the Moon Clan's power brought a beast that instilled dread upon Khanduras. More demon than Khazra, the one dubbed the Stormhorn left charred brands where cities once stood."
   },
   {
@@ -3023,7 +3023,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Picking up a Storm Feather forms a firestorm around you for # seconds dealing # Fire damage every # seconds.\n\nEvery # additional Storm Feathers you pick up intensifies the firestorm, increasing its damage by # but not refreshing its duration. Storm Feathers are now Jaguar Skills and the firestorm is an Eagle, Jaguar, and Storm Feather Skill.",
+   "power": "Picking up a Storm Feather forms a firestorm around you for # seconds dealing # Fire damage every # seconds.\n\nEvery # additional Storm Feathers you pick up intensifies the firestorm, increasing its damage by #% but not refreshing its duration. Storm Feathers are now Jaguar Skills and the firestorm is an Eagle, Jaguar, and Storm Feather Skill.",
    "flavor": "Long ago, the Sunbird swallowed the sun whole. In the dark, the Spiritborn Xipil crawled to its nest and tore the sun free from the bird's gullet. Since, its throat was scorched red for its folly."
   },
   {
@@ -3035,7 +3035,7 @@
    "slot": "Flail",
    "slotPt": "Mangual",
    "mythic": false,
-   "power": "Heaven's Fury gains # additional rays and deals # increased damage.",
+   "power": "Heaven's Fury gains # additional rays and deals #% increased damage.",
    "flavor": "\"The sun looked upon man and judged him unworthy. In wrath, the sins of the faithless were scourged in flame upon their flesh. And the day was made pure again.\" - Canticle of the Penitent, Verse XV"
   },
   {
@@ -3047,7 +3047,7 @@
    "slot": "Axe2H",
    "slotPt": "Machado de 2 mãos",
    "mythic": false,
-   "power": "Casting an Aura Skill triggers a Consecration beneath you.\n\nYou gain # Aura Potency while standing in Consecration.",
+   "power": "Casting an Aura Skill triggers a Consecration beneath you.\n\nYou gain #% Aura Potency while standing in Consecration.",
    "flavor": "\"Heat struck my face and I thought the sun had risen early. Each swing of the hammer cleaved through the hordes, and every man shouted, wild with awe: The night ends!\" - Survivor, Battle of Westmarch"
   },
   {
@@ -3059,7 +3059,7 @@
    "slot": "Quarterstaff",
    "slotPt": "Bordão",
    "mythic": false,
-   "power": "Your Focus Skills benefit from all their Upgrades, and they increase the damage of your Potency Skills by # for # seconds, up to #.",
+   "power": "Your Focus Skills benefit from all their Upgrades, and they increase the damage of your Potency Skills by #% for # seconds, up to #%.",
    "flavor": "\"A relic of an old, forgotten religion lost to time and expansion. The staff retains a faint warmth as if still blessed by the dead god it once served.\" - Ser Paget's notes from the Tiklan excavation"
   },
   {
@@ -3071,7 +3071,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Brandish unleashes in all directions dealing # increased damage.",
+   "power": "Brandish unleashes in all directions dealing #% increased damage.",
    "flavor": "The scroll's words are known to the knight alone. He supplicates to his sworn oath, lest his faith and blade find no purchase."
   },
   {
@@ -3083,7 +3083,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Casting a Pyromancy, Shock, or Frost Skill increases your damage by # for # seconds, stacking once per Element. Casting again refreshes all bonuses if the previous skill was a different Element.",
+   "power": "Casting a Pyromancy, Shock, or Frost Skill increases your damage by #% for # seconds, stacking once per Element. Casting again refreshes all bonuses if the previous skill was a different Element.",
    "flavor": "\"Fool said he dug it out of the sands near Lut Gholein with a few other 'worthless trinkets'. I hid my delight at receiving such a treasure in exchange for a meager handful of coins.\"\n- Rakhaan"
   },
   {
@@ -3093,7 +3093,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "When you take damage from a Non-Physical damage type, you gain # Resistance to that damage type for # seconds. This effect can only apply to one damage type at a time.",
+   "power": "When you take damage from a Non-Physical damage type, you gain #% Resistance to that damage type for # seconds. This effect can only apply to one damage type at a time.",
    "flavor": "“May the Light of Father Inarius shine down upon all weary travelers of this holy land. Turn your face toward his radiance and find your strength renewed.”\n- Statue Inscription"
   },
   {
@@ -3103,7 +3103,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "Effects that Heal you beyond # Life grant you Barrier equal to # of the overhealed amount that lasts for # seconds.\n\nYou may now drink your Healing Potion while at full Life.",
+   "power": "Effects that Heal you beyond #% Life grant you Barrier equal to #% of the overhealed amount that lasts for # seconds.\n\nYou may now drink your Healing Potion while at full Life.",
    "flavor": "\"The revelation that master tailor Callas was in fact a witch only served to further fuel the desire for her uniquely enchanted legwraps.\"\n- Barrett's Book of Implements"
   },
   {
@@ -3127,7 +3127,7 @@
    "slot": "Staff",
    "slotPt": "Cajado",
    "mythic": false,
-   "power": "Petrified enemies have a # increased chance to be Critically Struck and take # increased damage. Additionally, Earth Skills Petrify Healthy enemies for # seconds.",
+   "power": "Petrified enemies have a #% increased chance to be Critically Struck and take #% increased damage. Additionally, Earth Skills Petrify Healthy enemies for # seconds.",
    "flavor": "\"Well did she feed her children, and well did her children feed her.\" -Scosglen folktale"
   },
   {
@@ -3139,7 +3139,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Hitting a Lesser Demon with Bombardment explodes it for # of a Bombardment impact if the Demon has less than # |4second:seconds; duration left. Bombardment deals # increased damage.",
+   "power": "Hitting a Lesser Demon with Bombardment explodes it for #% of a Bombardment impact if the Demon has less than # seconds duration left. Bombardment deals #% increased damage.",
    "flavor": "The third lord of Hashir hungered to see all beneath his rule. A Warlock obliged and bound a demon into steel. The king bore the blade and beheld how his realm was cast down before him."
   },
   {
@@ -3155,7 +3155,7 @@
    "slot": "Axe",
    "slotPt": "Machado",
    "mythic": false,
-   "power": "Your attacks Critically Strike Injured Enemies. Killing Elites Fears and Slows nearby enemies by # for # seconds.",
+   "power": "Your attacks Critically Strike Injured Enemies. Killing Elites Fears and Slows nearby enemies by #% for # seconds.",
    "flavor": "A nightmarish amalgam of blood, bone and steel, this axe is as horrific, and as deadly, as its creator."
   },
   {
@@ -3167,7 +3167,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Blazing Scream leaves Sigil of Subversion Shadow or Lava trails behind. You deal # increased Abyss or Hellfire Skill damage to enemies on Sigil of Subversion trails based on their type.",
+   "power": "Blazing Scream leaves Sigil of Subversion Shadow or Lava trails behind. You deal #% increased Abyss or Hellfire Skill damage to enemies on Sigil of Subversion trails based on their type.",
    "flavor": "\"There are depths of the Hells, and even deeper still in the Abyss, where the nameless await their appointed hour. They whisper truths forbidden that erode the mind even as they enlighten it.\" -Elias"
   },
   {
@@ -3179,7 +3179,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Sigil of Summons deals # increased damage and you can summon up to # additional Lesser Demons with # kills outside the ritual.",
+   "power": "Sigil of Summons deals #% increased damage and you can summon up to # additional Lesser Demons with # kills outside the ritual.",
    "flavor": "\"The apprentice called for one. Two answered. Then the third crawled out afterward, unfinished, screaming like it had been torn free too early.\" -Master Azevera"
   },
   {
@@ -3195,7 +3195,7 @@
    "slot": "Mace2H",
    "slotPt": "Maça de 2 mãos",
    "mythic": false,
-   "power": "You deal # more damage to Elites.",
+   "power": "You deal #% more damage to Elites.",
    "flavor": "\"What plague has befouled, let fire make clean. What agony these good people have suffered, let it settle quietly in the dust.\" -General Arenton"
   },
   {
@@ -3207,7 +3207,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Shadow damage infects enemies with Shadowblight for # seconds. Every #th time an enemy receives Shadow damage from you while they are affected by Shadowblight, they take an additional # of that damage as Corrupting damage over # seconds.",
+   "power": "Shadow damage infects enemies with Shadowblight for # seconds. Every #th time an enemy receives Shadow damage from you while they are affected by Shadowblight, they take an additional #% of that damage as Corrupting damage over # seconds.",
    "flavor": "\"Necromancers uphold the Balance between Light and Dark, life and death. Yet it is only natural, only human, that an individual might tend toward one or the other.\" -Deckard Cain"
   },
   {
@@ -3222,7 +3222,7 @@
    "slot": "Sword2H",
    "slotPt": "Espada de 2 mãos",
    "mythic": true,
-   "power": "Increases your Critical Strike Damage by #.",
+   "power": "Increases your Critical Strike Damage by #%.",
    "flavor": "An unbroken lineage of unwavering strength."
   },
   {
@@ -3234,7 +3234,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Your maximum number of Skeleton Mages is increased by # and they are upgraded to Arch-Mages.\n\nArch-Mages teleport to safety when attacked and their attacks occasionally shatter on impact, dealing # increased damage to the enemy and up to # additional targets.",
+   "power": "Your maximum number of Skeleton Mages is increased by # and they are upgraded to Arch-Mages.\n\nArch-Mages teleport to safety when attacked and their attacks occasionally shatter on impact, dealing #% increased damage to the enemy and up to # additional targets.",
    "flavor": "Legends say that the Hand of Naz was not made, but cursed into being. Woe to the living who unearth it, for the price is the same regardless of form. The cavity where a gem once lay is empty."
   },
   {
@@ -3246,7 +3246,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Bonuses from Command Valloch and the Ritualist Shard and its Fragments have # increased Potency. Your Occult Skills deal # increased damage.",
+   "power": "Bonuses from Command Valloch and the Ritualist Shard and its Fragments have #% increased Potency. Your Occult Skills deal #% increased damage.",
    "flavor": "The warlock stared into the blood-stone until his eyes were scorched with dread knowledge. He felt an infernal current awaken in his veins—a plague of visions, malice, and command over the occult."
   },
   {
@@ -3258,7 +3258,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Twisting Blades impales an extra set of blades into its target, dealing # increased damage and creating additional blades that return to you.",
+   "power": "Twisting Blades impales an extra set of blades into its target, dealing #% increased damage and creating additional blades that return to you.",
    "flavor": "\"I am a symphony of blades at your disposal. No need to get your hands dirty, I will deal with any blood or body work. So, how much gold do you have?\" -Mouse, Assassin for Hire"
   },
   {
@@ -3270,7 +3270,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "When consuming a Corpse, there is a # chance to also create a decaying Skeletal Simulacrum that seeks enemies but cannot attack. When it dies, it explodes for # Shadow damage.\n\nThis effect is treated as a Macabre Skill.",
+   "power": "When consuming a Corpse, there is a #% chance to also create a decaying Skeletal Simulacrum that seeks enemies but cannot attack. When it dies, it explodes for # Shadow damage.\n\nThis effect is treated as a Macabre Skill.",
    "flavor": "One of a pair of twin daggers, forbidden from ever meeting. Nearby corpses shudder in its presence."
   },
   {
@@ -3282,7 +3282,7 @@
    "slot": "Wand",
    "slotPt": "Varinha",
    "mythic": false,
-   "power": "Each enemy hit by Teleport increases the damage by # and reduces the Cooldown by # of the next Cast. Becoming Injured will Teleport you to a random location.",
+   "power": "Each enemy hit by Teleport increases the damage by #% and reduces the Cooldown by # of the next Cast. Becoming Injured will Teleport you to a random location.",
    "flavor": "\"The rhythm of the orb, which had pulsed steadily for five centuries, quickened as its owner took his final ragged breaths. It were as if some intelligence within reveled in the sight.\"\n- Master Eos"
   },
   {
@@ -3294,7 +3294,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "When inflicting Damage Over Time, you have a chance equal to your Critical Strike Chance to increase the damage amount by #.",
+   "power": "When inflicting Damage Over Time, you have a chance equal to your Critical Strike Chance to increase the damage amount by #%.",
    "flavor": "Ever watchful were the Patriarchs, as the Unclean slowly made their way out of the Dreadlands."
   },
   {
@@ -3306,7 +3306,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Hammer of the Ancients deals # increased damage on consecutive hits to the same target. This stacks up to # times.",
+   "power": "Hammer of the Ancients deals #% increased damage on consecutive hits to the same target. This stacks up to # times.",
    "flavor": "\"Though he was stuck with a dozen arrows, the barbarian charged Rakkis' lines and swept away any who stood before him. The more he bled, the more ferocious were his blows.\" -The Chronicles of Rakkis"
   },
   {
@@ -3318,7 +3318,7 @@
    "slot": "Sword",
    "slotPt": "Espada",
    "mythic": false,
-   "power": "Your Weapon Mastery Skills are now also Core Skills that have # Cooldown Reduction but cost Fury, dealing # of normal damage.",
+   "power": "Your Weapon Mastery Skills are now also Core Skills that have #% Cooldown Reduction but cost Fury, dealing #% of normal damage.",
    "flavor": "\"Restraint, mercy, honor...these are shackles, forged by the weak and the conquered.\" -Hephasto, the Armorer"
   },
   {
@@ -3330,7 +3330,7 @@
    "slot": "Dagger",
    "slotPt": "Adaga",
    "mythic": false,
-   "power": "Your Subterfuge Skills create an attackable Shade Totem for # seconds. Any damage it takes is replicated onto surrounding enemies at #% effectiveness.\n\nThis effect is treated as a Trap Skill. You may only have # |4Shade Totem:Shade Totems; active at a time.",
+   "power": "Your Subterfuge Skills create an attackable Shade Totem for # seconds. Any damage it takes is replicated onto surrounding enemies at #% effectiveness.\n\nThis effect is treated as a Trap Skill. You may only have # Shade Totems active at a time.",
    "flavor": "One of a pair of twin daggers, forbidden from ever meeting. Bitter voices whisper from the blade."
   },
   {
@@ -3342,7 +3342,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Your maximum number of Skeleton Warriors and Skeleton Mages is increased by # and your Summon damage is increased by #.\n\nCommanding Skeleton Warriors also causes Skeleton Mages to focus the same target for # seconds.",
+   "power": "Your maximum number of Skeleton Warriors and Skeleton Mages is increased by # and your Summon damage is increased by #%.\n\nCommanding Skeleton Warriors also causes Skeleton Mages to focus the same target for # seconds.",
    "flavor": "\"There is no true death. There is only the movement from one world to another. I stand in both of these worlds.\" -Necromancer Zayl"
   },
   {
@@ -3354,7 +3354,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Soulrift's duration is increased by # seconds for every # Essence you spend while it's active, up to # seconds.\n\nSoulrift deals # of its Shadow damage per second to surrounding enemies for every # Essence you gain while it's active.",
+   "power": "Soulrift's duration is increased by # seconds for every # Essence you spend while it's active, up to # seconds.\n\nSoulrift deals #% of its Shadow damage per second to surrounding enemies for every # Essence you gain while it's active.",
    "flavor": "Urzael rent asunder his own wings and armor with a fury unbridled. For never would he bow to the doom of mortals, nor endure defeat at their lowly hands."
   },
   {
@@ -3370,7 +3370,7 @@
    "slot": "Axe",
    "slotPt": "Machado",
    "mythic": false,
-   "power": "Moving grants Ferocity, and Maximum Ferocity is increased by #. Ferocity also increases Movement Speed by # per stack.",
+   "power": "Moving grants Ferocity, and Maximum Ferocity is increased by #. Ferocity also increases Movement Speed by #% per stack.",
    "flavor": "No falsehood could endure the Thousand-Eyed King's reaver nor its countless eyes. Their gaze was bright and terrible, consumed with a world-eating hunger."
   },
   {
@@ -3382,7 +3382,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Terror Swarm gains the Devouring Swarm Variant for free and deals # increased damage.",
+   "power": "Terror Swarm gains the Devouring Swarm Variant for free and deals #% increased damage.",
    "flavor": "Faint screams emanate from the gloves, as if they are imbued with a hundred primal fears."
   },
   {
@@ -3396,7 +3396,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Lightning damage against Close enemies has a # chance to grant Resolve and deal # increased damage.",
+   "power": "Lightning damage against Close enemies has a #% chance to grant Resolve and deal #% increased damage.",
    "flavor": "The Unclean burned the Monastery, and all knowledge within. They beheaded the monks, and kept their tongues. All artifacts were lost - save for this."
   },
   {
@@ -3406,7 +3406,7 @@
    "slot": "Legs",
    "slotPt": "Calças",
    "mythic": false,
-   "power": "You deal # increased damage and gain # Primary Resource Regeneration while Unstoppable and for # seconds after.",
+   "power": "You deal #% increased damage and gain # Primary Resource Regeneration while Unstoppable and for # seconds after.",
    "flavor": "\"The younger apprentices think wearing heavy plate in the swamps is foolish. They fail to understand that our armor is our legacy, and without it we are nothing.\"\n- Crusader Pembroke"
   },
   {
@@ -3418,7 +3418,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "When you gain Berserking while already Berserk, you become more enraged granting # increased damage, # Fury per second, and # Cooldown Reduction.",
+   "power": "When you gain Berserking while already Berserk, you become more enraged granting #% increased damage, # Fury per second, and #% Cooldown Reduction.",
    "flavor": "As he fought with side by side with Raekor to liberate the labor camp, Joritz claimed this dented helm from a fallen foe. As his legend grew, its unique shape became synonymous with his great deeds."
   },
   {
@@ -3430,7 +3430,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "After Casting Double Swing # times, your Double Swing sweeps will each hit # additional times, dealing # increased damage for # seconds.",
+   "power": "Double Swing's initial sweep deals #% increased damage and applies Vulnerable. Subsequent swings deals #% increased damage and grants Berserking for # seconds.",
    "flavor": "\"When hitting it once doesn't kill it, hit it twice.\" -Bear Tribe Proverb"
   },
   {
@@ -3440,7 +3440,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": true,
-   "power": "Gain # Damage Reduction. While at full Life, your Skills unleash a divine barrage dealing # damage.",
+   "power": "Gain #% Damage Reduction. While at full Life, your Skills unleash a divine barrage dealing # damage.",
    "flavor": "\"Thus Tyrael, a perfect aspect of Justice, came to be. None were more vehement against the forces of hell. All demonic entities learned to shudder at Justice's might.\"\n-The Books of Jarl, Volume I"
   },
   {
@@ -3452,7 +3452,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Casting Wrath of the Berserker causes you to explode, dealing # Fire damage. While Wrath of the Berserker is active, your direct damage dealt is converted into Fire.\n\nYou deal # increased Fire damage.",
+   "power": "Casting Wrath of the Berserker causes you to explode, dealing # Fire damage. While Wrath of the Berserker is active, your direct damage dealt is converted into Fire.\n\nYou deal #% increased Fire damage.",
    "flavor": "\"Ah, Burning Hells. You look like one of Zolmog's inbred bastards.\" -Varyana"
   },
   {
@@ -3464,7 +3464,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Casting Steel Grasp reduces Iron Maelstrom's Cooldown by # seconds.\n\nEnemies damaged by Iron Maelstrom deal # less damage for # seconds.",
+   "power": "Swapping weapons increases the damage of Iron Maelstrom by #% for # seconds, stacking up to # times.",
    "flavor": "After the warmaster Raekor freed her people, the Oxen tribe continued to wear their collars and chains to honor those who died in thralldom under the Samauren Empire."
   },
   {
@@ -3476,7 +3476,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Lightning Storm gains 1 additional strike each time it grows and deals # bonus damage.",
+   "power": "Lightning Storm gains 1 additional strike each time it grows and deals #% bonus damage.",
    "flavor": "\"The storm caller returns, day after day, demanding to meet the Tree. He beats his chest and demonstrates his powers, refusing to believe that he will never be chosen.\"\n- Excerpt from Gulyas' Diary"
   },
   {
@@ -3500,7 +3500,7 @@
    "slot": "ChestArmor",
    "slotPt": "Peitoral",
    "mythic": false,
-   "power": "Bone Spirit explodes an additional time, dealing # of normal damage.\n\nBone Spirit deals # increased damage.",
+   "power": "Bone Spirit explodes an additional time, dealing #% of normal damage.\n\nBone Spirit deals #% increased damage.",
    "flavor": "\"There have been tales, though I cannot attest to their veracity, of Necromancers drawing power from their anger, from their belief that the world has shifted far out of Balance.\" -Deckard Cain"
   },
   {
@@ -3512,7 +3512,7 @@
    "slot": "Helm",
    "slotPt": "Elmo",
    "mythic": false,
-   "power": "Firewall has # increased damage and it's size is overcapped by #.",
+   "power": "Firewall has #% increased damage and it's size is overcapped by #%.",
    "flavor": "\"From the Judgement of Inarius, the Firstborn faced suffering of all kinds. As the land of Atanos sank, the land of Skartara erupted...\" -Tome recovered from Kasama"
   },
   {
@@ -3524,7 +3524,7 @@
    "slot": "Staff",
    "slotPt": "Cajado",
    "mythic": false,
-   "power": "Casting a Core Skill triggers a random equipped Basic Skill at a random enemy which deals # increased damage.",
+   "power": "Casting a Core Skill triggers a random equipped Basic Skill at a random enemy which deals #% increased damage.",
    "flavor": "Your incantations are echoed by a chorus of the damned. Wield their torment, their vengeance, their pain against the Hellborne that tortured them."
   },
   {
@@ -3536,7 +3536,7 @@
    "slot": "Shield",
    "slotPt": "Escudo",
    "mythic": false,
-   "power": "Blessed Shield deals # increased damage. Casting another Skill makes your next # Blessed Shields double this bonus and cost # less Faith to Cast.",
+   "power": "Blessed Shield deals #% increased damage. Casting another Skill makes your next # Blessed Shields double this bonus and cost # less Faith to Cast.",
    "flavor": "\"Of the world's first light she was borne - the White Dove, our most radiant Lady. Her visage none may behold, yet all warmed by dawn may call her friend.\" - Sir Morna, Order of the Dove"
   },
   {
@@ -3548,7 +3548,7 @@
    "slot": "Axe",
    "slotPt": "Machado",
    "mythic": false,
-   "power": "Shred deals # more damage, and Shred has a # chance to land an additional strike, up to # times.",
+   "power": "Shred deals #% more damage, and Shred has a #% chance to land an additional strike, up to # times.",
    "flavor": "The nights preceding the full moon are sometimes far more dangerous than the event itself. The frenzy has begun to rise, yet the night is just dark enough to obscure a hunter from their prey's sight."
   },
   {
@@ -3558,7 +3558,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Every # kills in the last # seconds increases your damage by #, and Attack Speed by #.",
+   "power": "Every # kills in the last # seconds increases your damage by #%, and Attack Speed by #%.",
    "flavor": "In the first winters, a desperate spirit awoke within the hearts of men. Where famine walked, the spirit strengthened. When men consumed one another, it found its name."
   },
   {
@@ -3570,7 +3570,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Your Critical Strikes cause your Poisoning on an enemy to burst, dealing # of the total Poisoning instantly to them and # of the burst to surrounding enemies before removing the Poisoning effect from the primary target.",
+   "power": "Your Critical Strikes cause your Poisoning on an enemy to burst, dealing #% of the total Poisoning instantly to them and #% of the burst to surrounding enemies before removing the Poisoning effect from the primary target.",
    "flavor": "\"One touch is all it took. She looked into my eyes, and I understood her hunger, endless and painful. I will start with the taverns and find a strong one, with strong blood.\" -Jios, Sarat's Servant"
   },
   {
@@ -3582,7 +3582,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Rabies spreads # faster and deals # bonus damage (max #) each time it spreads. Bosses take maximum bonus damage.",
+   "power": "Rabies spreads #% faster and deals #% bonus damage (max #%) each time it spreads. Bosses take maximum bonus damage.",
    "flavor": "Do not seek comfort in the shapes of the moon, beastwalker. Its pallid light awakens a yawning hunger. Call the beast, but do not tarry. Lest you never return to your own skin."
   },
   {
@@ -3594,7 +3594,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Vulnerable, Weakened, Crowd Controlled, or Corrupted enemies are Afflicted, taking # increased damage from you.\n\nCurse Skills deal # Shadow damage when applied to Afflicted enemies.",
+   "power": "Vulnerable, Weakened, Crowd Controlled, or Corrupted enemies are Afflicted, taking #% increased damage from you.\n\nCurse Skills deal # Shadow damage when applied to Afflicted enemies.",
    "flavor": "\"Prey not on innocents, but instill fear in those who would.\" -Books of Kalan"
   },
   {
@@ -3628,7 +3628,7 @@
    "slot": "Bow",
    "slotPt": "Arco",
    "mythic": false,
-   "power": "Hits of Barrage have a # chance to deal triple damage and Knock Down enemies.",
+   "power": "Hits of Barrage have a #% chance to deal triple damage and Knock Down enemies.",
    "flavor": "\"There have been numerous world-shaping conflicts throughout history. This bow has been found on the battlefield of every one, and always in the hands of the victors.\"\n- Barrett's Book of Implements"
   },
   {
@@ -3640,7 +3640,7 @@
    "slot": "Amulet",
    "slotPt": "Amuleto",
    "mythic": false,
-   "power": "Your Rain of Arrows is always Imbued with all Imbuements and deals # increased damage to Distant enemies.",
+   "power": "Your Rain of Arrows is always Imbued with all Imbuements and deals #% increased damage to Distant enemies.",
    "flavor": "\"Let the great gates of Caldeum be sealed. Let its proud walls stand fiercely defended. The rest of Kehjistan may suffer this plague, but my city, and my people, will not.\"\n- Proclamation of Hakan II"
   },
   {
@@ -3664,7 +3664,7 @@
    "slot": "Ring",
    "slotPt": "Anel",
    "mythic": false,
-   "power": "Lucky Hit: Holy Bolt has up to a # chance to trigger Purify.\n\nPurify causes enemies to take # increased damage from you for # seconds.",
+   "power": "Lucky Hit: Holy Bolt has up to a #% chance to trigger Purify.\n\nPurify causes enemies to take #% increased damage from you for # seconds.",
    "flavor": "\"No darkness may crown the brow that bears this light. Its radiance shall endure beyond the fall of stars.\" - Litany of Purity, Verse VII"
   },
   {
@@ -3688,7 +3688,7 @@
    "slot": "Glaive",
    "slotPt": "Glaive",
    "mythic": false,
-   "power": "Casting an Ultimate Skill grants or amplifies its matching Primary Spirit Hall Bonus with # potency for # seconds.\n\nYour Ultimate Skills each gain an additional Skill Type:\nThe Seeker is a Focus Skill.\nThe Hunter is a Mobility Skill.\nThe Devourer is a Potency Skill.\nThe Protector is a Defensive Skill.",
+   "power": "Casting an Ultimate Skill grants or amplifies its matching Primary Spirit Hall Bonus with #% potency for # seconds.\n\nYour Ultimate Skills each gain an additional Skill Type:\nThe Seeker is a Focus Skill.\nThe Hunter is a Mobility Skill.\nThe Devourer is a Potency Skill.\nThe Protector is a Defensive Skill.",
    "flavor": "\"Fear not the limits of your flesh, Spiritborn! As our ancestors said: wushe nak pa! Transcend your being!\" - Maka"
   },
   {
@@ -3698,7 +3698,7 @@
    "slot": "Gloves",
    "slotPt": "Luvas",
    "mythic": false,
-   "power": "Attacks apply Vulnerable to Distant Enemies, and Weakened to Close Enemies. You deal # increased damage to Enemies that are both Vulnerable and Weakened.",
+   "power": "Attacks apply Vulnerable to Distant Enemies, and Weakened to Close Enemies. You deal #% increased damage to Enemies that are both Vulnerable and Weakened.",
    "flavor": "Each touch dulls pain. Enemies feel their vigor unravel as the poison withers their marrow and drinks deep of their strength."
   },
   {
@@ -3726,7 +3726,7 @@
    "slot": "Boots",
    "slotPt": "Botas",
    "mythic": false,
-   "power": "Casting a Skill has a # chance to trigger a Non-Mobility, Non-Ultimate Skill that is currently on Cooldown. Can only occur once every # seconds.",
+   "power": "Casting a Skill has a #% chance to trigger a Non-Mobility, Non-Ultimate Skill that is currently on Cooldown. Can only occur once every # seconds.",
    "flavor": "These greaves are imbued with the divine blessing of Yen, the Veradani goddess of restoration. They bestow the wearer a revitalizing strength that enhances their own."
   }
  ]

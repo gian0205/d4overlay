@@ -144,3 +144,6 @@ details.drop > summary::-webkit-details-marker { display: none; }
 .loadout li { color: inherit; }
 .loadout li.unique > details > summary { color: var(--unique); }
 .loadout li.mythic > details > summary { color: var(--mythic); }
+.loadout .aspect { margin: 2px 0 6px; padding-left: 8px; border-left: 2px solid var(--border); }
+.paragon { margin: 2px 0 6px; padding-left: 20px; }
+.credits { font-size: 11px; padding-left: 16px; }

@@ -11,9 +11,21 @@ const { buildCompanionData } = require('./lib');
 
 const REPO = 'josdemmers/Diablo4Companion';
 const BRANCH = 'master';
-const KINDS = ['Uniques', 'Aspects', 'Runes', 'ParagonBoards', 'ParagonGlyphs'];
+const KINDS = ['Uniques', 'Aspects', 'Runes', 'ParagonBoards', 'ParagonGlyphs', 'Sigils'];
 const LANGS = ['enUS', 'ptBR'];
-const OUT = path.join(__dirname, '..', '..', 'data', 'generated', 'd4companion.json');
+const GENERATED = path.join(__dirname, '..', '..', 'data', 'generated');
+const OUT = path.join(GENERATED, 'd4companion.json');
+
+/** Nomes/poderes em inglês do nosso catálogo (npm run d4data), para conferir os nomes pt-BR. */
+function loadCatalog() {
+  try {
+    const { uniques } = JSON.parse(fs.readFileSync(path.join(GENERATED, 'uniques.json'), 'utf8'));
+    return new Map(uniques.map((u) => [u.id, { name: u.name, power: u.power }]));
+  } catch {
+    console.warn('aviso: data/generated/uniques.json ausente — nomes pt-BR dos únicos não serão conferidos (rode npm run d4data)');
+    return undefined;
+  }
+}
 
 async function getJson(url) {
   const res = await fetch(url, { signal: AbortSignal.timeout(30000) });
@@ -36,7 +48,12 @@ async function main() {
     }
   }
 
-  const data = buildCompanionData(files);
+  const { data, stats } = buildCompanionData(files, { catalog: loadCatalog() });
+  for (const line of stats.uniqueNameMismatch) console.log(`sem nome pt-BR (entrada do D4C é de outro item; poder pt mantido se conferir): ${line}`);
+  for (const line of stats.uniqueNameAmbiguous) console.log(`sem nome pt-BR (grupo fundido): ${line}`);
+  for (const line of stats.uniquePowerMismatch) console.log(`aviso: ${line} (rode npm run d4data ou confira o texto)`);
+  const uncertain = Object.entries(data.aspects).filter(([, a]) => a.nameUncertain).map(([sno, a]) => `${sno} ${a.namePt ?? a.name}`);
+  if (uncertain.length) console.log(`aspectos com nome a confirmar (grupo fundido no pt-BR): ${uncertain.join(', ')}`);
   const result = {
     source: `https://github.com/${REPO} (MIT)`,
     commit: commit.sha,
@@ -44,7 +61,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     ...data,
   };
-  fs.mkdirSync(path.dirname(OUT), { recursive: true });
+  fs.mkdirSync(GENERATED, { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(result));
   const count = (o) => Object.keys(o).length;
   console.log(`gerado ${path.relative(process.cwd(), OUT)}: ${count(data.uniques)} ids de únicos, ${count(data.aspects)} aspectos, ${count(data.runes)} runas, ${count(data.paragonBoards)} tabuleiros`);

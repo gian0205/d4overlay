@@ -71,13 +71,13 @@ function selectedBuild() {
 
 /** Nome/poder no idioma escolhido (português quando disponível). */
 function label(en, ptText) {
-  return state.settings?.ptNames && ptText ? ptText : en;
+  return (state.settings?.ptNames && ptText ? ptText : en) ?? ptText;
 }
 
 /** Nome principal + original entre parênteses quando está traduzido (útil para buscar no trade/guias). */
 function itemName(en, ptText) {
   const shown = label(en, ptText);
-  return shown !== en ? [shown, h('span', { class: 'muted' }, ` (${en})`)] : shown;
+  return shown !== en && en ? [shown, h('span', { class: 'muted' }, ` (${en})`)] : shown;
 }
 
 async function saveSettings(patch) {
@@ -232,7 +232,8 @@ function capstoneList(capstone) {
     {},
     h('summary', { class: 'muted' }, 'Únicos da Temporada 15 (Capstone)'),
     h('p', { class: 'muted' }, capstone.note),
-    tiers.filter(([k]) => capstone[k]?.length).map(([k, label]) => [h('h3', {}, label), h('ul', { class: 'drops' }, capstone[k].map((n) => h('li', {}, n)))]),
+    // flatMap: h() só achata um nível de filhos
+    tiers.filter(([k]) => capstone[k]?.length).flatMap(([k, title]) => [h('h3', {}, title), h('ul', { class: 'drops' }, capstone[k].map((n) => h('li', {}, n)))]),
   );
 }
 
@@ -327,26 +328,52 @@ function renderMaxrollImport() {
 }
 
 /** Equipamento da fase importada: skills, itens com poder/aspecto, runas e Paragon. */
+/** De onde vem o aspecto: masmorra do Códex (com a região) ou drop. */
+function aspectOriginText(a) {
+  if (!a || a.unknown) return null;
+  if (a.dungeon) {
+    const zone = label(a.zone, a.zonePt);
+    return `Códex: masmorra ${label(a.dungeon, a.dungeonPt)}${zone ? ` (${zone})` : ''}`;
+  }
+  // antes da T15 alguns dados vinham só com "codex"; sem masmorra = vem de drop
+  return 'Obtido por drop (depois fica no Códex)';
+}
+
 function renderLoadout(loadout) {
   if (!loadout) return null;
+  const aspectBlock = (a) =>
+    a.unknown
+      ? h('div', { class: 'muted' }, `Aspecto não identificado (id ${a.nid ?? '?'})`)
+      : h('div', { class: 'aspect' },
+          h('div', {}, itemName(a.name, a.namePt), a.nameUncertain ? h('span', { class: 'unverified', title: 'O Diablo4Companion junta este aspecto com outro de mesmo poder; o nome pode ser o do outro.' }, ' (nome a confirmar)') : null),
+          a.power || a.powerPt ? h('div', { class: 'power' }, label(a.power, a.powerPt)) : null,
+          h('div', { class: 'muted' }, aspectOriginText(a)),
+        );
   const itemRow = (it) => {
-    const aspect = it.aspect && !it.aspect.unknown ? it.aspect : null;
-    const title = it.kind === 'unique' ? itemName(it.name, it.namePt) : aspect ? itemName(aspect.name, aspect.namePt) : (it.name ?? 'Lendário (sem aspecto)');
-    const power = it.kind === 'unique' ? label(it.power, it.powerPt) : aspect ? label(aspect.power, aspect.powerPt) : null;
-    const origin = it.kind === 'unique'
-      ? (it.boss ? `Dropa de ${it.boss.name}` : null)
-      : aspect?.codex ? 'Códex de Poder' : aspect?.dungeon ? `Masmorra: ${aspect.dungeon}` : null;
+    // builds importados antes desta versão só têm `aspect`
+    const aspects = it.aspects ?? (it.aspect ? [it.aspect] : []);
+    const known = aspects.filter((a) => !a.unknown);
+    const title = it.kind === 'unique'
+      ? itemName(it.name, it.namePt)
+      : known.length
+        ? known.map((a) => label(a.name, a.namePt)).join(' + ')
+        : it.name ?? (aspects.length ? 'Lendário (aspecto não identificado)' : 'Lendário (sem aspecto)');
     return h(
       'li',
-      { class: `${it.kind === 'unique' ? 'unique' : ''} ${it.mythic ? 'mythic' : ''}` },
+      { class: `${it.kind === 'unique' || it.kind === 'runeword' ? 'unique' : ''} ${it.mythic ? 'mythic' : ''}` },
       h('details', { class: 'drop' },
-        h('summary', {}, h('span', { class: 'muted' }, `${it.slot}: `), title, it.charm ? h('span', { class: 'muted' }, ' · talismã') : null),
-        power ? h('div', { class: 'power' }, power) : null,
-        origin ? h('div', { class: 'muted' }, origin) : null,
+        h('summary', {}, h('span', { class: 'muted' }, `${it.slot}: `), title,
+          it.charm ? h('span', { class: 'muted' }, ' · talismã') : null,
+          it.kind === 'runeword' ? h('span', { class: 'muted' }, ` · palavra rúnica${it.mythic ? ' mítica' : ''}`) : null,
+        ),
+        it.kind === 'unique' && (it.power || it.powerPt) ? h('div', { class: 'power' }, label(it.power, it.powerPt)) : null,
+        it.kind === 'unique' && it.boss ? h('div', { class: 'muted' }, `Dropa de ${it.boss.name}`) : null,
+        aspects.map(aspectBlock),
         it.runes?.length ? h('div', { class: 'muted' }, `Runas: ${it.runes.join(', ')}`) : null,
       ),
     );
   };
+  const step = loadout.paragonStep;
   return h(
     'details',
     { style: 'margin-top:6px' },
@@ -354,7 +381,15 @@ function renderLoadout(loadout) {
     loadout.skills.length ? h('div', {}, h('strong', {}, 'Skills: '), loadout.skills.map((s) => s.name).join(', ')) : null,
     h('ul', { class: 'drops loadout' }, loadout.items.map(itemRow)),
     loadout.paragon.length
-      ? h('div', {}, h('strong', {}, 'Paragon: '), loadout.paragon.map((p) => `${label(p.board, p.boardPt)}${p.glyph ? ` [${label(p.glyph, p.glyphPt)}]` : ''}`).join(' → '))
+      ? h('div', {},
+          h('strong', {}, 'Paragon'),
+          step && step.total > 1 ? h('span', { class: 'muted' }, ` — etapa ${step.name ?? ''} (${step.index + 1}/${step.total})`) : null,
+          h('ol', { class: 'paragon' }, loadout.paragon.map((p) => h('li', {},
+            label(p.board, p.boardPt),
+            p.glyph ? h('span', { class: 'muted' }, ` · glifo ${label(p.glyph, p.glyphPt)}${p.glyphLevel ? ` nv ${p.glyphLevel}` : ''}`) : null,
+            p.rotation ? h('span', { class: 'muted' }, ` · rotação ${p.rotation}°`) : null,
+          ))),
+        )
       : null,
   );
 }
@@ -535,6 +570,15 @@ function renderConfigTab() {
     h('h3', {}, 'Atalhos'),
     h('table', {}, state.hotkeys.map((k) => h('tr', {}, h('td', {}, k.label), h('td', {}, k.description)))),
     h('p', { class: 'muted' }, state.overwolf ? 'Rodando com ow-electron: overlay in-game + eventos do jogo.' : 'Rodando com Electron puro: use o jogo em "Tela cheia em janela".'),
+    h('h3', {}, 'Créditos'),
+    h('ul', { class: 'muted credits' },
+      h('li', {}, 'Tabelas de drop e builds: ', h('a', { onclick: () => d4.openExternal('https://maxroll.gg/d4/resources/boss-loot-table-cheat-sheet') }, 'Maxroll'), '.'),
+      h('li', {}, 'Nomes em português, aspectos, runas e Paragon: ', h('a', { onclick: () => d4.openExternal('https://github.com/josdemmers/Diablo4Companion') }, 'Diablo4Companion'), ' (MIT, © 2022 Jos Demmers).'),
+      h('li', {}, 'Catálogo de únicos e skills: ', h('a', { onclick: () => d4.openExternal('https://github.com/DiabloTools/d4data') }, 'DiabloTools/d4data'), ' (MIT, © 2023 blizzhackers).'),
+      h('li', {}, 'Eventos do jogo e overlay: Overwolf. Timers: d4armory.io (não oficial).'),
+      h('li', {}, 'Diablo IV © Blizzard Entertainment. Projeto de fã, sem afiliação.'),
+    ),
+    h('p', { class: 'muted' }, 'Licenças completas no arquivo THIRD_PARTY_NOTICES.md, na pasta onde o app está instalado.'),
   );
 }
 

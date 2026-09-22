@@ -16,8 +16,16 @@ test('classesFromMask segue a ordem do jogo e trata "todas" como genérico', () 
 test('cleanGameText remove marcação e escolhe o ramo não-mítico', () => {
   const raw =
     '{if:SF.IsMythic}{c_mythic}{/if}{c_important}Whirlwind{/c} deals {if:SF.IsMythic}{c_number}{else}{c_random}{/if}[Affix_Value_1*100|%|]{/c} more to {c_important}{u}Healthy{/u}{/c} enemies.{if:SF.IsMythic}{/c_mythic}{/if}';
-  assert.equal(lib.cleanGameText(raw), 'Whirlwind deals # more to Healthy enemies.');
+  assert.equal(lib.cleanGameText(raw), 'Whirlwind deals #% more to Healthy enemies.');
   assert.equal(lib.cleanGameText('{icon:bullet,1.2} A {payload:X} B\r\n\r\n\r\nC'), 'A # B\n\nC');
+  // plural do jogo e fórmula sem %
+  assert.equal(lib.cleanGameText('by [Affix_Value_2] for [Affix_Value_3] |4second:seconds;.'), 'by # for # seconds.');
+  assert.equal(lib.cleanGameText('up to [X|%|] chance, # |1Stack:Stacks; max'), 'up to #% chance, # Stacks max');
+  // condicional órfão no fim (texto real de Henri's Perquisition) não vira "#"
+  assert.equal(
+    lib.cleanGameText('{if:SF.IsMythic}{c_mythic}{/if}You gain Primary Stat equal to {if:SF.IsMythic}{c_number}{else}{c_random}{/if}[Affix_Value_1|0%x|]{/c} of your {c_important}Dexterity{/c}.{/c_mythic}{/if}'),
+    'You gain Primary Stat equal to #% of your Dexterity.',
+  );
   assert.equal(lib.cleanGameText(undefined), '');
 });
 

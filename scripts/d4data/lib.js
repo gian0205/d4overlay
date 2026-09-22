@@ -96,11 +96,16 @@ function cleanGameText(text) {
   }
 
   return out
-    .replace(/\[[^\]]*\]/g, '#')
+    // plural do jogo: "# |4second:seconds;" → "# seconds"
+    .replace(/\|\d*([^:|;\n]*):([^;\n]*);/g, '$2')
+    // fórmula: "[Affix_Value_1|%+|]" → "#%" (mantém o % como o texto do jogo mostra)
+    .replace(/\[([^\]]*)\]/g, (_m, inner) => (/\|[^|]*%/.test(inner) ? '#%' : '#'))
     .replace(/\{payload:[^}]*\}/g, '#')
     .replace(/\{icon:[^}]*\}/g, '')
     // formatação: {c_important}, {/c}, {c:FF00FF00}, {u}, {b}…
     .replace(/\{\/?(?:c(?:_\w+)?|c:[0-9a-f]+|u|b)\s*\}/gi, '')
+    // condicional órfão no texto do jogo (ex.: "…Dexterity.{/c_mythic}{/if}")
+    .replace(/\{(?:\/if|else|if:[^}]*)\}/gi, '')
     .replace(/\{[^}]*\}/g, '#')
     .replace(/#(?:\s*#)+/g, '#')
     .replace(/[ \t ]+/g, ' ')
@@ -141,7 +146,10 @@ function buildUnique({ id, item, nameStrings, affixStrings }) {
  */
 function powerAffixNames(id, item) {
   const forced = (item?.arForcedAffixes ?? []).map((a) => a?.name).filter(Boolean);
-  return [id, ...forced];
+  // versão atual do poder: affix forçado "<id>_xN" (ex.: 2HSword_Unique_Barb_002_x2),
+  // que substitui o Affix_<id> antigo (hoje usado pela versão do Crisol/S12)
+  const revised = forced.filter((n) => n.toLowerCase().startsWith(`${String(id).toLowerCase()}_x`)).sort().reverse();
+  return [...revised, id, ...forced.filter((n) => !revised.includes(n))];
 }
 
 /** Mesma unique em mais de um arquivo (_x1/_x2): junta classes e mantém o primeiro. */
