@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'" />
+    <title>D4 Overlay</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="panel">
+      <header id="header">
+        <div class="title-row">
+          <span class="logo">D4</span>
+          <span id="character">Jogo não detectado</span>
+          <button id="interactive-btn" class="chip" title="Liberar/travar o mouse no overlay"></button>
+        </div>
+        <div id="location" class="muted"></div>
+        <nav id="tabs">
+          <button data-tab="boss">Bosses</button>
+          <button data-tab="build">Build</button>
+          <button data-tab="events">Eventos</button>
+          <button data-tab="config">Config</button>
+        </nav>
+      </header>
+      <main id="content"></main>
+      <footer id="hint" class="muted"></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "d4overlay",
+  "version": "0.1.0",
+  "description": "Overlay para Diablo IV: drops dos bosses e guia de builds por classe (Electron / Overwolf ow-electron)",
+  "main": "src/main/main.js",
+  "license": "MIT",
+  "private": true,
+  "overwolf": {
+    "packages": [
+      "gep",
+      "overlay"
+    ]
+  },
+  "scripts": {
+    "start": "ow-electron .",
+    "start:electron": "electron .",
+    "test": "node --test",
+    "validate-data": "node scripts/validate-data.js",
+    "dist": "ow-electron-builder --publish=never"
+  },
+  "build": {
+    "appId": "com.d4overlay.app",
+    "productName": "D4 Overlay",
+    "files": [
+      "src/**/*",
+      "data/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@overwolf/ow-electron": "^42.7.1",
+    "@overwolf/ow-electron-builder": "latest",
+    "electron": "^42.11.6"
+  }
+}

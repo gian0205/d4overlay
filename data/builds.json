@@ -1,0 +1,332 @@
+{
+  "version": "2026.09-s15-draft",
+  "notes": [
+    "Modelos de guia: confira a versão mais recente do build no planner linkado antes de investir materiais.",
+    "Nomes de skills/itens em inglês (igual ao cliente em EN); o jogo em PT-BR usa nomes traduzidos."
+  ],
+  "builds": [
+    {
+      "id": "barb-whirlwind",
+      "classId": "barbarian",
+      "name": "Whirlwind (Redemoinho)",
+      "playstyle": "Corpo a corpo girando, gritos para sustento e velocidade.",
+      "difficulty": "Fácil",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Bárbaro", "url": "https://maxroll.gg/d4/tierlists/barbarian-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Básica", "name": "Lunging Strike" },
+        { "slot": "Principal", "name": "Whirlwind" },
+        { "slot": "Defensiva", "name": "Rallying Cry" },
+        { "slot": "Defensiva", "name": "Challenging Shout" },
+        { "slot": "Brado", "name": "War Cry" },
+        { "slot": "Suprema", "name": "Wrath of the Berserker" }
+      ],
+      "stats": ["Dano de Sangramento/Físico", "Velocidade de ataque", "Redução de recarga dos gritos", "Vida máxima"],
+      "keyItems": ["Aspecto que aumenta o tamanho/dano do Whirlwind", "Arma bi-mão contundente para Overpower"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Leveling com Lunging Strike + Hammer of the Ancients até liberar Whirlwind.",
+          "steps": [
+            { "id": "b1", "text": "Pegar Lunging Strike e Hammer of the Ancients." },
+            { "id": "b2", "text": "Adicionar Rallying Cry para Fúria e velocidade." },
+            { "id": "b3", "text": "Fazer a campanha/temporada até liberar a Montaria e Aspectos do Codex." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Trocar para Whirlwind e montar os gritos.",
+          "steps": [
+            { "id": "b4", "text": "Trocar a skill principal para Whirlwind." },
+            { "id": "b5", "text": "Adicionar Challenging Shout e War Cry." },
+            { "id": "b6", "text": "Imprimir o aspecto principal do Whirlwind na arma." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Fechar a árvore de skills e subir a dificuldade.",
+          "steps": [
+            { "id": "b7", "text": "Pegar Wrath of the Berserker como suprema." },
+            { "id": "b8", "text": "Subir para Torment 1 quando os Níveis do Pit permitirem." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Farmar Lair Bosses e Pit para os únicos.",
+          "steps": [
+            { "id": "b9", "text": "Farmar Grigoire (Gohr's Devastating Grips)." },
+            { "id": "b10", "text": "Temperar (Tempering) Whirlwind e velocidade de ataque." },
+            { "id": "b11", "text": "Montar os tabuleiros de Paragon indicados no planner." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking e Greater Lair Bosses.",
+          "steps": [
+            { "id": "b12", "text": "Masterworking da arma até +12." },
+            { "id": "b13", "text": "Farmar Greater Lair Bosses com as Greater Lair Keys." }
+          ] }
+      ]
+    },
+    {
+      "id": "druid-pulverize",
+      "classId": "druid",
+      "name": "Pulverize (Werebear)",
+      "playstyle": "Urso tanque, ondas de choque em área.",
+      "difficulty": "Fácil",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Druida", "url": "https://maxroll.gg/d4/tierlists/druid-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Básica", "name": "Maul" },
+        { "slot": "Principal", "name": "Pulverize" },
+        { "slot": "Defensiva", "name": "Earthen Bulwark" },
+        { "slot": "Defensiva", "name": "Debilitating Roar" },
+        { "slot": "Companheiro", "name": "Blood Howl" },
+        { "slot": "Suprema", "name": "Grizzly Rage" }
+      ],
+      "stats": ["Dano de Overpower", "Vida máxima", "Fortificação", "Redução de recarga"],
+      "keyItems": ["Aspect of the Ursine Horror (tremores do Pulverize)"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Maul + Pulverize assim que disponível.",
+          "steps": [
+            { "id": "d1", "text": "Pegar Maul e Pulverize." },
+            { "id": "d2", "text": "Adicionar Earthen Bulwark para escudo." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Sustento e controle.",
+          "steps": [
+            { "id": "d3", "text": "Adicionar Debilitating Roar e Blood Howl." },
+            { "id": "d4", "text": "Imprimir Aspect of the Ursine Horror no amuleto/arma." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Suprema e dificuldade.",
+          "steps": [
+            { "id": "d5", "text": "Pegar Grizzly Rage." },
+            { "id": "d6", "text": "Subir para Torment 1." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Únicos e Tempering.",
+          "steps": [
+            { "id": "d7", "text": "Temperar dano de Overpower e vida." },
+            { "id": "d8", "text": "Farmar Lair Bosses para os únicos do build (ver planner)." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking.",
+          "steps": [
+            { "id": "d9", "text": "Masterworking da arma e amuleto." },
+            { "id": "d10", "text": "Farmar Greater Lair Bosses." }
+          ] }
+      ]
+    },
+    {
+      "id": "necro-minions",
+      "classId": "necromancer",
+      "name": "Minions (Exército)",
+      "playstyle": "Esqueletos e golem fazem o trabalho; você explode corpos.",
+      "difficulty": "Muito fácil",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Necromante", "url": "https://maxroll.gg/d4/tierlists/necromancer-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Básica", "name": "Reap" },
+        { "slot": "Corpo", "name": "Corpse Explosion" },
+        { "slot": "Macabra", "name": "Blood Mist" },
+        { "slot": "Maldição", "name": "Decrepify" },
+        { "slot": "Golem", "name": "Golem" },
+        { "slot": "Suprema", "name": "Army of the Dead" }
+      ],
+      "stats": ["Dano de lacaios", "Vida dos lacaios", "Redução de recarga", "Vida máxima"],
+      "keyItems": ["Book of the Dead: Skeleton Warriors + Skeleton Mages + Golem"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Invocar esqueletos cedo.",
+          "steps": [
+            { "id": "n1", "text": "Ativar Skeleton Warriors e Mages no Book of the Dead." },
+            { "id": "n2", "text": "Pegar Reap e Corpse Explosion." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Golem e sobrevivência.",
+          "steps": [
+            { "id": "n3", "text": "Adicionar Golem e Blood Mist." },
+            { "id": "n4", "text": "Adicionar Decrepify para reduzir dano recebido." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Suprema.",
+          "steps": [
+            { "id": "n5", "text": "Pegar Army of the Dead." },
+            { "id": "n6", "text": "Subir para Torment 1." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Dano de lacaios.",
+          "steps": [
+            { "id": "n7", "text": "Temperar dano/vida de lacaios." },
+            { "id": "n8", "text": "Farmar Lair Bosses para os únicos de lacaios (ver planner)." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking.",
+          "steps": [
+            { "id": "n9", "text": "Masterworking de arma e amuleto." },
+            { "id": "n10", "text": "Farmar Greater Lair Bosses." }
+          ] }
+      ]
+    },
+    {
+      "id": "rogue-heartseeker",
+      "classId": "rogue",
+      "name": "Heartseeker (Arco)",
+      "playstyle": "À distância, críticos com imbuições.",
+      "difficulty": "Média",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Renegada", "url": "https://maxroll.gg/d4/tierlists/rogue-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Principal", "name": "Heartseeker" },
+        { "slot": "Agilidade", "name": "Dash" },
+        { "slot": "Subterfúgio", "name": "Dark Shroud" },
+        { "slot": "Imbuição", "name": "Shadow Imbuement" },
+        { "slot": "Imbuição", "name": "Cold Imbuement" },
+        { "slot": "Suprema", "name": "Rain of Arrows" }
+      ],
+      "stats": ["Chance/dano crítico", "Velocidade de ataque", "Redução de recarga das imbuições"],
+      "keyItems": ["Arco com dano crítico", "Aspecto que dispara Heartseekers extras"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Heartseeker + Dash.",
+          "steps": [
+            { "id": "r1", "text": "Pegar Heartseeker e Dash." },
+            { "id": "r2", "text": "Equipar um arco e focar crítico." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Imbuições e defesa.",
+          "steps": [
+            { "id": "r3", "text": "Adicionar Dark Shroud e Shadow Imbuement." },
+            { "id": "r4", "text": "Liberar a especialização da classe (Combo/Inner Sight/Preparation) indicada no planner." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Suprema.",
+          "steps": [
+            { "id": "r5", "text": "Pegar Rain of Arrows." },
+            { "id": "r6", "text": "Subir para Torment 1." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Crítico e únicos.",
+          "steps": [
+            { "id": "r7", "text": "Temperar dano crítico e Heartseeker." },
+            { "id": "r8", "text": "Farmar Lair Bosses para os únicos do build (ver planner)." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking.",
+          "steps": [
+            { "id": "r9", "text": "Masterworking do arco." },
+            { "id": "r10", "text": "Farmar Greater Lair Bosses." }
+          ] }
+      ]
+    },
+    {
+      "id": "sorc-ball-lightning",
+      "classId": "sorcerer",
+      "name": "Ball Lightning (Bola de Relâmpago)",
+      "playstyle": "Orbes de raio em área, teleporte constante.",
+      "difficulty": "Média",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Feiticeiro", "url": "https://maxroll.gg/d4/tierlists/sorcerer-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Principal", "name": "Ball Lightning" },
+        { "slot": "Mobilidade", "name": "Teleport" },
+        { "slot": "Defensiva", "name": "Flame Shield" },
+        { "slot": "Defensiva", "name": "Ice Armor" },
+        { "slot": "Defensiva", "name": "Frost Nova" },
+        { "slot": "Suprema", "name": "Unstable Currents" }
+      ],
+      "stats": ["Dano de Raio", "Redução de recarga", "Custo de Mana reduzido", "Vida máxima"],
+      "keyItems": ["The Oculus (se o planner indicar)", "Encantamentos: Teleport + Chain Lightning ou conforme planner"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Charged Bolts/Chain Lightning até Ball Lightning.",
+          "steps": [
+            { "id": "s1", "text": "Usar Chain Lightning e Teleport." },
+            { "id": "s2", "text": "Adicionar Flame Shield." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Trocar para Ball Lightning.",
+          "steps": [
+            { "id": "s3", "text": "Trocar a principal para Ball Lightning." },
+            { "id": "s4", "text": "Adicionar Ice Armor e Frost Nova; definir encantamentos." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Suprema.",
+          "steps": [
+            { "id": "s5", "text": "Pegar Unstable Currents." },
+            { "id": "s6", "text": "Subir para Torment 1." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Únicos e Tempering.",
+          "steps": [
+            { "id": "s7", "text": "Farmar Grigoire (The Oculus)." },
+            { "id": "s8", "text": "Temperar dano de Raio e recarga." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking.",
+          "steps": [
+            { "id": "s9", "text": "Masterworking da arma e amuleto." },
+            { "id": "s10", "text": "Farmar Greater Lair Bosses." }
+          ] }
+      ]
+    },
+    {
+      "id": "spirit-quill-volley",
+      "classId": "spiritborn",
+      "name": "Quill Volley (Águia)",
+      "playstyle": "Penas à distância com o espírito da Águia; muita mobilidade.",
+      "difficulty": "Média",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Espiritonato", "url": "https://maxroll.gg/d4/tierlists/spiritborn-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Básica", "name": "Withering Fist" },
+        { "slot": "Principal", "name": "Quill Volley" },
+        { "slot": "Foco", "name": "Soar" },
+        { "slot": "Potencial", "name": "Scourge" },
+        { "slot": "Mobilidade", "name": "Rushing Claw" },
+        { "slot": "Suprema", "name": "Hunter (conforme planner)" }
+      ],
+      "stats": ["Dano Vulnerável", "Chance de crítico", "Velocidade de ataque", "Vida máxima"],
+      "keyItems": ["Espírito primário: Águia (Eagle) no Spirit Hall", "Espírito secundário conforme planner (Gorila/Centopeia/Jaguar)"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Quill Volley cedo.",
+          "steps": [
+            { "id": "q1", "text": "Pegar Withering Fist e Quill Volley." },
+            { "id": "q2", "text": "Adicionar Soar para mobilidade." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Spirit Hall.",
+          "steps": [
+            { "id": "q3", "text": "Escolher Águia como espírito primário no Spirit Hall." },
+            { "id": "q4", "text": "Adicionar Scourge e Rushing Claw." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Suprema e espírito secundário.",
+          "steps": [
+            { "id": "q5", "text": "Definir o espírito secundário indicado no planner." },
+            { "id": "q6", "text": "Subir para Torment 1." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Únicos e Tempering.",
+          "steps": [
+            { "id": "q7", "text": "Farmar Grigoire (Hunter's Zenith, se for do build — confira)." },
+            { "id": "q8", "text": "Temperar Quill Volley e crítico." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking.",
+          "steps": [
+            { "id": "q9", "text": "Masterworking da arma." },
+            { "id": "q10", "text": "Farmar Greater Lair Bosses." }
+          ] }
+      ]
+    },
+    {
+      "id": "paladin-hammerdin",
+      "classId": "paladin",
+      "name": "Hammerdin (Blessed Hammer)",
+      "playstyle": "Martelos abençoados em espiral ao redor do personagem; auras para defesa.",
+      "difficulty": "Fácil",
+      "verified": false,
+      "links": [{ "label": "Maxroll – tier list Paladino", "url": "https://maxroll.gg/d4/tierlists/paladin-endgame-tier-list" }],
+      "skills": [
+        { "slot": "Principal", "name": "Blessed Hammer" },
+        { "slot": "Aura", "name": "Aura defensiva (conforme planner)" },
+        { "slot": "Aura", "name": "Aura ofensiva (conforme planner)" },
+        { "slot": "Juramento", "name": "Oath (conforme planner)" }
+      ],
+      "stats": ["Dano Sagrado", "Redução de recarga", "Vida máxima", "Armadura/Resistências"],
+      "keyItems": ["Aspecto que amplia o raio/quantidade de Blessed Hammers"],
+      "phases": [
+        { "id": "lv1", "name": "Nível 1–15", "minLevel": 1, "maxLevel": 15, "focus": "Liberar Blessed Hammer.",
+          "steps": [
+            { "id": "p1", "text": "Pegar Blessed Hammer assim que disponível." },
+            { "id": "p2", "text": "Ativar a primeira aura defensiva." }
+          ] },
+        { "id": "lv2", "name": "Nível 16–50", "minLevel": 16, "maxLevel": 50, "focus": "Auras e Juramento.",
+          "steps": [
+            { "id": "p3", "text": "Escolher o Oath indicado no planner." },
+            { "id": "p4", "text": "Imprimir o aspecto dos martelos." }
+          ] },
+        { "id": "lv3", "name": "Nível 51–60", "minLevel": 51, "maxLevel": 60, "focus": "Suprema.",
+          "steps": [
+            { "id": "p5", "text": "Pegar a suprema indicada no planner." },
+            { "id": "p6", "text": "Subir para Torment 1." }
+          ] },
+        { "id": "end1", "name": "Endgame – Paragon 0+", "minParagon": 0, "focus": "Únicos e Tempering.",
+          "steps": [
+            { "id": "p7", "text": "Temperar dano de Blessed Hammer." },
+            { "id": "p8", "text": "Farmar Lair Bosses para os únicos do build (ver planner)." }
+          ] },
+        { "id": "end2", "name": "Endgame – Paragon 150+", "minParagon": 150, "focus": "Masterworking.",
+          "steps": [
+            { "id": "p9", "text": "Masterworking da arma e escudo." },
+            { "id": "p10", "text": "Farmar Greater Lair Bosses." }
+          ] }
+      ]
+    }
+  ]
+}

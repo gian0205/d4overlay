@@ -1,0 +1,121 @@
+{
+  "version": "2026.09-s15-draft",
+  "season": "Temporada 15 (Lord of Hatred)",
+  "notes": [
+    "Todos os Lair Bosses podem dropar Únicos Míticos (versões Tormented por padrão).",
+    "Initiate Lair Bosses usam Lair Key e podem dar Greater Lair Key / Stygian Stone no baú.",
+    "Belial não tem tabela própria: no baú dele você escolhe a tabela de outro boss.",
+    "Itens com \"verified\": false foram coletados de fontes secundárias — confira antes de farmar."
+  ],
+  "bosses": [
+    {
+      "id": "grigoire",
+      "name": "Grigoire, the Galvanic Saint",
+      "tier": "initiate",
+      "summon": "1 Lair Key",
+      "arena": { "name": "Hall of the Penitent", "region": "Kehjistan", "matchers": ["Hall of the Penitent", "Grigoire"] },
+      "tips": ["Fique longe das linhas de raio no chão.", "Na fase de muralha elétrica, procure o espaço aberto."],
+      "drops": [
+        { "name": "Gohr's Devastating Grips", "classes": ["barbarian"], "verified": false },
+        { "name": "The Oculus", "classes": ["sorcerer"], "verified": false },
+        { "name": "Seed of Horazon", "verified": false },
+        { "name": "Hands of the Worldbreaker", "verified": false },
+        { "name": "Deathgrip", "verified": false },
+        { "name": "Vision of the Firestorm", "verified": false },
+        { "name": "Cage of Madness", "verified": false },
+        { "name": "The Maestro", "verified": false },
+        { "name": "The Basilisk", "verified": false },
+        { "name": "Bastion of Sir Matthias", "verified": false },
+        { "name": "Strike of Stormhorn", "verified": false },
+        { "name": "Might of Qual-Kehk", "verified": false },
+        { "name": "Hunter's Zenith", "verified": false },
+        { "name": "Will of Stone", "verified": false },
+        { "name": "The Mortacrux", "verified": false },
+        { "name": "Desperate March", "verified": false }
+      ]
+    },
+    {
+      "id": "beast-in-the-ice",
+      "name": "The Beast in the Ice",
+      "tier": "initiate",
+      "summon": "1 Lair Key",
+      "arena": { "name": "Glacial Fissure", "region": "Fractured Peaks", "matchers": ["Glacial Fissure", "Beast in the Ice"] },
+      "tips": ["Destrua as poças de gelo rapidamente.", "Saia dos círculos de congelamento antes de explodirem."],
+      "drops": []
+    },
+    {
+      "id": "echo-of-varshan",
+      "name": "Echo of Varshan",
+      "tier": "initiate",
+      "summon": "1 Lair Key",
+      "arena": { "name": "Malignant Burrow", "region": "Kehjistan", "matchers": ["Malignant Burrow", "Varshan"] },
+      "tips": ["Mate os corações malignos que ele invoca para reduzir o dano."],
+      "drops": []
+    },
+    {
+      "id": "lord-zir",
+      "name": "Lord Zir",
+      "tier": "initiate",
+      "summon": "1 Lair Key",
+      "arena": { "name": "Darkened Way", "region": "Fractured Peaks", "matchers": ["Darkened Way", "Lord Zir"] },
+      "tips": ["Quebre as pedras de sangue (Blood Stones) para interromper a cura.", "Evite as poças de sangue."],
+      "drops": []
+    },
+    {
+      "id": "urivar",
+      "name": "Urivar",
+      "tier": "initiate",
+      "summon": "1 Lair Key",
+      "arena": { "name": "Urivar", "region": "Nahantu", "matchers": ["Urivar"] },
+      "tips": [],
+      "drops": []
+    },
+    {
+      "id": "duriel",
+      "name": "Duriel, King of Maggots",
+      "tier": "greater",
+      "summon": "1 Greater Lair Key",
+      "arena": { "name": "Gaping Crevasse", "region": "Kehjistan (leste de Gea Kul)", "matchers": ["Gaping Crevasse", "Duriel"] },
+      "tips": ["Quando ele entrar no chão, fique em movimento.", "Tenha Unstoppable para o agarrão."],
+      "drops": [
+        { "name": "Razorplate", "verified": false }
+      ]
+    },
+    {
+      "id": "andariel",
+      "name": "Andariel, Maiden of Anguish",
+      "tier": "greater",
+      "summon": "1 Greater Lair Key",
+      "arena": { "name": "Hanged Man's Hall", "region": "Kehjistan", "matchers": ["Hanged Man's Hall", "Andariel"] },
+      "tips": ["Desvie das lâminas giratórias e do veneno no chão.", "Desde Lord of Hatred tem tabela própria (não compartilha com Duriel)."],
+      "drops": []
+    },
+    {
+      "id": "harbinger-of-hatred",
+      "name": "Harbinger of Hatred",
+      "tier": "greater",
+      "summon": "1 Greater Lair Key",
+      "arena": { "name": "Harbinger of Hatred", "region": "", "matchers": ["Harbinger"] },
+      "tips": [],
+      "drops": []
+    },
+    {
+      "id": "the-butcher",
+      "name": "The Butcher",
+      "tier": "greater",
+      "summon": "1 Greater Lair Key",
+      "arena": { "name": "The Butcher", "region": "", "matchers": ["Butcher"] },
+      "tips": ["Kite: ele puxa com o gancho e dá stun."],
+      "drops": []
+    },
+    {
+      "id": "belial",
+      "name": "Belial, Lord of Lies",
+      "tier": "pinnacle",
+      "summon": "Chaves de Greater Lair Bosses",
+      "arena": { "name": "Belial", "region": "", "matchers": ["Belial"] },
+      "tips": ["Melhor chance de Míticos; escolha a tabela de outro boss no baú."],
+      "drops": []
+    }
+  ]
+}
